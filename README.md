@@ -1,4 +1,3 @@
-```markdown
 # Oral-Gut Microbial Transmission Analysis Pipeline
 
 A comprehensive pipeline for analyzing microbial strain transmission between oral and gut microbiomes using metagenomic data.
