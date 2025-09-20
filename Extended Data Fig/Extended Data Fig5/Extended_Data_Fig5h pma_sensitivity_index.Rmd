@@ -1,0 +1,178 @@
+---
+title: "PMA Sensitivity Analysis for Transmitted Oral Microbes"
+author: "xiaochang"
+date: "2025-08-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Load required packages for data manipulation and visualization
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
+load data 
+```{r cars}
+# Set working directory and load pre-processed data
+setwd("E:/办公文件/口腔肠道肠道癌/mpa4/manuscript20241019/Figure/new_data")
+load("oral_gut_abundance_melt.RData")        # Melted abundance data
+load("trans2.RData")                         # Strain-Level Transmission Information
+load("shared_new9.RData")                    # Shared microbial features data
+```
+
+Data Preparation for PMA Effect Analysis
+
+```{r pressure, echo=FALSE}
+# Subset data to include only cancer diagnoses (CRC, GC, EC)
+pma_effect <- subset(oral_gut_abundance, Diagnosis %in% c("CRC", "GC", "EC"))
+
+# Identify gut-only SGBs (present in gut but not in oral samples)
+gut_only <- subset(oral_gut_abundance, oral == 0 & gut > 0)
+
+# Count occurrences of each SGB by treatment group
+stat <- gut_only %>% group_by(SGB, group) %>% summarise(counts = n())
+
+# Reshape to wide format for comparison
+stat <- stat %>% pivot_wider(names_from = group, values_from = counts)
+
+# Filter for SGBs with sufficient representation (≥10 samples in either group)
+gut_sgb <- subset(stat, PMA >= 10 | `non-PMA` >= 10)
+
+# Classify SGBs as either "gut_only" or "shared" (oral-gut transmitted)
+shared_vs_gut <- pma_effect %>% 
+  mutate(type = case_when(
+    SGB %in% gut_sgb$SGB ~ "gut_only",
+    SGB %in% unique(shared_new9$X2) ~ "shared"
+  ))
+
+# Remove unclassified entries and prepare data for ratio calculation
+shared_vs_gut <- subset(shared_vs_gut, !is.na(type))
+shared_vs_gut <- shared_vs_gut[, -4]  # Remove unnecessary column
+shared_vs_gut$id <- gsub("_PMA", "", shared_vs_gut$id)  # Standardize sample IDs
+
+# Reshape to wide format with separate columns for PMA and non-PMA abundances
+shared_vs_gut <- shared_vs_gut %>% 
+  pivot_wider(names_from = group, values_from = gut)
+shared_vs_gut[is.na(shared_vs_gut)] <- 0  # Replace NAs with zeros
+```
+
+PMA Effect Ratio (PER) Calculation
+```{r}
+# Separate shared (transmitted) and gut-only (resident) SGBs
+shared_data <- shared_vs_gut %>% filter(type == "shared")
+gut_only_data <- shared_vs_gut %>% filter(type == "gut_only")
+
+# Calculate PMA Effect Ratio (PER) for each transmitted strain relative to each resident SGB
+# PER = log10((Rt/Rr)PMA / (Dt/Dr)non-PMA)
+# Where: Rt/Rr = transmitted/resident ratio in PMA-treated samples
+#        Dt/Dr = transmitted/resident ratio in untreated samples
+result <- shared_data %>%
+  left_join(
+    gut_only_data, 
+    by = "id", 
+    suffix = c("_shared", "_gut")
+  ) %>%
+  mutate(
+    ratio_nonPMA = `non-PMA_shared` / `non-PMA_gut`,  # Untreated ratio
+    ratio_PMA = PMA_shared / PMA_gut                  # PMA-treated ratio
+  ) %>%
+  # Select and rename key columns
+  select(
+    id,
+    SGB_shared,              # Transmitted SGB
+    SGB_gut,                 # Resident SGB
+    site = site_shared,      # Sample site
+    Diagnosis = Diagnosis_shared,  # Cancer diagnosis
+    
+    # Abundance values for transmitted SGB
+    non_PMA_shared = `non-PMA_shared`,
+    PMA_shared,
+    
+    # Abundance values for resident SGB
+    non_PMA_gut = `non-PMA_gut`,
+    PMA_gut,
+    
+    # Calculated ratios
+    ratio_nonPMA,
+    ratio_PMA
+  )
+
+# Calculate PMA Effect Ratio (PER)
+result$PER <- log10(result$ratio_PMA / result$ratio_nonPMA)
+
+# Remove infinite values resulting from division by zero
+result_clean <- result %>% filter(is.finite(PER))
+```
+Incorporate Strain-Level Transmission Information
+```{r}
+# Load and process transmission data
+trans <- subset(trans2, trans == "YES")  # Confirmed transmitted strains
+trans$ID1 <- gsub("_PMA", "", trans$ID1)  # Standardize sample IDs
+
+# Separate transmission data by treatment
+trans_nonpma <- trans[trans$treatment.x == "non-PMA", c("ID1", "SGB", "species", "trans")]
+trans_pma <- trans[trans$treatment.x == "PMA", c("ID1", "SGB", "species", "trans")]
+
+# Merge transmission information with PER results
+result_clean1 <- merge(result_clean, trans_nonpma, 
+                       by.x = c("id", "SGB_shared"), 
+                       by.y = c("ID1", "SGB"), 
+                       all.x = TRUE)
+
+result_clean1 <- merge(result_clean1, trans_pma, 
+                       by.x = c("id", "SGB_shared"), 
+                       by.y = c("ID1", "SGB"), 
+                       all.x = TRUE)
+```
+PMA Sensitivity Index (PSI) Calculation
+```{r}
+# Filter for transmitted strains with significant PMA effect (PER > 1 or < -1)
+tmp2 <- subset(result_clean1, (trans.x == "YES" | trans.y == "YES") & (PER >= 1 | PER <= -1))
+tmp2 <- unique(tmp2)
+
+# Classify comparison direction (PMA vs non-PMA dominance)
+tmp2 <- tmp2 %>% mutate(compare = case_when(
+  ratio_nonPMA > ratio_PMA ~ "non-PMA",
+  ratio_nonPMA < ratio_PMA ~ "PMA"
+))
+
+# Count resident SGBs with PER > 1 (n) and PER < -1 (m) for each transmitted strain
+stat <- tmp2 %>% group_by(SGB_shared, compare) %>% summarise(count = n())
+colnames(stat) <- c("SGB", "group", "number")
+
+# Reshape to wide format for PSI calculation
+stat <- stat %>% pivot_wider(names_from = group, values_from = number)
+stat[is.na(stat)] <- 0  # Replace NAs with zeros
+
+# Calculate PMA Sensitivity Index (PSI): PSI = (n - m) / (n + m)
+stat$PSI <- (stat$`non-PMA` - stat$PMA) / (stat$`non-PMA` + stat$PMA)
+
+# Add species information for better interpretation
+species <- unique(trans2[, c("SGB", "species")])
+species <- subset(species, !is.na(species))
+stat <- merge(stat, species, by = "SGB", all.x = TRUE)
+
+# Create formatted labels for visualization
+stat$id <- paste(stat$species, stat$SGB)
+stat$id <- gsub("_unclassified_SGB19850", "", stat$id)
+stat$id <- gsub("_group", "", stat$id)
+stat$id <- gsub("s__", "", stat$id)
+```
+Visualization of PMA Sensitivity Index 
+```{r}
+# Order strains by PSI value for visualization
+stat <- stat[order(stat$PSI, decreasing = TRUE), ]
+stat$id <- factor(stat$id, levels = stat$id)
+
+# Create dot plot of PSI values
+ggplot(stat, aes(PSI, id)) +
+  geom_point() +
+  theme_bw() +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  labs(x = "PMA Sensitivity Index (PSI)", 
+       y = "Transmitted Strains",
+       title = "PMA Sensitivity of Transmitted Oral Microbes",
+       subtitle = "Positive PSI: Higher viability after PMA treatment\nNegative PSI: Lower viability after PMA treatment")
+```
+
