@@ -1,8 +1,9 @@
 library(Maaslin2)
 
-load("data_for_GI_gut_cancer.RData")
+load("../data/Figure1/data_for_GI_gut_cancer.RData")
 
 otu_table2<-data.frame(t(otu_table1))
+rownames(sam1)<-sam1$X
 otu_table2<-otu_table2[rownames(sam1),]
 
 fit_big_cohort_all = Maaslin2(
@@ -11,7 +12,7 @@ fit_big_cohort_all = Maaslin2(
   output = "Maaslin2_big_cohort_all",
   fixed_effects = "Response_6",random_effects = c("Diagnosis","Age","BMI_category"),normalization = "NONE")
 
-sam_CRC<-subset(sam,Diagnosis=="CRC"&grepl("ICI",Treatment_class)&Response_6 %in% c("R","NR"))
+sam_CRC<-subset(sam1,Diagnosis=="CRC"&grepl("ICI",Treatment_class)&Response_6 %in% c("R","NR"))
 
 fit_big_cohort_CRC = Maaslin2(
   input_data = otu_table2,
@@ -19,14 +20,15 @@ fit_big_cohort_CRC = Maaslin2(
   output = "Maaslin2_big_cohort_CRC",
   fixed_effects = "Response_6",random_effects = c("Diagnosis","Age","BMI_category"),normalization = "NONE")
   
-sam_EC<-subset(sam,Diagnosis=="EC"&grepl("ICI",Treatment_class)&Response_6 %in% c("R","NR"))
+sam_EC<-subset(sam1,Diagnosis=="EC"&grepl("ICI",Treatment_class)&Response_6 %in% c("R","NR"))
 
 fit_big_cohort_EC = Maaslin2(
   input_data = otu_table2,
   input_metadata = sam_EC,
   output = "Maaslin2_big_cohort_EC",
   fixed_effects = "Response_6",random_effects = c("Diagnosis","Age","BMI_category"),normalization = "NONE")
-  
+
+sam_GC<-subset(sam1,Diagnosis=="GC"&grepl("ICI",Treatment_class)&Response_6 %in% c("R","NR"))
 fit_big_cohort_GC = Maaslin2(
   input_data = otu_table2,
   input_metadata = sam_GC,
@@ -37,13 +39,9 @@ fit_big_cohort_GC = Maaslin2(
 ###manually combine output files of "Maaslin2_big_cohort_all","Maaslin2_big_cohort_CRC","Maaslin2_big_cohort_GC"and "Maaslin2_big_cohort_EC"
 
 library(dplyr)
-library(microeco)
 library(magrittr)
 library(ggplot2)
-library(aplot)
-load("Figure1e.RData")
-
-load("masslin2_result.RData")
+load("../data/Figure1/masslin2_result.RData")
 plot_data_p1_big <- subset(result2, !grepl("GGB", id))
 
 
@@ -74,4 +72,4 @@ p1_big_final <- ggplot(plot_data_p1_big, aes(group.x, id, fill = coef)) +
   )
 
 
-ggsave("Figure1e.pdf", plot = p1_big_final, height = 7, width = 5)
+ggsave("../results/Figure1h.pdf", plot = p1_big_final, height = 7, width = 5)

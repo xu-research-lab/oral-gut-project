@@ -1,0 +1,155 @@
+{
+	"version": 1,
+	"base_image": "registry.codeocean.com/codeocean/py-r:python3.12.8-R4.4.2-JupyterLab4.3.5-RStudiorstudio-server-2024.12.1-563-ubuntu22.04",
+	"post_install": true,
+	"options": {},
+	"installers": {
+		"apt": {
+			"packages": [
+				{
+					"name": "libglpk-dev",
+					"version": "5.0-1"
+				}
+			],
+			"install_software_properties_common": true
+		},
+		"rbioconductor": {
+			"packages": [
+				{
+					"name": "Maaslin2",
+					"version": "1.20.0"
+				}
+			],
+			"r_version": "4.4.2",
+			"install_bioconductor": true
+		},
+		"rcran": {
+			"packages": [
+				{
+					"name": "RColorBrewer",
+					"version": "1.1-3"
+				},
+				{
+					"name": "aplot",
+					"version": "0.2.9"
+				},
+				{
+					"name": "caret",
+					"version": "7.0-1"
+				},
+				{
+					"name": "dplyr",
+					"version": "1.1.4"
+				},
+				{
+					"name": "forcats",
+					"version": "1.0.1"
+				},
+				{
+					"name": "ggExtra",
+					"version": "0.11.0"
+				},
+				{
+					"name": "ggbeeswarm",
+					"version": "0.7.2"
+				},
+				{
+					"name": "gghalves",
+					"version": "0.1.4"
+				},
+				{
+					"name": "ggnewscale",
+					"version": "0.5.2"
+				},
+				{
+					"name": "ggplot2",
+					"version": "4.0.0"
+				},
+				{
+					"name": "ggpubr",
+					"version": "0.6.1"
+				},
+				{
+					"name": "ggraph",
+					"version": "2.2.2"
+				},
+				{
+					"name": "igraph",
+					"version": "2.2.0"
+				},
+				{
+					"name": "knitr",
+					"version": "1.50"
+				},
+				{
+					"name": "magrittr",
+					"version": "2.0.4"
+				},
+				{
+					"name": "microeco",
+					"version": "1.15.0"
+				},
+				{
+					"name": "optparse",
+					"version": "1.7.5"
+				},
+				{
+					"name": "pROC",
+					"version": "1.19.0.1"
+				},
+				{
+					"name": "patchwork",
+					"version": "1.3.2"
+				},
+				{
+					"name": "purrr",
+					"version": "1.1.0"
+				},
+				{
+					"name": "randomForest",
+					"version": "4.7-1.2"
+				},
+				{
+					"name": "readxl",
+					"version": "1.4.5"
+				},
+				{
+					"name": "reshape2",
+					"version": "1.4.4"
+				},
+				{
+					"name": "rstatix",
+					"version": "0.7.2"
+				},
+				{
+					"name": "scales",
+					"version": "1.4.0"
+				},
+				{
+					"name": "scatterpie",
+					"version": "0.2.6"
+				},
+				{
+					"name": "survival",
+					"version": "3.8-3"
+				},
+				{
+					"name": "survminer",
+					"version": "0.5.1"
+				},
+				{
+					"name": "tidyr",
+					"version": "1.3.1"
+				},
+				{
+					"name": "tidyverse",
+					"version": "2.0.0"
+				},
+				{
+					"name": "vegan",
+					"version": "2.7-2"
+				}
+			]
+		}
+	}
+}

@@ -1,8 +1,10 @@
 library(dplyr)
 library(tidyr)
+library(reshape2)
+library(ggplot2)
 
-load("butyrate kinase contributor.RData")# dataframe `gene` contains the identified key gene abundance involoved in SCFA production 
-load("scfa_gene_features.RData") ## dataframe `scfa_gene_features` alreadly merged the gene profiles, transmitted abundnce and metadata together 
+load("../data/Figure5/butyrate/butyrate kinase contributor.RData")# dataframe `gene` contains the identified key gene abundance involoved in SCFA production 
+load("../data/Figure5/butyrate/scfa_gene_features.RData") ## dataframe `scfa_gene_features` alreadly merged the gene profiles, transmitted abundnce and metadata together 
 kinase<-subset(gene,enzyme=="kinase")
 kinase_melt<-melt(kinase)
 kinase_melt$Species_cleaned <- gsub("s__", "", kinase_melt$Species_cleaned )
@@ -50,16 +52,4 @@ p_butyrate<-ggplot(subset(plot_data,value>0), aes(value, group)) +
     theme(plot.title = element_text(hjust = 0.5)) +
     labs(x = "abundance", y = NULL, title = "Butyrate kinase contributor")
 print(p_butyrate)
-ggsave("butyrate kinase contributor.pdf",height = 5,width = 5)
-
-save(plot_data,p_butyrate,gene,kinase,kinase_mean,kinase_melt,kinase_melt_nonpma,file = "butyrate kinase contributor.RData")
-
-
-###plot butyrate kinase association with transmitted abundance
-ggplot(subset(enzyme_features,!is.na(treatment)&group=="Gut"&enzyme=="Butyrate kinase"),aes(Feces,transmitted.abundance.in.Gut))+geom_point(shape=1)+
-       stat_smooth(method = "lm",se = F)+facet_wrap(~treatment)+
-       stat_cor(method = "spearman",color="blue")+theme_bw()+
-       theme(strip.background = element_blank(),panel.grid = element_blank())+
-       scale_y_continuous(expand = c(0,0))+xlab("Abundance of butyrate kinase")+ylab("Transmitted abundance")
-	   
-	    ggsave("butyrate_kinase.pdf",height = 2.5,width = 5)
+ggsave("../results/butyrate kinase contributor.pdf",height = 5,width = 5)

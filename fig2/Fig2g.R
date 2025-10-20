@@ -1,6 +1,7 @@
 library(ggplot2)
 library(dplyr)
 library(aplot)
+load("../data/Figure2/Fig2g.RData")
 p_shared1<-ggplot(subset(df_sig2,rate>0&!grepl("Candidatus",id)&group=="non-PMA"),aes(Diagnosis,id))+
   geom_point(color ="#BC3C29",aes(size=rate))+
   geom_text(aes(label=sig),size=3,nudge_y = -0.25)+
@@ -16,5 +17,5 @@ p_cor1<-ggplot(subset(stat,!(Diagnosis=="Treated")&id>=6&group=="non-PMA"),aes(D
 p_cor1
 p_all <- p_shared1%>%insert_right(p_cor1)
 p_all
-ggsave("p_shared_new20250819.pdf",p_all,height = 7,width = 7)
+ggsave("../results/fig2g.pdf",p_all,height = 7,width = 7)
 

@@ -1,6 +1,6 @@
 library(ggplot2)
 library(ggpubr)
-load("bugbase.RData")
+load("../data/Figure5/bugbase/Fig.5b bugbase.RData")
 
 bugbase$Diagnosis<-factor(bugbase$Diagnosis,levels = c("CRC","GC","EC"))
 
@@ -11,4 +11,4 @@ bugbase_plot<-ggplot(subset(bugbase,site=="gut"),aes(ratio,transmitted.abundance
   xlab(label="relative abundance")+
   theme(axis.text = element_text(size=7),strip.background = element_blank(),legend.position="top")
 
-ggsave(plot = bugbase_plot,filename = "bugbase_plot.pdf",height = 3,width = 5)
+ggsave(plot = bugbase_plot,filename = "../results/bugbase_plot.pdf",height = 3,width = 5)

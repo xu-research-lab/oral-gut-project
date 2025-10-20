@@ -1,8 +1,9 @@
 
-load("microm_sig.RData")
+library(ggplot2)
+load("../data/Figure5/microm/microm_sig.RData")
 ## file microm - association between transmitted abundance and all predicted metabolites
 ## sig_metabolites - significant associations
-microm<-read.delim("clipboard",header = T)
+#microm<-read.delim("clipboard",header = T)
 sig_metabolites <- microm[abs(microm$statistic) >= 0.2&microm$n>=5&microm$q<=0.25, ]
 
 # 检查是否有满足条件的行
@@ -16,5 +17,4 @@ if(nrow(sig_metabolites) > 0) {
 } else {
   message("没有满足条件的metabolites（所有statistic绝对值都小于2）")
 }
-ggsave("microm_sig.pdf",height = 2,width = 2.5)
-save(microm,sig_metabolites,file="microm_sig.RData")
+ggsave("../results/microm_sig.pdf",height = 2,width = 2.5)

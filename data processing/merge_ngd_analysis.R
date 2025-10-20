@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 #
 # merge_ngd_analysis.R
-# Description: Merge and analyze nGD results from StrainPhlAn and assembly-based methods
+# Description: Merge and analyze nGD results from StrainPhlAn and Panphlan methods
 # Usage: Rscript merge_ngd_analysis.R
 
 # Load required packages
@@ -12,93 +12,79 @@ suppressPackageStartupMessages({
   library(purrr)
 })
 
-# Set seed for reproducibility
-set.seed(123)
-
 ###############################################################################
-# Step 1: Load and preprocess data
+# Step 1: Load data
 ###############################################################################
 
-cat("Loading and preprocessing data...\n")
-
-# Load StrainPhlAn distance data
-load("distance.RData")
-dis_strainphlan <- dis
-rm(dis)
-
-# Load assembly-based distance data
-load("kept_dis.RData")
-dis_assembly <- dis
-rm(dis)
-
-# Clean up sample names and define groups for StrainPhlAn data
-dis_strainphlan <- dis_strainphlan %>%
-  mutate(
-    # Clean sample IDs by removing prefixes and suffixes
-    clean_id1 = gsub("Feces_|PMA_|Saliva_|Dental|_A|_B|_C", "", ID1),
-    clean_id2 = gsub("Feces_|PMA_|Saliva_|_A|_B|_C", "", ID2),
-    
-    # Define groups based on sample relationships
-    group = case_when(
-      clean_id1 == clean_id2 ~ "within individual",
-      gsub("Feces_", "Saliva_", ID1) == ID2 ~ "oral_gut",
-      TRUE ~ "between individuals"
-    )
-  ) %>%
-  select(-clean_id1, -clean_id2)
-
-# Extract oral-gut transmission pairs
-trans_strainphlan <- dis_strainphlan %>%
-  filter(group == "oral_gut")
-  
-# Clean up sample names and define groups for StrainPhlAn data
-trans_assembly <- trans_assembly %>%
-  mutate(
-    # Clean sample IDs by removing prefixes and suffixes
-    clean_id1 = gsub("Feces_|PMA_|Saliva_|Dental|_A|_B|_C", "", ID1),
-    clean_id2 = gsub("Feces_|PMA_|Saliva_|_A|_B|_C", "", ID2),
-    
-    # Define groups based on sample relationships
-    group = case_when(
-      clean_id1 == clean_id2 ~ "within individual",
-      gsub("Feces_", "Saliva_", ID1) == ID2 ~ "oral_gut",
-      TRUE ~ "between individuals"
-    )
-  ) %>%
-  select(-clean_id1, -clean_id2)
-
-# Extract oral-gut transmission pairs
-trans_assembly <- dis_strainphlan %>%
-  filter(group == "oral_gut")
-
-
+# Load StrainPhlAn distance data and panphlan data
+load("../data/data processing/distance_strainphlan_panphlan.RData")
 
 ###############################################################################
 # Step 2: Merge results from both methods and select minimal distance as final genetic distance
 ###############################################################################
-
-cat("Merging results from both methods...\n")
-
-# Merge transmission results
-trans_merged <- full_join(
-  trans_panphlan %>% 
-    select(ID1, ID2, SGB, centered) %>%
+# Merge distance from both methods
+dis_merged <- full_join(
+  dis_panphlan %>% 
+    select(ID1, ID2, SGB, centered,bin_cluster,Species) %>%
     rename(centered_panphlan = centered),
   
-  trans_strainphlan %>% 
-    select(ID1, ID2, SGB, centered) %>%
+  dis_strainphlan %>% 
+    select(ID1, ID2, SGB, centered,Species) %>%
     rename(centered_strainphlan = centered),
   by = c("ID1", "ID2", "SGB")
 )
 
-trans_merged<-trans_merged%>%mutate(centered.min=min(centered_panphlan,centered_strainphlan))
+dis_merged <- dis_merged %>%
+  mutate(centered.min = case_when(
+    !is.na(centered_strainphlan) & !is.na(centered_panphlan) ~ pmin(centered_strainphlan, centered_panphlan),
+    !is.na(centered_strainphlan) ~ centered_strainphlan,
+    !is.na(centered_panphlan) ~ centered_panphlan,
+    TRUE ~ NA_real_
+  )) %>%
+  filter(!is.na(centered.min))
+
+###############################################################################
+# Step 3: Filter distance pairs for oral-gut and technical replicate comparisons
+###############################################################################
+
+# Filter distance pairs to include:
+# 1. Oral-gut pairs (Saliva-Feces comparisons)
+# 2. Paired samples with/without PMA treatment or technical replicates
+dis_merged<-subset(dis_merged,(grepl("Saliva_",ID1)&grepl("Feces_",ID2))|
+                     (grepl("Saliva_",ID2)&grepl("Feces_",ID1))|
+                     gsub("PMA_|_A|_B|_C","",ID1) == ID2|
+                     gsub("PMA_|_A|_B|_C","",ID2) == ID1)
+
+
+#Clean up sample names and define groups for merged distance
+dis_merged <- dis_merged %>%
+  mutate(
+    # Clean sample IDs by removing prefixes and suffixes
+    clean_id1 = gsub("Feces_|Saliva_", "", ID1),
+    clean_id2 = gsub("Feces_|Saliva_", "", ID2),
+    
+    # Define comparison groups based on sample relationships
+    group = ifelse(
+      clean_id1 == clean_id2 & 
+        ((grepl("^Feces_", ID1) & grepl("^Saliva_", ID2)) | 
+           (grepl("^Saliva_", ID1) & grepl("^Feces_", ID2))),
+      "within individual oral_gut",
+      ifelse(
+        gsub("PMA_|_A|_B|_C","",clean_id1) == clean_id2|
+          gsub("PMA_|_A|_B|_C","",clean_id2) == clean_id1,
+        "within individual",
+        "between individuals"
+      )
+    )
+  ) %>%
+  select(-clean_id1, -clean_id2)
 
 
 ###############################################################################
-# Step 3: Calculate transmission thresholds for each species using Youden's index
+# Step 4: Calculate transmission thresholds for each SGB using Youden's index
 ###############################################################################
 
-cat("Calculating transmission thresholds for each species...\n")
+cat("Calculating transmission thresholds for each SGB...\n")
 
 calculate_youden_threshold <- function(sgb_data, bin_name) {
   # Extract distances for within-individual and between-individual comparisons
@@ -129,7 +115,7 @@ calculate_youden_threshold <- function(sgb_data, bin_name) {
 }
 
 # Calculate thresholds for each SGB
-thresholds <- trans_merged %>%
+thresholds <- dis_merged %>%
   group_by(SGB) %>%
   group_modify(~ {
     data.frame(threshold = calculate_youden_threshold(.x, .y$SGB))
@@ -137,34 +123,23 @@ thresholds <- trans_merged %>%
   ungroup()
 
 # Merge thresholds back to the main dataframe
-trans_merged<- trans_merged %>%
-  left_join(thresholds, by = "SGB") %>%
-  rename(threshold_strainphlan = threshold)
+dis_merged<- dis_merged %>%
+  left_join(thresholds, by = "SGB")
 
 ###############################################################################
-# Step 4: Determine transmission events
+# Step 5: Determine transmission events
 ###############################################################################
-
-cat("Determining transmission events...\n")
+trans_merged<-subset(dis_merged,group=="within individual oral_gut")
 
 trans_merged <- trans_merged %>%
   mutate(
-    # Check if distances are below thresholds
-    trans_panphlan = ifelse(centered_panphlan <= thresholds, TRUE, FALSE),
-    trans_strainphlan = ifelse(centered_strainphlan <= thresholds, TRUE, FALSE),
-    
-    # Handle NA values
-    trans_panphlan = ifelse(is.na(trans_panphlan), FALSE, trans_panphlan),
-    trans_strainphlan = ifelse(is.na(trans_strainphlan), FALSE, trans_strainphlan),
-    
-    # Combine results from both methods
-    trans_count = as.numeric(trans_panphlan) + as.numeric(trans_strainphlan),
-    
-    # Final transmission call
-    transmission = case_when(
-      trans_count >= 1 ~ "YES",
-      trans_count == 0 ~ "NO",
-      TRUE ~ "UNCERTAIN"
+    trans = case_when(
+      centered.min<=threshold ~ "YES",
+      centered.min>threshold ~ "NO"
     )
   )
+cat("Determining transmission events...\n")
+
+save(dis_merged,trans_merged,file="../results/processed_merge_dis.RData")
+
 

@@ -8,7 +8,7 @@ library(ggnewscale)
 
 # Load your data file
 # Please ensure the "fig3b.RData" file is in your R working directory
-load("fig3b.RData")
+load("../data/Figure3/fig3b.RData")
 
 # --- 1. Data Preparation and Filtering ---
 
@@ -67,5 +67,4 @@ p_combined <- ggplot(plot_data_full, aes(x = centered.min, y = gut, color = Diag
 # Print the first plot
 print(p_combined)
 # Save the first plot
-ggsave("fig3b.png", p_combined, width = 4.2, height = 2.8)
-ggsave("fig3b.pdf", p_combined, width = 4.2, height = 2.7)
+ggsave("../results/fig3b.pdf", p_combined, width = 4.2, height = 2.7)

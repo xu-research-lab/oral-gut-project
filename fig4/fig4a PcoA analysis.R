@@ -15,7 +15,7 @@ dist_metrics_names <- c(
 )
 
 
-meta_data_full <- read.csv("fig4a.csv", sep = ",", row.names = 1, header = TRUE)
+meta_data_full <- read.csv("../data/Figure4/fig4a.csv", sep = ",", row.names = 1, header = TRUE)
 
 
 meta_data_full <- meta_data_full %>%
@@ -39,7 +39,7 @@ for (dtype in data_types) {
     for (i in 1:length(dist_metrics_names)) {
         dist_name <- names(dist_metrics_names)[i]
         file_suffix <- dist_metrics_names[i]
-        file_path <- sprintf("total_abundance_profile_%s_%s.tsv", dtype, file_suffix)
+        file_path <- sprintf("../data/Figure4/total_abundance_profile_%s_%s.tsv", dtype, file_suffix)
 
         if (file.exists(file_path)) {
             dist_matrices[[dist_name]] <- read.csv(file_path, sep = "\t", row.names = 1, header = TRUE)
@@ -136,7 +136,7 @@ for (dtype in data_types[1]) {
     for (sgroup in sample_groups) {
         cat(sprintf("Preparing data for PCoA plot: %s - %s\n", dtype, sgroup))
 
-        bray_file <- sprintf("total_abundance_profile_%s_bray-curtis.tsv", dtype)
+        bray_file <- sprintf("../data/Figure4/total_abundance_profile_%s_bray-curtis.tsv", dtype)
         if (!file.exists(bray_file)) {
             warning(sprintf("File %s not found, skipping PCoA plotting.", bray_file))
             next
@@ -245,6 +245,5 @@ if (length(pcoa_plot_data_list) > 0) {
 
     print(pcoa_combined_plot)
 
-    ggsave("fig4_a.png", plot = pcoa_combined_plot, width = 6.4, height = 3.5, dpi = 300)
-    ggsave("fig4_a.pdf", plot = pcoa_combined_plot, width = 6, height = 2.5)
+    ggsave("../results/fig4_a.pdf", plot = pcoa_combined_plot, width = 6, height = 2.5)
 }

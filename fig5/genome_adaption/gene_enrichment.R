@@ -1,3 +1,6 @@
+library(ggplot2)
+library(aplot)
+load("../data/Figure5/genome_adaption/gene_enrichment_analysis.RData")
 p1<-ggplot(subset(all,species=="Streptococcus salivarius"), aes(both_YES+gut_YES, both_YES+oral_YES)) + 
   geom_point(data = subset(subset(all,species=="Streptococcus salivarius"), !is.na(GO)), aes(color = GO), shape = 16) +
   geom_point(data = subset(subset(all,species=="Streptococcus salivarius"), is.na(GO)), color = "grey50", shape = 1,size=0.5) +
@@ -18,5 +21,5 @@ geom_abline(slope=1,intercept = (-1.478430-3*4.430210),linetype="dashed")+
   ylab(label=NULL)+xlim(c(0,60))+theme(legend.key.size = unit(0.1,"cm"))
 
 Fig3.D<-p1%>%insert_right(p2)
-
-ggsave("go richement.pdf",height =3 ,width = 7)
+Fig3.D
+ggsave("../results/go richement.pdf",height =3 ,width = 10)

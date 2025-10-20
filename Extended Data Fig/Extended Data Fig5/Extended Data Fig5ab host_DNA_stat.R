@@ -1,5 +1,6 @@
 library(ggplot2)
 library(dplyr)
+load("../data/Extended Data Fig/Extended Data Fig5/Extended_Data_Fig5ab host_DNA_stat.RData")
 df <- reads %>%
   mutate(subjectID = factor(subjectID, levels = unique(subjectID[order(site,treatment.1,-host_removed)])))
 
@@ -52,7 +53,7 @@ p_reads_stat<-ggplot(df,aes(site,host_removed,color=treatment.1))+
   labs(title = "clean data size",x=NULL,y="paired reads counts",color="treatment")+
   theme(plot.title = element_text(hjust=0.5))
 
-ggsave(plot = p_reads_stat,filename = "boxplot_data_reads.pdf",height = 2.5,width = 3.5)
+ggsave(plot = p_reads_stat,filename = "../results/boxplot_data_reads.pdf",height = 2.5,width = 3.5)
 
 
 
