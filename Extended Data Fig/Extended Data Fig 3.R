@@ -1,13 +1,11 @@
 library(dplyr)
 library(purrr)
 library(ggplot2)
-library(aplot)
 library(ggpubr)
 library(reshape2)
-library(patchwork)
 library(stringr)
 
-load("Extended Data Fig 3.RData")
+load("/data/Extended Data Fig/Extended Data Fig 3.RData")
 
 color_mapping <- c(
   "between individuals" = "#F8766D",
@@ -32,5 +30,4 @@ p_density <- ggplot(dis_merged_filtered, aes(centered.min, fill = group.x)) +
   )
 
 
-ggsave("Extended Data Fig 3.png", plot = p_density, height = 15, width = 15)
-ggsave("Extended Data Fig 3.pdf", plot = p_density, height = 15, width = 15)
+ggsave("../results/Extended Data Fig 3.pdf", plot = p_density, height = 15, width = 15)

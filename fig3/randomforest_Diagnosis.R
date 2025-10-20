@@ -7,13 +7,12 @@ library(randomForest)
 library(pROC)
 library(caret)
 library(ggplot2)
-library(readxl)
 
 all<-read.csv(args_list$args[2],header=T,row.names=1)
 #all<-read.csv("oral_gut.csv",header=T,row.names=1)
-meta<-read.table("metadata.txt",header=T,row.names=1,sep="\t")
+meta<-read.table("../data/Figure3/metadata.txt",header=T,row.names=1,sep="\t")
 
-data<-merge(meta[,c("Gender","Treatment","MSI_Status","Response_3","Response_6","Operation","Tumor_Staging","Diagnosis")],all,by=0,all=T)
+data<-merge(meta[,c("Gender","Response_6","Diagnosis")],all,by=0,all=T)
 rownames(data)<-data[,1]
 data<-data[,-1]
 data<-data[!grepl("_B",rownames(data)),]
@@ -23,7 +22,7 @@ data<-subset(data,!grepl("PMA",rownames(data)))
 data[is.na(data)]<-0
 
 randomfor <- function(dat = data, test) {
-  work_table <- data.frame(dat[, test], dat[, c(9:ncol(dat) - 1)])
+  work_table <- data.frame(dat[, test], dat[, c(3:ncol(dat) - 1)])
   work_table[, 1] <- as.factor(work_table[, 1])
   
   # creat 5 fold cross-validate test data 
@@ -116,4 +115,4 @@ auc <- c(
 
 # Print AUC values
 print("OK")
-write.table(auc,paste0(args_list$args[1],"_Diagnosis_AUC_nonPMA.txt"),quote=F,sep="\t")
+write.table(auc,paste0("../results/",args_list$args[1],"_Diagnosis_AUC_nonPMA.txt"),quote=F,sep="\t")

@@ -7,7 +7,7 @@ library(scales)
 library(ggbeeswarm) 
 
 
-load("Extended_Data_Fig1b.RData")
+load("../data/Extended Data Fig/Extended_Data_Fig1/Extended_Data_Fig1b.RData")
 compare1 <- compare1[!is.na(compare1$id), ]
 taxonomy_annotation$SGB <- gsub("t__", "", taxonomy_annotation$SGB)
 
@@ -182,6 +182,5 @@ create_oral_abundance_dotplot <- function(df, group_filter, facet_by = NULL) {
 
 plot_non_pma_abundance <- create_oral_abundance_dotplot(oral_gut_abundance, "non-PMA")
 if (!is.null(plot_non_pma_abundance)) {
-    ggsave("Extended_Data_Fig1_b.png", plot = plot_non_pma_abundance, width = 7, height = 11, dpi = 300)
-    ggsave("Extended_Data_Fig1_b.pdf", plot = plot_non_pma_abundance, width = 7, height = 13)
+    ggsave("../results/Extended_Data_Fig1_b.pdf", plot = plot_non_pma_abundance, width = 7, height = 13)
 }

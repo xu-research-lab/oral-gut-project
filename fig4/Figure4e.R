@@ -1,18 +1,14 @@
 library(dplyr)
 library(purrr)
 library(ggplot2)
-library(aplot)
 library(ggpubr)
 library(reshape2)
-library(patchwork)
-library(scatterpie)
 library(tidyr)
 library(survival)
 library(survminer)
 
 
-load("Figure4e.RData")
-
+load("../data/Figure4/Figure4e.RData")
 
 shared_abd <- subset(paired_sum, Group.2 == "oral-gut shared")
 features <- merge(features, shared_abd[, c("Group.1", "x")], by.x = "sampleid", by.y = "Group.1", all.x = TRUE)
@@ -83,4 +79,4 @@ survival_plot <- ggsurvplot(
   ) +
   scale_color_manual(values = c("#E41A1C", "#377EB8"))
 
-ggsave("/home/hby/huiyi/new/Figure4e.pdf", plot = survival_plot, height = 2.5, width = 6)
+ggsave("../results/Figure4e.pdf", plot = survival_plot, height = 2.5, width = 6)

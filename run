@@ -1,0 +1,131 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+# ==================== data processing ====================
+# merge strainphlan-based genetics distance and spanphlan-based genetics distance
+Rscript '/code/data processing/merge_ngd_analysis.R' "$@"
+
+# ==================== Figure 1 ====================
+echo "Running Figure 1 scripts..."
+
+# Figure 1b, f, g - Alpha diversity and putative oral analysis
+Rscript 'Figure1/Fig1bfg alpha_putative_oral.R' "$@"
+
+# Figure 1c-d - PCoA analysis
+Rscript 'Figure1/fig1c-d PcoA analysis.R' "$@"
+
+# Figure 1e - LEfSe analysis for Diagnosis in big cohort
+Rscript 'Figure1/Fig1e lefse_Diagnosis_big_cohort.R' "$@"
+
+# Figure 1h - Maaslin2 analysis for big cohort (commented out)
+Rscript 'Figure1/Fig1h maaslin2_big_cohort.R' "$@"
+
+
+# ==================== Figure 2 ====================
+echo "Running Figure 2 scripts..."
+
+# Figure 2b - Beta diversity intra vs inter individuals
+Rscript 'Figure2/Fig2b beta_intra_vs_inter_individuals.R' "$@"
+
+# Figure 2c - Alpha association between oral and gut
+Rscript 'Figure2/Fig2c alpha_assoc_between_oral_gut.R' "$@"
+
+# Figure 2d, e, f - Cumulative abundance counts between Diagnosis
+Rscript 'Figure2/Fig2def cumulatvie_abundance_counts_between_Diagnosis.R' "$@"
+
+# Figure 2g
+Rscript Figure2/Fig2g.R "$@"
+
+
+# ==================== Figure 3 ====================
+echo "Running Figure 3 scripts..."
+
+# Figure 3a
+Rscript Figure3/fig3a.R "$@"
+
+# Figure 3b
+Rscript Figure3/fig3b.R "$@"
+
+# Figure 3c, d, e, f
+Rscript Figure3/Fig3cdef.R "$@"
+
+# Figure 3g
+Rscript Figure3/Fig3g.R "$@"
+
+# Random forest analysis for diagnosis classification
+Rscript ../code/Figure3/randomforest_Diagnosis.R sgb_feces_abundance_nonPMA_Diagnosis_random ../data/Figure3/sgb_feces_abundance.csv "$@"
+Rscript ../code/Figure3/randomforest_Diagnosis.R sgb_saliva_abundance_nonPMA_Diagnosis_random ../data/Figure3/sgb_saliva_abundance.csv "$@"
+Rscript ../code/Figure3/randomforest_Diagnosis.R oral_gut_nonPMA_randomforest ../data/Figure3/oral_gut.csv "$@"
+Rscript ../code/Figure3/randomforest_Diagnosis.R oral_gut_shared_binary_nonPMA_randomforest ../data/Figure3/oral_gut_shared_binary.csv "$@"
+Rscript ../code/Figure3/randomforest_Diagnosis.R oral_gut_trans_binary_randomforest ../data/Figure3/oral_gut_trans_binary.csv "$@"
+Rscript ../code/Figure3/randomforest_Diagnosis.R oral_gut_nGD_nonPMA_randomforest ../data/Figure3/oral_gut_nGD.csv "$@"
+
+
+# ==================== Figure 4 ====================
+echo "Running Figure 4 scripts..."
+
+# Figure 4a - PCoA analysis
+Rscript 'Figure4/fig4a PcoA analysis.R' "$@"
+
+# Figure 4b - nGD response
+Rscript 'Figure4/fig4b p_nGD_response.R' "$@"
+
+# Figure 4d
+Rscript Figure4/Fig4d.R "$@"
+
+# Figure 4e
+Rscript Figure4/Figure4e.R "$@"
+
+
+# ==================== Figure 5 ====================
+echo "Running Figure 5 scripts..."
+
+# Figure 5b - Bugbase plot
+Rscript 'Figure5/bugbase/Fig.5b bugbase_plot.R' "$@"
+
+# Figure 5d - Microm signature
+Rscript 'Figure5/microm/Fig.5d microm_sig.R' "$@"
+
+# Butyrate plot
+Rscript Figure5/butyrate/butyrate_plot.R "$@"
+
+# Gene enrichment analysis
+Rscript Figure5/genome_adaption/gene_enrichment.R "$@"
+
+# Network analysis
+Rscript 'Figure5/network analysis/plot_network.R' "$@"
+
+
+# ==================== Extended Data Figures ====================
+echo "Running Extended Data Figure scripts..."
+
+# Extended Data Figure 1a
+Rscript 'Extended Data Fig/Extended_Data_Fig1/Extended_Data_Fig1a.R' "$@"
+# Extended Data Figure 1b
+Rscript 'Extended Data Fig/Extended_Data_Fig1/Extended_Data_Fig1b.R' "$@"
+
+# Extended Data Figure 2
+Rscript 'Extended Data Fig/Extended_Data_Fig2.R' "$@"
+
+# Extended Data Figure 3
+Rscript 'Extended Data Fig/Extended Data Fig 3.R' "$@"
+
+# Extended Data Figure 4 - Strain shared transmission proportion
+Rscript 'Extended Data Fig/Extended_Data_Fig4 strain_shared_trans_proportion.R' "$@"
+
+# Extended Data Figure 5 - Host DNA statistics and PMA treatment effects
+Rscript 'Extended Data Fig/Extended_Data_Fig5/Extended Data Fig5ab host_DNA_stat.R' "$@"
+Rscript 'Extended Data Fig/Extended_Data_Fig5/effect_of_PMA_treatment.R' "$@"
+Rscript 'Extended Data Fig/Extended_Data_Fig5/Extended_Data_Fig5dfg.R' "$@"
+Rscript 'Extended Data Fig/Extended_Data_Fig5/Extended_Data_Fig5e.R' "$@"
+Rscript -e "rmarkdown::render(input = 'Extended Data Fig/Extended_Data_Fig5/Extended_Data_Fig5h pma_sensitivity_index.Rmd', output_dir = '../results', clean = TRUE)"
+
+# Extended Data Figure 7c
+Rscript 'Extended Data Fig/Extended_Data_Fig7/Extended Data Fig 7c.R' "$@"
+
+# Extended Data Figure 8
+Rscript 'Extended Data Fig/Extended_Data_Fig8.R' "$@"
+
+
+echo "All scripts completed successfully!"

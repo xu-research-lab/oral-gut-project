@@ -14,11 +14,10 @@ library(tidyr)
 
 load data 
 ```{r cars}
-# Set working directory and load pre-processed data
-setwd("E:/办公文件/口腔肠道肠道癌/mpa4/manuscript20241019/Figure/new_data")
-load("oral_gut_abundance_melt.RData")        # Melted abundance data
-load("trans2.RData")                         # Strain-Level Transmission Information
-load("shared_new9.RData")                    # Shared microbial features data
+# load files
+load("../data/Extended Data Fig/Extended Data Fig5/oral_gut_abundance_melt.RData")        # Melted abundance data
+load("../data/Extended Data Fig/Extended Data Fig5/trans2.RData")                         # Strain-Level Transmission Information
+load("../data/Extended Data Fig/Extended Data Fig5/shared_new9.RData")                    # Shared microbial features data
 ```
 
 Data Preparation for PMA Effect Analysis
@@ -174,5 +173,6 @@ ggplot(stat, aes(PSI, id)) +
        y = "Transmitted Strains",
        title = "PMA Sensitivity of Transmitted Oral Microbes",
        subtitle = "Positive PSI: Higher viability after PMA treatment\nNegative PSI: Lower viability after PMA treatment")
+ggsave("../results/fig5h.pdf",height=10,width=6)
 ```
 

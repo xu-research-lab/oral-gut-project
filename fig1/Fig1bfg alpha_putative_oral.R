@@ -2,7 +2,7 @@ library(tidyverse)
 library(gghalves)
 library(ggplot2)
 library(ggpubr)
-load("SGB_counts_abundance.RData")
+load("../data/Figure1/SGB_counts_abundance.RData")
 total <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `total observed`, color = Response_6)) +
   # 左半边小提琴图（NR组）
   geom_half_violin(
@@ -103,7 +103,7 @@ oral_origin
 library(patchwork)
 all <- total+putative_oral+oral_origin
 all
-ggsave("p_observed_shared_big_cohort_boxplot_violin.pdf",plot = all,height = 2.5,width = 8)
+ggsave("../results/p_observed_shared_big_cohort_boxplot_violin.pdf",plot = all,height = 2.5,width = 8)
 
 
 

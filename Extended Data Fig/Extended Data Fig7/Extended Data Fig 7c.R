@@ -7,7 +7,7 @@ library(reshape2)
 library(patchwork)
 library(scatterpie)
 
-load("Extended Data Fig 7c.RData")
+load("../data/Extended Data Fig/Extended Data Fig7/Extended Data Fig 7c.RData")
 
 ggplot(subset(sub_otu, value > 0), aes(paste(V2, "\n", Var1), value * 100, color = Response_6)) +
     geom_boxplot() +
@@ -23,4 +23,4 @@ ggplot(subset(sub_otu, value > 0), aes(paste(V2, "\n", Var1), value * 100, color
     coord_flip() +
     ylab("relative abundance (%)")
 
-ggsave("Extended Data Fig 7c.pdf", height = 2.5, width = 5)
+ggsave("../results/Extended Data Fig 7c.pdf", height = 2.5, width = 5)

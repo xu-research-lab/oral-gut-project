@@ -1,12 +1,10 @@
 library(dplyr)
-library(purrr)
 library(magrittr)
 library(ggplot2)
-library(aplot)
 library(ggpubr)
 library(scales)
 
-load("Figure3a.RData")
+load("../data/Figure3/fig3a.RData")
 head(trans2)
 
 
@@ -55,5 +53,4 @@ nGD_non_pma_plot <- ggplot(non_pma_data, aes(x = Diagnosis.x, y = centered.min))
 
 print(nGD_non_pma_plot)
 
-ggsave("Figure3a.png", plot = nGD_non_pma_plot, height = 2.5, width = 2.8)
-ggsave("Figure3a.pdf", plot = nGD_non_pma_plot, height = 2.5, width = 3.2)
+ggsave("../results/Figure3a.pdf", plot = nGD_non_pma_plot, height = 2.5, width = 3.2)

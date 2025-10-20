@@ -1,4 +1,4 @@
-load("Extended_Data_Fig5e.RData")
+load("../data/Extended Data Fig/Extended Data Fig5/Extended_Data_Fig5e.RData")
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -38,4 +38,4 @@ gut3<- ggplot(subset(data52),aes(`non-PMA`,PMA,color=Diagnosis))+
 gut3
 gut_all3<-gut3%>%insert_right(gut_pma3,0.5)%>%insert_top(gut_nonpma3,0.5)
 gut_all3
-ggsave(filename = "Extended_Data_Fig5e.pdf",plot = gut_all3,width = 5,height = 4)
+ggsave(filename = "../results/Extended_Data_Fig5e.pdf",plot = gut_all3,width = 5,height = 4)

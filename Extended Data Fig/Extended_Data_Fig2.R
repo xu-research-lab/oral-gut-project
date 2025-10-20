@@ -5,7 +5,7 @@ library(RColorBrewer)
 library(ggnewscale)
 
 
-load("Extended_Data_Fig2")
+load("../data/Extended Data Fig/Extended_Data_Fig2.RData")
 
 original_diagnosis_levels <- c("CRC", "GC", "EC", "RA untreated", "HC")
 
@@ -76,5 +76,4 @@ p_Extended_Data_Fig2 <- ggplot(plot_data_filtered, aes(x = centered.min, y = gut
     )
 
 print(p_Extended_Data_Fig2)
-ggsave("Extended_Data_Fig2.png", p_Extended_Data_Fig2, width = 12, height = 10, dpi = 300)
-ggsave("Extended_Data_Fig2.pdf", p_Extended_Data_Fig2, width = 11.5, height = 10)
+ggsave("../results/Extended_Data_Fig2.pdf", p_Extended_Data_Fig2, width = 11.5, height = 10)

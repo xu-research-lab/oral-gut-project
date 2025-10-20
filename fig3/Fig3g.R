@@ -1,5 +1,6 @@
 library(ggplot2)
 library(dplyr)
+load("../data/Figure3/fig3g.RData")
 p5 <- ggplot(subset(remergeshare_new9, group=="non-PMA"&id!="NA")) + 
   geom_segment(aes(x = `trans. rate`, xend = rate, y = id, yend = id),color="grey70" ) +
   geom_point(aes(x = `trans. rate`, y = id,color=oral.x,shape="trans.rate"),size = 3) +
@@ -18,5 +19,5 @@ p5 <- ggplot(subset(remergeshare_new9, group=="non-PMA"&id!="NA")) +
         axis.text.y = element_text(size = 10))+
   scale_color_gradient(name="Present(oral)")
 p5
-ggsave("trans_non-PMA_shared_rate_new_segment_20250821.pdf",p5,height = 8,width = 12.5)
+ggsave("../results/trans_non-PMA_shared_rate_new_segment.pdf",p5,height = 8,width = 12.5)
 

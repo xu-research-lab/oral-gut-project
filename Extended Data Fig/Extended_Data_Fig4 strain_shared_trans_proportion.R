@@ -3,6 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(scatterpie)
+library(reshape2)
+load("../data/Extended Data Fig/shared_trans_species_stat.RData")
 df<-subset(shared_new7,!is.na(YES))
 df<-df%>%mutate(shared.YES=oral.gut-(NO+YES))
 df1<-df[,c(1:4,6,28,15:16)]
@@ -10,17 +12,26 @@ df1<-subset(df1,shared.YES>=0)
 df1<-df1%>%mutate(oral_total=oral+shared.YES+NO+YES)
 
 df1<-df1%>%mutate(trans_rate=YES/oral_total)
+
+df1$X2<-gsub("_group","",df1$X2)
+df1$X1<-gsub("_unclassified_SGB19850","",df1$X1)
+df1$id<-paste(df1$X1,df1$X2)
 df1_long<-melt(df1,id.vars = c("group","X2", "X1", "Diagnosis","oral_total","trans_rate"))
+df1_long <- df1 %>%
+  pivot_longer(
+    cols = c(oral, shared.YES, NO, YES),
+    names_to = "variable",
+    values_to = "value"
+  )
+
 df1_long<-df1_long%>%mutate(percent=value/oral_total*100)
 
-df1_long$X1<-gsub("_unclassified_SGB19850","",df1_long$X1)
-df1_long$X2<-gsub("_group","",df1_long$X2)
 
 df1_long$variable<-gsub("oral","shared.NO",df1_long$variable)
-df1_long<-df1_long%>%mutate(variable=case_when(variable=="YES"~"trans.YES",
-                                               variable=="NO"~"trans.NO",
-                                               variable=="shared.NO"~"shared.NO",
-                                               variable=="shared.YES"~"shared.YES"))
+df1_long<-df1_long%>%mutate(variable=case_when(variable=="YES"~"oral-gut transmission",
+                                               variable=="NO"~"oral-gut non-transmission",
+                                               variable=="shared.NO"~"oral-only",
+                                               variable=="shared.YES"~"oral-gut shared (unresolved strain)"))
 											   
 df2_long<-subset(df1_long,id %in% counts$id)
 
@@ -54,13 +65,12 @@ ggplot()+
      facet_grid(~Diagnosis+group)+xlab("proportion (%)")+ylab(NULL)+theme_bw()+
 theme(axis.text.x = element_text(hjust = 1,angle = 45),axis.text = element_text(size = 7,color=counts$color),legend.position = "top")+
 labs(fill="Oral strain status")
-ggsave("strain_shared_trans_proportion.pdf",height = 7,width = 12)
+ggsave("../results/strain_shared_trans_proportion.pdf",height = 7,width = 12)
 
-save(df,df1,shared_new7,df1_long,file="non_pma_pie_matrix.RData")
+#save(df,df1,shared_new7,df1_long,file="non_pma_pie_matrix.RData")
 
 
 ###plot only non-PMA
-
 
 df3_long<-merge(df2_long,stat1,by.x = c(2,1,4),by.y = 1:3,all = T)
 df3_long$percent[is.na(df3_long$percent)&df3_long$oral_counts>0]<-100
@@ -83,7 +93,7 @@ ggplot()+
 	axis.text = element_text(size = 7),legend.position = "right")+
     labs(fill="Oral strain status")
 
-ggsave("strain_shared_trans_proportion_nonpma.pdf",height = 7,width = 10)
+ggsave("../results/strain_shared_trans_proportion_nonpma.pdf",height = 7,width = 10)
 
 
 ###plot PMA
@@ -100,4 +110,4 @@ ggplot()+
         axis.text = element_text(size = 7),legend.position = "right")+
   labs(fill="Oral strain status")
 
-ggsave("strain_shared_trans_proportion_pma.pdf",height = 7,width = 10)
+ggsave("../results/strain_shared_trans_proportion_pma.pdf",height = 7,width = 10)

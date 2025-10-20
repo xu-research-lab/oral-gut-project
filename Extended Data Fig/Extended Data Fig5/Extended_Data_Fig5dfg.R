@@ -1,4 +1,3 @@
-load("Extended_Data_Fig5defg.RData")
 library(ggplot2)
 library(ggpubr)
 library(aplot)
@@ -6,6 +5,7 @@ library(ggExtra)
 library(dplyr)
 library(stringr)
 library(tidyr)
+load("../data/Extended Data Fig/Extended Data Fig5/Extended_Data_Fig5dfg.RData")
 features_merge1$Diagnosis <- factor(features_merge1$Diagnosis,levels=c("CRC","GC","EC"))
 #gut
 data11 <- features_merge1[,c("id","gut","treatment","Diagnosis")]
@@ -43,7 +43,7 @@ gut<- ggplot(subset(data12),aes(`non-PMA`,PMA,color=Diagnosis))+
 gut
 gut_all<-gut%>%insert_right(gut_pma,0.5)%>%insert_top(gut_nonpma,0.5)
 gut_all
-ggsave(filename = "Extended_Data_Fig5f.pdf",plot = gut_all,width = 5,height = 4)
+ggsave(filename = "../results/Extended_Data_Fig5f.pdf",plot = gut_all,width = 5,height = 4)
 #counts
 data31 <- features_merge1[,c("id","counts","treatment","Diagnosis")]
 data32 <- data31 %>%
@@ -80,7 +80,7 @@ gut2<- ggplot(subset(data32),aes(`non-PMA`,PMA,color=Diagnosis))+
 gut2
 gut_all2<-gut2%>%insert_right(gut_pma2,0.5)%>%insert_top(gut_nonpma2,0.5)
 gut_all2
-ggsave(filename = "Extended_Data_Fig5g.pdf",plot = gut_all2,width = 5,height = 4)
+ggsave(filename = "../results/Extended_Data_Fig5g.pdf",plot = gut_all2,width = 5,height = 4)
 #shared
 data41 <- features_merge1[,c("id","shared_abundance.Feces","treatment","Diagnosis")]
 data42 <- data41 %>%
@@ -117,4 +117,4 @@ gut3<- ggplot(subset(data42),aes(`non-PMA`,PMA,color=Diagnosis))+
 gut3
 gut_all3<-gut3%>%insert_right(gut_pma3,0.5)%>%insert_top(gut_nonpma3,0.5)
 gut_all3
-ggsave(filename = "Extended_Data_Fig5d.pdf",plot = gut_all3,width = 5,height = 4)
+ggsave(filename = "../results/Extended_Data_Fig5d.pdf",plot = gut_all3,width = 5,height = 4)
