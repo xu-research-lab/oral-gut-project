@@ -1,0 +1,7 @@
+"group1","group2","test","estimate","p_raw","p_holm","signif","metric"
+"CRC","HC","Wilcoxon(unadj)",NA,0.00265533371747927,0.00629988978943091,"**","transmitted.abundance.in.Gut"
+"EC","HC","Wilcoxon(unadj)",NA,3.5763717774723e-05,0.000178818588873615,"***","transmitted.abundance.in.Gut"
+"GC","HC","Wilcoxon(unadj)",NA,5.50342896005374e-08,3.30205737603224e-07,"***","transmitted.abundance.in.Gut"
+"CRC","GC","ANCOVA(adj: host+clinical)",0.207274417863229,0.163249662108627,0.163249662108627,"ns","transmitted.abundance.in.Gut"
+"EC","RA","Wilcoxon(unadj)",NA,0.00209996326314364,0.00629988978943091,"**","transmitted.abundance.in.Gut"
+"RA","GC","Wilcoxon(unadj)",NA,3.76516213406831e-05,0.000178818588873615,"***","transmitted.abundance.in.Gut"

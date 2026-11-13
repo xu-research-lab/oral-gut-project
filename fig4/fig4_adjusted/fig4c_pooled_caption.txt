@@ -1,0 +1,30 @@
+Figure 4c. Oral-gut transmitted abundance by response to immune checkpoint inhibition.
+
+Panels are shown separately for non-PMA and PMA preparations.
+Boxplots and individual points show the RAW (unadjusted) distribution of
+transmitted abundance in gut and are DESCRIPTIVE only.
+
+The reported p-values and confidence intervals come from a single covariate-
+adjusted linear mixed model fitted to the pooled cohort (CRC, GC and EC),
+specified as:
+  log1p(transmitted abundance in gut) ~
+    Response_6 * Diagnosis * treatment(PMA)
+    + Age + Gender + BMI category + smoking            (host factors)
+    + MMR/MSI + Stage (IV vs I-III) + Treatment class   (clinical factors)
+    + (1 | subject_id)                                  (random intercept)
+
+Adjustment set: host factors (age, sex, body-mass index category and smoking)
+and clinical/tumour factors (MMR/MSI status, stage and treatment class). PMA
+status is a technical/measurement factor (PMA and non-PMA are paired aliquots
+of the same stool sample from the same subject) and is included as a factor in
+the model; its interaction with response was tested and was not significant.
+
+Because several cancer-type x preparation strata are small (e.g. CRC PMA, n=17),
+the model was fitted to the pooled cohort so that stratum-specific effects borrow
+strength for the residual variance. Each stratum retains its own effect estimate.
+Confidence intervals for the primary contrasts were additionally verified by a
+subject-level cluster bootstrap (1000 resamples).
+
+Caveat: for the smallest strata the raw boxplot summarises few observations and
+is unstable; the adjusted effect estimates and their CIs (forest plot) are the
+basis for inference, not the visual separation of the boxes.

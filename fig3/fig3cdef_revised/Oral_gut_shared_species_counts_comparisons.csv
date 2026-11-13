@@ -1,0 +1,6 @@
+"group1","group2","test","estimate","p_raw","p_holm","signif","metric"
+"HC","RA","Wilcoxon(unadj)",NA,0.00243774995704979,0.00731324987114937,"**","Oral.gut.shared.species.counts"
+"EC","HC","Wilcoxon(unadj)",NA,0.00844521269983267,0.0168904253996653,"**","Oral.gut.shared.species.counts"
+"GC","HC","Wilcoxon(unadj)",NA,1.19365186624511e-07,5.96825933122557e-07,"***","Oral.gut.shared.species.counts"
+"CRC","GC","ANCOVA(adj: host+clinical)",0.312313214875382,0.001530007673884,0.00612003069553602,"**","Oral.gut.shared.species.counts"
+"CRC","RA","Wilcoxon(unadj)",NA,0.0950511594131865,0.0950511594131865,"ns","Oral.gut.shared.species.counts"

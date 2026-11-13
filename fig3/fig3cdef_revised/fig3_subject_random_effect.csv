@@ -1,0 +1,5 @@
+"metric","n_full","n_subj","n_dedup","p_OLS_dedup","p_lmer_unadj","p_lmer_full"
+"transmitted.SGB.counts",137,118,118,0.2592,0.1717,0.2197
+"Oral.gut.shared.species.counts",137,118,118,6e-04,1e-04,4e-04
+"transmitted.abundance.in.Gut",137,118,118,0.1866,0.1246,0.1789
+"shared_abundance.Feces",137,118,118,0.0102,0.0043,0.009

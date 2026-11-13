@@ -1,0 +1,5 @@
+"group1","group2","test","estimate","p_raw","p_holm","signif","metric"
+"EC","HC","Wilcoxon(unadj)",NA,0.000554968219874005,0.00166490465962201,"***","transmitted.SGB.counts"
+"GC","HC","Wilcoxon(unadj)",NA,2.20544561638454e-06,8.82178246553817e-06,"***","transmitted.SGB.counts"
+"CRC","GC","ANCOVA(adj: host+clinical)",0.119666797147247,0.249416365565661,0.249416365565661,"ns","transmitted.SGB.counts"
+"RA","GC","Wilcoxon(unadj)",NA,0.00320782845458077,0.00641565690916154,"**","transmitted.SGB.counts"

@@ -1,0 +1,303 @@
+index,Diagnosis,Treatment_class,Response_6,Age,BMI_category,sex,MSS_MMR,MSI_Status,HP,分期,HER2,EBV,smoking,histology
+S_22230,CRC,ICI|target|chemo,R,33,normal,F,MSI_dMMR,,Negative,IV,,未查,1,adenocarcinoma
+S_22182,CRC,ICI|target|chemo,R,26,lean,F,MSI_dMMR,,Negative,IV,,未查,2,adenocarcinoma
+S_17982,CRC,ICI,R,38,normal,F,MSI_dMMR,,Negative,III,,Not Assessed,2,adenocarcinoma
+S_17981,CRC,ICI,R,59,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17980,CRC,ICI,R,66,obese,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_17973,CRC,ICI,R,69,normal,M,MSI_dMMR,,Positive,III,,Not Assessed,1,adenocarcinoma
+S_17786,CRC,ICI|chemo,R,64,normal,M,MSS_pMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_10098,CRC,ICI,R,31,normal,M,MSI_dMMR,,Negative,III,,Not Assessed,2,adenocarcinoma
+S_10090,CRC,ICI,R,51,overweight,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_10066,CRC,ICI,R,37,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,squamous cell carcinoma
+S_10022,CRC,ICI,R,31,overweight,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_10003,CRC,ICI,R,66,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17965,CRC,ICI,NR,59,overweight,M,MSS_pMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_3686,CRC,ICI,R,43,lean,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_10004,CRC,ICI,NR,63,normal,F,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_3626,CRC,ICI,R,60,overweight,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_3674,CRC,ICI,R,51,normal,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,squamous cell carcinoma
+S_3542,CRC,ICI,R,34,normal,F,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_10037,CRC,ICI,NR,58,overweight,M,MSS_pMMR,,Negative,IV,,Negative,1,adenocarcinoma
+S_3691,CRC,ICI,R,18,lean,F,MSI_dMMR,,Negative,IV,,Not Assessed,2,squamous cell carcinoma
+S_1467,CRC,ICI,R,62,normal,M,MSI_dMMR,,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_1412,CRC,ICI,R,60,overweight,M,MSI_dMMR,,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_1359,CRC,ICI,NR,60,overweight,M,MSS_pMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_1356,CRC,ICI,NR,50,normal,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_1441,CRC,ICI,R,68,normal,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_1416,CRC,ICI,R,35,overweight,F,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_1382,CRC,ICI,R,73,normal,F,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_1493,CRC,ICI,NR,61,normal,F,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17964,CRC,ICI,NR,44,lean,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_3660,CRC,ICI,R,30,obese,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_489,CRC,ICI,R,66,lean,F,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_486,CRC,ICI,R,36,normal,F,MSI_dMMR,,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_615,CRC,ICI,NR,49,lean,M,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_3551,CRC,ICI,R,52,normal,F,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_1391,CRC,ICI,R,46,obese,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_534,CRC,ICI,NR,49,normal,F,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_524,CRC,ICI,NR,74,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_705,CRC,ICI,NR,57,normal,F,MSI_dMMR,,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_529,CRC,ICI,R,30,normal,F,MSI_dMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_716,CRC,ICI,R,23,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,squamous cell carcinoma
+S_537,CRC,ICI,R,48,obese,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,squamous cell carcinoma
+S_540,CRC,ICI,R,64,normal,M,MSI_dMMR,,Negative,IV,,Not Assessed,1,squamous cell carcinoma
+S_10006,CRC,ICI,R,66,overweight,M,MSI_dMMR,,Negative,IV,,Not Assessed,2,squamous cell carcinoma
+S_797,CRC,ICI,NR,73,normal,F,MSI_dMMR,,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_572,CRC,ICI,R,54,normal,M,MSI_dMMR,,Negative,III,,Not Assessed,1,adenocarcinoma
+S_688,CRC,ICI,NR,67,lean,M,MSS_pMMR,,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_22284,EC,ICI|chemo,R,67,overweight,M,,non MSI-high,Positive,III,,未查,2,adenocarcinoma
+S_22278,EC,ICI|chemo,R,50,normal,M,,non MSI-high,Negative,III,,未查,1,adenocarcinoma
+S_22276,EC,ICI|chemo,NR,74,normal,F,,non MSI-high,Negative,IV,,未查,1,adenocarcinoma
+S_22268,EC,ICI|chemo,R,52,normal,M,,non MSI-high,Negative,IV,,未查,2,adenocarcinoma
+S_22256,EC,ICI|chemo,R,66,normal,M,,non MSI-high,Positive,IV,,未查,1,adenocarcinoma
+S_22267,EC,ICI|chemo,R,70,lean,M,,non MSI-high,Positive,IV,,未查,1,adenocarcinoma
+S_22255,EC,ICI|chemo,NR,54,normal,M,,non MSI-high,Positive,IV,,未查,2,adenocarcinoma
+S_22245,EC,ICI|chemo,R,58,normal,M,,non MSI-high,Negative,III,,未查,2,adenocarcinoma
+S_22228,EC,ICI|chemo,R,60,normal,M,,non MSI-high,Negative,III,,未查,1,adenocarcinoma
+S_22216,EC,ICI|chemo,R,62,normal,M,,non MSI-high,Negative,III,,未查,2,adenocarcinoma
+S_22204,EC,ICI|chemo,R,60,normal,M,,non MSI-high,Positive,II,,未查,1,adenocarcinoma
+S_22207,EC,ICI|chemo,R,67,normal,M,,non MSI-high,Positive,III,,未查,1,adenocarcinoma
+S_22201,EC,ICI|chemo,NR,52,normal,M,,non MSI-high,Negative,IV,,未查,1,adenocarcinoma
+S_22202,EC,ICI|chemo,R,70,normal,M,,non MSI-high,Negative,III,,未查,2,adenocarcinoma
+S_22187,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Positive,IV,,未查,1,adenocarcinoma
+S_22183,EC,ICI|chemo,R,63,normal,M,,non MSI-high,Negative,IV,,未查,1,adenocarcinoma
+S_17887,EC,ICI|chemo,NR,64,lean,M,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17885,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17882,EC,ICI|chemo,R,68,normal,M,,Missing,Positive,III,,Not Assessed,2,adenocarcinoma
+S_17881,EC,ICI|chemo,NR,64,normal,M,,Missing,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_17878,EC,ICI|chemo,R,71,overweight,M,,non MSI-high,Positive,III,,Not Assessed,2,adenocarcinoma
+S_17876,EC,ICI|chemo,R,58,normal,M,,non MSI-high,Negative,III,,Not Assessed,1,adenocarcinoma
+S_17874,EC,ICI|chemo,R,56,normal,M,,non MSI-high,Negative,III,,Not Assessed,2,squamous cell carcinoma
+S_17873,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Negative,IV,,未查,2,adenocarcinoma
+S_17872,EC,ICI|chemo,R,69,normal,M,,non MSI-high,Negative,III,,Not Assessed,2,adenocarcinoma
+S_17871,EC,ICI|chemo,R,54,normal,M,,Missing,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_17870,EC,ICI|chemo,R,47,normal,M,,Missing,Negative,III,,Not Assessed,1,adenocarcinoma
+S_17867,EC,ICI|chemo,R,57,normal,M,,non MSI-high,Negative,III,,Not Assessed,2,squamous cell carcinoma
+S_17860,EC,ICI|chemo,R,66,normal,M,,MSI-high,Negative,III,,Not Assessed,1,squamous cell carcinoma
+S_22232,EC,ICI|chemo,R,74,overweight,M,,non MSI-high,Negative,IV,,未查,2,adenocarcinoma
+S_17859,EC,ICI|chemo,R,61,overweight,M,,non MSI-high,Positive,III,,Not Assessed,1,squamous cell carcinoma
+S_17858,EC,ICI|chemo,NR,70,normal,M,,non MSI-high,Positive,IV,,Negative,2,squamous cell carcinoma
+S_17856,EC,ICI|chemo,R,64,normal,M,,Missing,Negative,III,,Not Assessed,1,adenocarcinoma
+S_17855,EC,ICI|chemo,R,50,normal,M,,Missing,Negative,IV,,Negative,2,adenocarcinoma
+S_17854,EC,ICI|chemo,R,58,normal,M,,non MSI-high,Positive,III,,Not Assessed,2,adenocarcinoma
+S_10063,EC,ICI,NR,58,overweight,M,,Missing,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_17853,EC,ICI|chemo,R,47,normal,M,,non MSI-high,Negative,II,,Not Assessed,2,adenocarcinoma
+S_17852,EC,ICI|chemo,NR,68,normal,M,,Missing,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_17845,EC,ICI|chemo,NR,55,normal,M,,Missing,Positive,IV,,Negative,1,squamous cell carcinoma
+S_17789,EC,ICI|chemo,R,57,normal,M,,Missing,Negative,IV,,Negative,2,adenocarcinoma
+S_17844,EC,ICI|chemo,R,66,overweight,M,,Missing,Positive,IV,,Negative,1,adenocarcinoma
+S_10039,EC,ICI,NR,85,normal,F,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17843,EC,ICI|chemo,NR,63,overweight,F,,non MSI-high,Positive,IV,,Negative,2,adenocarcinoma
+S_17842,EC,ICI|chemo,R,62,normal,M,,Missing,Positive,IV,,Negative,1,adenocarcinoma
+S_17841,EC,ICI|chemo,R,59,overweight,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_10074,EC,ICI,NR,61,normal,M,,Missing,Negative,Not Assessed,,Not Assessed,1,squamous cell carcinoma
+S_17833,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Positive,Not Assessed,,Not Assessed,1,adenocarcinoma
+S_9997,EC,ICI,R,56,overweight,M,,non MSI-high,Negative,III,,Negative,1,adenocarcinoma
+S_17832,EC,ICI|chemo,NR,62,lean,M,,Missing,Positive,IV,,Negative,2,adenocarcinoma
+S_17831,EC,ICI|chemo,R,60,normal,F,,non MSI-high,Negative,II,,Negative,2,squamous cell carcinoma
+S_17821,EC,ICI|chemo,R,64,normal,M,,non MSI-high,Positive,IV,,Not Assessed,2,adenocarcinoma
+S_17820,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Negative,IV,,Negative,1,adenocarcinoma
+S_17819,EC,ICI|chemo,R,68,normal,F,,non MSI-high,Negative,IV,,Negative,1,adenocarcinoma
+S_17818,EC,ICI|chemo,NR,66,overweight,M,,non MSI-high,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_17817,EC,ICI|chemo,R,61,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_17815,EC,ICI|chemo,R,63,normal,M,,Missing,Negative,Not Assessed,,Not Assessed,2,adenocarcinoma
+S_17814,EC,ICI|chemo,NR,61,normal,M,,Missing,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_17813,EC,ICI|chemo,R,69,overweight,M,,non MSI-high,Positive,III,,Not Assessed,1,adenocarcinoma
+S_17812,EC,ICI|chemo,R,64,normal,M,,non MSI-high,Positive,III,,Not Assessed,1,adenocarcinoma
+S_10062,EC,ICI,R,52,overweight,M,,Missing,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_3656,EC,ICI,R,61,normal,M,,non MSI-high,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_17811,EC,ICI|chemo,R,66,overweight,M,,non MSI-high,Positive,III,,Not Assessed,1,adenocarcinoma
+S_17810,EC,ICI|chemo,R,53,normal,M,,Missing,Negative,IV,,Not Assessed,2,squamous cell carcinoma
+S_17809,EC,ICI|chemo,NR,61,lean,F,,Missing,Negative,IV,,Negative,2,adenocarcinoma
+S_1455,EC,ICI,NR,67,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_3612,EC,ICI,NR,56,overweight,M,,non MSI-high,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_632,EC,ICI|chemo,R,67,normal,M,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_1471,EC,ICI,NR,52,normal,M,,non MSI-high,Negative,IV,,Not Assessed,2,squamous cell carcinoma
+S_17798,EC,ICI|chemo,R,71,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_10031,EC,ICI,NR,68,normal,M,,Missing,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_1429,EC,ICI,NR,53,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_1443,EC,ICI,NR,63,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_17797,EC,ICI|chemo,NR,69,normal,M,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_1409,EC,ICI,NR,59,overweight,M,,Missing,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_712,EC,ICI,R,58,normal,M,,non MSI-high,Negative,IV,,Not Assessed,2,adenocarcinoma
+S_708,EC,ICI,NR,67,overweight,M,,non MSI-high,Negative,IV,,Negative,1,squamous cell carcinoma
+S_3664,EC,ICI,NR,77,normal,M,,non MSI-high,Negative,IV,,Not Assessed,1,squamous cell carcinoma
+S_509,EC,ICI,R,61,normal,M,,non MSI-high,Positive,IV,,Not Assessed,1,squamous cell carcinoma
+S_641,EC,ICI|chemo,R,61,overweight,M,,non MSI-high,Negative,III,,Not Assessed,1,squamous cell carcinoma
+S_488,EC,ICI,NR,57,lean,M,,non MSI-high,Positive,IV,,Not Assessed,1,squamous cell carcinoma
+S_706,EC,ICI,NR,57,normal,M,,non MSI-high,Negative,IV,,Negative,2,adenocarcinoma
+S_1400,EC,ICI,NR,77,lean,F,,non MSI-high,Negative,IV,,Negative,1,adenocarcinoma
+S_731,EC,ICI,NR,58,normal,M,,non MSI-high,Positive,IV,,Negative,1,adenocarcinoma
+S_483,EC,ICI,R,57,normal,M,,non MSI-high,Negative,IV,,Negative,1,adenocarcinoma
+S_634,EC,ICI,R,65,normal,M,,Missing,Positive,IV,,Not Assessed,1,adenocarcinoma
+S_492,EC,ICI,NR,55,lean,M,,Missing,Negative,IV,,Not Assessed,1,adenocarcinoma
+S_573,EC,ICI,R,72,normal,F,,non MSI-high,Negative,IV,,未查,1,squamous cell carcinoma
+S_22259,EC,ICI|chemo,R,65,overweight,M,,non MSI-high,Positive,III,,未查,1,squamous cell carcinoma
+S_562,EC,ICI,NR,65,normal,M,,non MSI-high,Positive,IV,,Not Assessed,2,squamous cell carcinoma
+S_3668,GC,ICI|target,R,70,normal,M,MSI_dMMR,,Negative,IV,Negative,Negative,1,squamous cell carcinoma
+S_22292,GC,ICI|chemo,NR,70,lean,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22279,GC,ICI|chemo,R,55,overweight,F,MSS_pMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_22285,GC,ICI|chemo,R,62,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22277,GC,ICI|chemo,R,69,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22273,GC,ICI|chemo,NR,24,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22263,GC,ICI|chemo,R,59,overweight,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22265,GC,ICI|chemo,R,53,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_22260,GC,ICI|chemo,R,67,overweight,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22254,GC,ICI|chemo,R,64,overweight,M,MSS_pMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_22249,GC,ICI|chemo,R,72,overweight,M,MSI_dMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_22246,GC,ICI|chemo,R,66,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_22247,GC,ICI|chemo,NR,65,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_22250,GC,ICI|chemo,R,40,lean,F,MSS_pMMR,,Negative,III,Positive,Not Assessed,2,adenocarcinoma
+S_22262,GC,ICI|chemo,NR,77,lean,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22239,GC,ICI|chemo,R,58,overweight,M,MSS_pMMR,,Positive,IV,Positive,Negative,2,adenocarcinoma
+S_22235,GC,ICI|chemo,NR,34,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22231,GC,ICI|chemo,R,76,overweight,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_22236,GC,ICI|chemo,NR,69,normal,M,MSS_pMMR,,Positive,III,Negative,Negative,2,adenocarcinoma
+S_22233,GC,ICI|chemo,NR,75,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22225,GC,ICI|chemo,NR,61,lean,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_22203,GC,ICI,R,64,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_22196,GC,ICI,R,65,overweight,M,MSI_dMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22186,GC,ICI,R,43,normal,M,MSI_dMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_18041,GC,ICI,NR,28,normal,F,MSI_dMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_17930,GC,ICI|chemo,NR,68,normal,M,Not Assessed,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17933,GC,ICI|chemo,R,73,overweight,F,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17934,GC,ICI|chemo,R,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17936,GC,ICI|chemo,R,50,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_18040,GC,ICI,NR,51,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_17904,GC,ICI|chemo,R,58,normal,M,MSS_pMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_18039,GC,ICI,R,70,normal,F,MSI_dMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_18038,GC,ICI,R,55,normal,M,MSS_pMMR,,Positive,II,Negative,Negative,1,adenocarcinoma
+S_17905,GC,ICI|chemo,R,58,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_18037,GC,ICI,R,78,overweight,M,MSI_dMMR,,Positive,III,Negative,Negative,2,adenocarcinoma
+S_18036,GC,ICI,NR,26,obese,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,squamous cell carcinoma
+S_17937,GC,ICI|chemo,R,60,normal,F,MSI_dMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_17957,GC,ICI|chemo,NR,65,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_17938,GC,ICI|chemo,R,50,normal,M,MSS_pMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_17909,GC,ICI|chemo,R,64,overweight,F,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_18033,GC,ICI,NR,71,normal,F,MSI_dMMR,,Positive,Not Assessed,Negative,Negative,2,adenocarcinoma
+S_17939,GC,ICI|chemo,R,72,normal,M,Not Assessed,,Positive,IV,Not Assessed,Negative,1,adenocarcinoma
+S_18032,GC,ICI,NR,82,normal,M,MSS_pMMR,,Positive,IV,Positive,Positive,1,adenocarcinoma
+S_17910,GC,ICI|chemo,R,72,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17861,EC,ICI|chemo,NR,63,normal,M,MSS_pMMR,,Positive,III,Negative,Negative,1,squamous cell carcinoma
+S_17912,GC,ICI|chemo,NR,59,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_18031,GC,ICI,NR,56,lean,M,MSS_pMMR,,Positive,III,Negative,Positive,1,adenocarcinoma
+S_11041,GC,ICI,R,70,overweight,F,MSI_dMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_17913,GC,ICI|chemo,R,75,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_18026,GC,ICI,R,42,overweight,M,MSS_pMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_10101,GC,ICI,NR,47,lean,M,MSS_pMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_17914,GC,ICI|chemo,NR,32,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17891,GC,ICI|chemo,R,65,normal,M,MSS_pMMR,,Positive,IV,Positive,Positive,1,adenocarcinoma
+S_17940,GC,ICI|chemo,NR,71,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_17915,GC,ICI|chemo,NR,58,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17941,GC,ICI|chemo,R,67,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_17916,GC,ICI|chemo,R,63,overweight,F,MSS_pMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_10091,GC,ICI,R,72,normal,M,MSI_dMMR,,Negative,IV,Not Assessed,Negative,2,adenocarcinoma
+S_17896,GC,ICI|chemo,NR,44,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17897,GC,ICI|chemo,R,56,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_10087,GC,ICI,R,60,normal,M,MSS_pMMR,,Positive,Not Assessed,Negative,Positive,1,adenocarcinoma
+S_17917,GC,ICI|chemo,R,69,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_10099,GC,ICI,R,63,normal,F,MSI_dMMR,,Positive,IV,Negative,Not Assessed,2,adenocarcinoma
+S_17950,GC,ICI|chemo,R,61,normal,M,MSS_pMMR,,Negative,III,Negative,Negative,2,adenocarcinoma
+S_18019,GC,ICI,NR,66,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_10079,GC,ICI,R,62,lean,M,MSS_pMMR,,Negative,IV,Negative,Positive,2,adenocarcinoma
+S_10077,GC,ICI,NR,80,normal,F,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17919,GC,ICI|chemo,NR,41,overweight,M,MSS_pMMR,,Negative,IV,Positive,Negative,2,adenocarcinoma
+S_17920,GC,ICI|chemo,NR,47,lean,F,MSS_pMMR,,Positive,IV,Negative,Negative,2,squamous cell carcinoma
+S_11038,GC,ICI,R,64,lean,F,MSI_dMMR,,Negative,III,Negative,Negative,2,adenocarcinoma
+S_10056,GC,ICI,R,73,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_10054,GC,ICI,R,45,overweight,M,MSS_pMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_17955,GC,ICI|chemo,NR,57,lean,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_18050,GC,ICI,R,30,normal,F,MSS_pMMR,,Negative,III,Negative,Negative,2,adenocarcinoma
+S_17921,GC,ICI|chemo,NR,67,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_17942,GC,ICI|chemo,NR,63,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17890,GC,ICI|chemo,NR,68,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_10043,GC,ICI,NR,75,normal,F,MSI_dMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17943,GC,ICI|chemo,NR,71,overweight,F,MSS_pMMR,,Positive,IV,Positive,Negative,2,adenocarcinoma
+S_10028,GC,ICI,R,39,normal,M,MSS_pMMR,,Negative,IV,Negative,Positive,1,adenocarcinoma
+S_17898,GC,ICI|chemo,R,53,normal,F,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_17944,GC,ICI|chemo,NR,72,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_10026,GC,ICI,NR,60,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,1,adenocarcinoma
+S_18088,GC,ICI|chemo,R,43,lean,F,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_10014,GC,ICI,R,70,normal,F,MSI_dMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17923,GC,ICI|chemo,R,65,normal,F,MSI_dMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_17899,GC,ICI|chemo,NR,48,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_10012,GC,ICI,R,67,normal,F,MSI_dMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_17924,GC,ICI|chemo,R,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17925,GC,ICI|chemo,R,58,normal,F,MSS_pMMR,,Positive,III,Negative,Negative,2,adenocarcinoma
+S_10002,GC,ICI,NR,57,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17945,GC,ICI|chemo,R,41,normal,M,MSS_pMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_17900,GC,ICI|chemo,R,71,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_10011,GC,ICI,NR,65,normal,M,MSS_pMMR,,Positive,IV,Positive,Negative,2,adenocarcinoma
+S_5394,GC,ICI|chemo,NR,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_5396,GC,ICI|chemo,R,60,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_3697,GC,ICI,R,79,overweight,F,MSI_dMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_3545,GC,ICI,NR,38,overweight,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17926,GC,ICI|chemo,NR,35,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_5400,GC,ICI|chemo,NR,47,normal,F,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17894,GC,ICI|chemo,NR,38,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_3658,GC,ICI,R,69,normal,M,MSI_dMMR,,Positive,III,Negative,Negative,2,adenocarcinoma
+S_10060,GC,ICI,R,85,overweight,M,MSI_dMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_10025,GC,ICI,NR,68,normal,M,MSS_pMMR,,Negative,IV,Negative,Positive,1,adenocarcinoma
+S_3638,GC,ICI,R,50,normal,M,MSI_dMMR,,Positive,III,Negative,Negative,1,adenocarcinoma
+S_18005,GC,ICI,R,54,overweight,M,MSS_pMMR,,Negative,IV,Negative,Positive,2,adenocarcinoma
+S_18004,GC,ICI,R,32,normal,F,MSS_pMMR,,Positive,IV,Negative,Positive,1,adenocarcinoma
+S_3529,GC,ICI,NR,58,normal,M,MSI_dMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_10068,GC,ICI,R,74,normal,M,MSI_dMMR,,Positive,III,Negative,Positive,2,adenocarcinoma
+S_22190,GC,ICI,NR,65,lean,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_5367,GC,ICI,NR,64,lean,M,MSS_pMMR,,Positive,Not Assessed,Negative,Positive,2,squamous cell carcinoma
+S_3680,GC,ICI,R,53,normal,M,MSI_dMMR,,Positive,III,Negative,Negative,2,adenocarcinoma
+S_3643,GC,ICI,NR,41,normal,F,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_1515,GC,ICI,R,45,overweight,M,MSI_dMMR,,Negative,III,Not Assessed,Not Assessed,1,adenocarcinoma
+S_17946,GC,ICI|chemo,R,64,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17952,GC,ICI|chemo,R,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_22142,GC,ICI,NR,63,lean,M,MSS_pMMR,,Negative,IV,Negative,Positive,2,adenocarcinoma
+S_17901,GC,ICI|chemo,R,65,normal,M,MSS_pMMR,,Positive,IV,Not Assessed,Negative,2,adenocarcinoma
+S_1512,GC,ICI,R,71,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,1,squamous cell carcinoma
+S_3650,GC,ICI,NR,70,normal,M,MSS_pMMR,,Positive,Not Assessed,Negative,Positive,1,squamous cell carcinoma
+S_5386,GC,ICI,NR,59,normal,M,MSS_pMMR,,Positive,IV,Positive,Positive,2,adenocarcinoma
+S_9980,GC,ICI,R,36,lean,M,MSS_pMMR,,Negative,IV,Negative,Positive,1,adenocarcinoma
+S_1511,GC,ICI,R,57,normal,M,MSI_dMMR,,Negative,III,Negative,Negative,2,adenocarcinoma
+S_5344,GC,ICI|chemo,R,71,lean,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17998,GC,ICI,NR,67,normal,M,MSS_pMMR,,Negative,IV,Negative,Positive,2,adenocarcinoma
+S_10005,GC,ICI,NR,60,lean,M,MSS_pMMR,,Negative,IV,Not Assessed,Negative,1,adenocarcinoma
+S_22136,GC,ICI,NR,50,overweight,M,MSS_pMMR,,Positive,III,Negative,Positive,2,adenocarcinoma
+S_1457,GC,ICI,R,58,overweight,M,MSI_dMMR,,Positive,IV,Positive,Negative,1,adenocarcinoma
+S_5302,GC,ICI|chemo,R,61,normal,M,MSI_dMMR,,Negative,III,Negative,Negative,2,adenocarcinoma
+S_17928,GC,ICI|chemo,R,70,overweight,M,MSS_pMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_1394,GC,ICI,R,64,normal,M,MSI_dMMR,,Negative,III,Negative,Not Assessed,1,adenocarcinoma
+S_5291,GC,ICI|chemo,NR,51,lean,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17929,GC,ICI|chemo,NR,53,normal,M,MSS_pMMR,,Positive,III,Negative,Negative,2,squamous cell carcinoma
+S_3611,GC,ICI,NR,43,overweight,M,MSS_pMMR,,Negative,IV,Negative,Positive,1,squamous cell carcinoma
+S_5289,GC,ICI|chemo,NR,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,adenocarcinoma
+S_17947,GC,ICI|chemo,NR,58,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_5276,GC,ICI|chemo,R,56,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_5269,GC,ICI|chemo,NR,53,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,squamous cell carcinoma
+S_17902,GC,ICI|chemo,R,67,overweight,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,squamous cell carcinoma
+S_10019,GC,ICI,NR,79,normal,F,MSS_pMMR,,Negative,III,Negative,Negative,1,squamous cell carcinoma
+S_1390,GC,ICI,NR,56,lean,M,MSS_pMMR,,Negative,III,Negative,Positive,2,adenocarcinoma
+S_1401,GC,ICI,NR,75,normal,M,MSI_dMMR,,Positive,Not Assessed,Not Assessed,Not Assessed,2,adenocarcinoma
+S_1398,GC,ICI,R,76,normal,F,MSI_dMMR,,Negative,III,Negative,Negative,1,adenocarcinoma
+S_10024,GC,ICI,R,44,lean,F,MSI_dMMR,,Positive,IV,Negative,Positive,2,adenocarcinoma
+S_583,GC,ICI|chemo,NR,63,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_1434,GC,ICI,R,72,overweight,M,MSI_dMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_9998,GC,ICI,NR,65,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_17994,GC,ICI,NR,57,normal,F,MSS_pMMR,,Positive,IV,Negative,Not Assessed,2,adenocarcinoma
+S_539,GC,ICI|chemo,NR,69,lean,M,MSS_pMMR,,Negative,IV,Not Assessed,Positive,2,adenocarcinoma
+S_515,GC,ICI,NR,56,normal,F,Not Assessed,,Positive,IV,Negative,Not Assessed,1,squamous cell carcinoma
+S_22229,EC,ICI|chemo,R,58,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,squamous cell carcinoma
+S_735,GC,ICI,NR,50,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,squamous cell carcinoma
+S_709,GC,ICI,NR,50,normal,M,MSS_pMMR,,Positive,IV,Negative,Negative,1,squamous cell carcinoma
+S_1396,GC,ICI,R,58,obese,M,MSS_pMMR,,Negative,IV,Negative,Negative,2,squamous cell carcinoma
+S_734,GC,ICI,NR,62,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,squamous cell carcinoma
+S_17791,EC,ICI|chemo,R,64,normal,M,MSI_dMMR,,Positive,III,Not Assessed,Negative,2,adenocarcinoma
+S_530,GC,ICI,NR,56,lean,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,adenocarcinoma
+S_704,GC,ICI,R,75,normal,F,MSS_pMMR,,Positive,IV,Negative,Negative,2,adenocarcinoma
+S_526,GC,ICI,NR,27,lean,F,MSS_pMMR,,Negative,IV,Negative,Negative,1,adenocarcinoma
+S_696,EC,ICI,NR,65,normal,M,MSS_pMMR,,Positive,IV,Not Assessed,Negative,1,adenocarcinoma
+S_543,GC,ICI,NR,55,lean,M,MSI_dMMR,,Positive,II,Negative,Negative,1,adenocarcinoma
+S_611,GC,ICI|chemo,NR,47,normal,M,MSS_pMMR,,Negative,IV,Negative,Negative,1,squamous cell carcinoma
+S_550,GC,ICI,NR,68,normal,M,MSS_pMMR,,Negative,IV,Negative,Positive,2,squamous cell carcinoma
+S_1432,GC,ICI,NR,58,normal,F,MSS_pMMR,,Negative,IV,Negative,Negative,2,squamous cell carcinoma
+S_17986,GC,ICI,R,69,overweight,M,MSS_pMMR,,Negative,III,Negative,Negative,2,squamous cell carcinoma
+S_5362,GC,ICI,R,67,normal,M,MSS_pMMR,,Positive,IV,Negative,Positive,1,adenocarcinoma
+S_568,GC,ICI,R,67,normal,M,MSS_pMMR,,Negative,IV,Negative,Not Assessed,1,adenocarcinoma
