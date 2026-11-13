@@ -4,12 +4,12 @@ library(ggplot2)
 library(ggpubr)
 load("../data/Figure1/SGB_counts_abundance.RData")
 total <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `total observed`, color = Response_6)) +
-  # 左半边小提琴图（NR组）
+  # Left half-violin (NR group)
   geom_half_violin(
-    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # 修正筛选方式
+    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # Corrected filtering
     fill = NA, side = "l", show.legend = FALSE, linewidth = 0.2
   ) +
-  # 右半边小提琴图（R组）
+  # Right half-violin (R group)
   geom_half_violin(
     data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[2]),
     fill = NA, side = "r", show.legend = FALSE, linewidth = 0.2
@@ -37,12 +37,12 @@ total <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `total observed`, co
 
 
 putative_oral <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `oral-origin`, color = Response_6)) +
-  # 左半边小提琴图（NR组）
+  # Left half-violin (NR group)
   geom_half_violin(
-    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # 修正筛选方式
+    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # Corrected filtering
     fill = NA, side = "l", show.legend = FALSE, linewidth = 0.2
   ) +
-  # 右半边小提琴图（R组）
+  # Right half-violin (R group)
   geom_half_violin(
     data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[2]),
     fill = NA, side = "r", show.legend = FALSE, linewidth = 0.2
@@ -70,12 +70,12 @@ putative_oral <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `oral-origin
   
 putative_oral                                          
 oral_origin <- ggplot(SGB_counts_abundance,aes(x = Diagnosis, y = `cumlative abundance`*100, color = Response_6)) +
-  # 左半边小提琴图（NR组）
+  # Left half-violin (NR group)
   geom_half_violin(
-    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # 修正筛选方式
+    data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[1]),  # Corrected filtering
     fill = NA, side = "l", show.legend = FALSE, linewidth = 0.2
   ) +
-  # 右半边小提琴图（R组）
+  # Right half-violin (R group)
   geom_half_violin(
     data = ~ subset(.x, Response_6 == levels(factor(.x$Response_6))[2]),
     fill = NA, side = "r", show.legend = FALSE, linewidth = 0.2

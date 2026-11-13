@@ -1,0 +1,7 @@
+"group1","group2","test","estimate","p_raw","p_holm","signif","metric"
+"HC","RA","Wilcoxon(unadj)",NA,0.0599316271241202,0.0599316271241202,"ns","shared_abundance.Feces"
+"EC","HC","Wilcoxon(unadj)",NA,0.000205659839699673,0.000822639358798692,"***","shared_abundance.Feces"
+"GC","HC","Wilcoxon(unadj)",NA,9.88227463406512e-11,5.92936478043907e-10,"***","shared_abundance.Feces"
+"CRC","GC","ANCOVA(adj: host+clinical)",0.381327454261939,0.00879871757775519,0.0263961527332656,"**","shared_abundance.Feces"
+"EC","RA","Wilcoxon(unadj)",NA,0.0253055360559588,0.0506110721119175,"*","shared_abundance.Feces"
+"RA","GC","Wilcoxon(unadj)",NA,4.77178599741653e-06,2.38589299870827e-05,"***","shared_abundance.Feces"

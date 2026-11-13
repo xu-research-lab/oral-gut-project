@@ -35,7 +35,7 @@ df1_long<-df1_long%>%mutate(variable=case_when(variable=="YES"~"oral-gut transmi
 											   
 df2_long<-subset(df1_long,id %in% counts$id)
 
-# 首先创建包含GC、EC和CRC的"all"组数据
+# First create the "all" group data containing GC, EC and CRC
 df_all <- df2_long %>%
   filter(Diagnosis %in% c("GC", "EC", "CRC")) %>%
   group_by(group, X2, X1, variable) %>%
@@ -47,17 +47,17 @@ df_all <- df2_long %>%
   mutate(
     Diagnosis = "all",
     percent = value / oral_total * 100,
-    trans_rate = NA,  # 由于合并后trans_rate可能不适用，设为NA
-    id = paste(X1, X2)  # 重新创建id列
+    trans_rate = NA,  # trans_rate may not apply after merging; set to NA
+    id = paste(X1, X2)  # Recreate the id column
   )
 
-# 选择需要的列，确保列顺序与原始数据一致
+# Select the required columns and keep the same order as the original data
 df_all <- df_all %>% select(names(df2_long))
 
-# 将新数据与原始数据合并
+# Merge the new data with the original data
 df_combined <- bind_rows(df2_long, df_all)
 
-# 查看结果
+# Inspect the result
 df_combined$id<-factor(df_combined$id,levels = counts$id)
 
 ggplot()+

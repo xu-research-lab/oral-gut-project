@@ -15,8 +15,8 @@ kinase_melt_nonpma<-kinase_melt_nonpma %>%
 kinase_mean <- kinase_melt_nonpma %>%
   group_by(Species)%>%
   summarise(average = mean(value_sum))%>%
-  arrange(desc(average)) %>%  # 先按平均值降序排序
-  mutate(Species= factor(Species, levels = Species))  # 设置因子水平为排序后的顺序
+  arrange(desc(average)) %>%  # Sort by mean in descending order
+  mutate(Species= factor(Species, levels = Species))  # Set factor levels to the sorted order
 kinase_mean<-subset(kinase_mean,Species!="unclassified")
 
 unselected_mean<-kinase_mean[-c(1:10),]
@@ -35,7 +35,7 @@ med<-plot_data%>%
   filter(value>0)%>%
   group_by(group)%>%
   summarise(med=median(value))%>%
-  arrange(desc(med)) %>%  # 先按平均值降序排序
+  arrange(desc(med)) %>%  # Sort by median in descending order
   mutate(group = factor(group, levels = group)) 
 
 plot_data$group<-factor(plot_data$group,levels = med$group)

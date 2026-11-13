@@ -1,0 +1,125 @@
+PRIMARY POOLED MODEL (Response x Diagnosis x treatment)
+logy ~ Response_6 * Diagnosis * treatment + Age + Gender + BMI_cat +      smoking + MMR_MSI + Stage + Tx + (1 | subject_id)
+n = 188; subjects = 96; singular = FALSE
+
+                                        Estimate Std. Error       df
+(Intercept)                           1.44810072 0.86114093 84.54590
+Response_6R                          -1.01576313 0.64036201 95.42770
+DiagnosisGC                          -0.10315193 0.53550285 98.13385
+DiagnosisEC                           0.42152785 0.67770405 95.65499
+treatmentPMA                          0.23040192 0.27521938 86.30153
+Age                                  -0.00827017 0.01094584 80.03877
+GenderM                               0.23080369 0.36175908 80.44216
+BMI_catlean                          -0.32667701 0.45434102 80.12661
+BMI_catObesity                        0.02358616 0.33079319 80.32742
+smokingYes                           -0.10528544 0.31222962 80.32409
+MMR_MSIdMMR                           0.38093549 0.42646456 79.94571
+StageIV                               0.28408227 0.37006722 81.86115
+Txchemo                              -0.16266853 0.42511482 80.00924
+Response_6R:DiagnosisGC               1.31207526 0.71623009 97.35304
+Response_6R:DiagnosisEC               0.99572071 0.86054179 95.95638
+Response_6R:treatmentPMA             -0.62601626 0.37825286 86.30153
+DiagnosisGC:treatmentPMA             -0.22675216 0.33347275 86.56726
+DiagnosisEC:treatmentPMA             -0.60375997 0.40287993 86.30153
+Response_6R:DiagnosisGC:treatmentPMA  0.35615475 0.44248882 86.49276
+Response_6R:DiagnosisEC:treatmentPMA  0.71588687 0.51505999 86.30153
+                                         t value   Pr(>|t|)
+(Intercept)                           1.68160711 0.09633557
+Response_6R                          -1.58623265 0.11599480
+DiagnosisGC                          -0.19262629 0.84764973
+DiagnosisEC                           0.62199400 0.53542556
+treatmentPMA                          0.83715730 0.40481645
+Age                                  -0.75555377 0.45213459
+GenderM                               0.63800386 0.52528323
+BMI_catlean                          -0.71901280 0.47422475
+BMI_catObesity                        0.07130183 0.94333476
+smokingYes                           -0.33720517 0.73684179
+MMR_MSIdMMR                           0.89324067 0.37440933
+StageIV                               0.76765045 0.44490349
+Txchemo                              -0.38264611 0.70299682
+Response_6R:DiagnosisGC               1.83191865 0.07002110
+Response_6R:DiagnosisEC               1.15708583 0.25010960
+Response_6R:treatmentPMA             -1.65502055 0.10155275
+DiagnosisGC:treatmentPMA             -0.67997208 0.49833654
+DiagnosisEC:treatmentPMA             -1.49861020 0.13762387
+Response_6R:DiagnosisGC:treatmentPMA  0.80488984 0.42309028
+Response_6R:DiagnosisEC:treatmentPMA  1.38990968 0.16813118
+
+PRIMARY stratum-specific contrasts (model-based):
+              Estimate Std. Error        df     t value      lower      upper
+CRC_nonPMA -1.01576313  0.6403620  95.42770 -1.58623265 -2.2869690  0.2554427
+CRC_PMA    -1.64177939  0.6403620  95.42770 -2.56383009 -2.9129852 -0.3705736
+GC_nonPMA   0.29631214  0.3565038 100.38050  0.83116126 -0.4109484  1.0035727
+GC_PMA      0.02645063  0.3545768  98.66355  0.07459775 -0.6771363  0.7300376
+EC_nonPMA  -0.02004241  0.5729949  96.74156 -0.03497835 -1.1573171  1.1172322
+EC_PMA      0.06982819  0.5729949  96.74156  0.12186529 -1.0674465  1.2071028
+             Pr(>|t|)
+CRC_nonPMA 0.11599480
+CRC_PMA    0.01191355
+GC_nonPMA  0.40785524
+GC_PMA     0.94068581
+EC_nonPMA  0.97216908
+EC_PMA     0.90325849
+
+PMA effect-modification test (Response x treatment):
+                                 term        est         p
+             Response_6R:treatmentPMA -0.6260163 0.1015527
+ Response_6R:DiagnosisGC:treatmentPMA  0.3561548 0.4230903
+ Response_6R:DiagnosisEC:treatmentPMA  0.7158869 0.1681312
+
+SECONDARY collapsed diagnosis-level contrasts (PMA as covariate):
+       Estimate Std. Error       df     t value     lower      upper   Pr(>|t|)
+CRC -1.32766935  0.6129144 80.02479 -2.16615782 -2.547402 -0.1079366 0.03327524
+GC   0.15685915  0.3370792 80.80694  0.46534805 -0.513847  0.8275653 0.64293393
+EC   0.01865056  0.5466578 80.19311  0.03411743 -1.069193  1.1064939 0.97286829
+
+SUBGROUP-ONLY SENSITIVITY (eff | p across models):
+      panel eff_unadjusted p_unadjusted n_panel_unadjusted
+ CRC_nonPMA    -0.74965634   0.15986846                 17
+    CRC_PMA    -1.37567260   0.01004169                 17
+  GC_nonPMA     0.38556409   0.22729696                 53
+     GC_PMA     0.03759207   0.90952727                 53
+  EC_nonPMA    -0.17271921   0.77938530                 24
+     EC_PMA    -0.08284860   0.88377743                 24
+                        covs_used_unadjusted eff_clinical p_clinical
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  -1.04443031 0.14719929
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  -1.43624228 0.04915869
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx   0.40458869 0.22471700
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx   0.06992148 0.84163425
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage   0.22358109 0.74097166
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage   0.20662839 0.74464030
+ n_panel_clinical                          covs_used_clinical    eff_host
+               17 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx -0.20154430
+               17 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx -0.88105583
+               53 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  0.45636198
+               53 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  0.06523934
+               24    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage -0.46531038
+               24    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage -0.51278848
+    p_host n_panel_host                              covs_used_host
+ 0.7654072           17 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ 0.1626717           17 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ 0.1856317           53 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ 0.8559420           53 Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ 0.5599176           24    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage
+ 0.4678231           24    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage
+ eff_clinical_host p_clinical_host n_panel_clinical_host
+       -0.65915933       0.5073931                    17
+       -0.74846458       0.4206086                    17
+        0.45502708       0.1990328                    53
+        0.04540731       0.9034012                    53
+        0.13468474       0.8803047                    24
+       -0.12594149       0.8769559                    24
+                     covs_used_clinical_host      eff_ps      p_ps n_panel_ps
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx -0.45123901 0.6314614         17
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx -0.83474210 0.3341291         17
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  0.42962207 0.2177976         53
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx  0.03070746 0.9316559         53
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage  0.23460585 0.8146355         24
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage -0.27086636 0.7697273         24
+                                covs_used_ps
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+ Age+Gender+BMI_cat+smoking+MMR_MSI+Stage+Tx
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage
+    Age+Gender+BMI_cat+smoking+MMR_MSI+Stage

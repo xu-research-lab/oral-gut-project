@@ -1,0 +1,5 @@
+"group1","group2","test","estimate","p_raw","p_holm","signif"
+"HC","RA","Wilcoxon(unadj)",NA,0.00317984885142604,0.00953954655427812,"**"
+"EC","HC","Wilcoxon(unadj)",NA,0.0144212043528167,0.0288424087056334,"*"
+"GC","HC","Wilcoxon(unadj)",NA,2.72221150427687e-07,1.08888460171075e-06,"***"
+"CRC","GC","ANCOVA(adj: host+clinical)",0.205203468630689,0.039005990357912,0.039005990357912,"*"

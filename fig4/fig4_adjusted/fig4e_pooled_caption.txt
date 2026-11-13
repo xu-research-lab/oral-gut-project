@@ -1,0 +1,24 @@
+Figure 4e. Progression-free survival by oral-gut transmission level.
+
+Exposure: high vs low oral-gut transmission, shown separately for non-PMA and PMA.
+Outcome: per-subject progression-free survival (time to first progression, or last
+follow-up if no progression).
+
+Primary model: a single POOLED Cox proportional-hazards model with a
+transmission x cancer-type (Diagnosis) interaction, specified as:
+  Surv(time, event) ~ shared_level * Diagnosis
+    + Age + Gender + BMI category + smoking        (host factors)
+    + MMR/MSI + Stage (IV vs I-III) + Treatment class (clinical factors)
+Per-cancer hazard ratios (low vs high transmission) are extracted from this model,
+so each cancer type retains its own HR while precision borrows strength across
+cancer types; 95% CIs were verified by a 1000-sample bootstrap.
+
+Sensitivity analyses: (i) clinical factors only (previous specification), and
+(ii) clinical + host factors, both fitted to the pooled cohort with stratified
+baseline hazard (stratified by Diagnosis) and Firth penalisation for the small
+number of events.
+
+Host factors (age, sex, body-mass index category and smoking) were added to align
+the survival analysis with the transmission-abundance analysis (Fig. 4c).
+Because event numbers are small in some cancer types, estimates should be
+interpreted with caution and the per-cancer results treated as exploratory.

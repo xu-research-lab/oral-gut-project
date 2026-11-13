@@ -16,7 +16,7 @@ features <- merge(features, shared_abd[, c("Group.1", "x")], by.x = "sampleid", 
 
 abundance_threshold <- 2.09818
 features <- mutate(features, shared_level = case_when(
-  is.na(transmitted.abundance.in.gut) ~ NA_character_, # 明确处理NA值
+  is.na(transmitted.abundance.in.gut) ~ NA_character_, # Explicitly handle NA values
   transmitted.abundance.in.gut <= abundance_threshold ~ "low",
   transmitted.abundance.in.gut > abundance_threshold ~ "high"
 ))

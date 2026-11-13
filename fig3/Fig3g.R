@@ -15,7 +15,7 @@ p5 <- ggplot(subset(remergeshare_new9, group=="non-PMA"&id!="NA")) +
   expand_limits(x = 0)+
   theme(axis.text = element_text(size = 7,color = counts$color),
         axis.ticks.y = element_blank(),
-        axis.text.x = element_text(size = 9),  # 调整 x 轴刻度标签尺寸
+        axis.text.x = element_text(size = 9),  # Adjust x-axis tick label size
         axis.text.y = element_text(size = 10))+
   scale_color_gradient(name="Present(oral)")
 p5

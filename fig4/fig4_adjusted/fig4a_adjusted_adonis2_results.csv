@@ -1,0 +1,65 @@
+"Data_Type","Sample_Group","Analysis","Cancer_Type","Distance_Metric","adj_set","n","R2_unadj","P_unadj","R2_adj","P_adj"
+"non_PMA","oral","Diagnosis","All","Bray-Curtis","all",138,0.0307202701295585,0.001,0.0327216778200251,0.002
+"non_PMA","oral","Response_6","CRC","Bray-Curtis","three",24,0.109819315278387,0.012,0.0649794299963275,0.079
+"non_PMA","oral","Response_6","GC","Bray-Curtis","three",63,0.0183398236434384,0.267,0.0157588945324837,0.423
+"non_PMA","oral","Response_6","EC","Bray-Curtis","three",27,0.0174369943801174,0.997,0.0250064688163271,0.854
+"non_PMA","oral","Diagnosis","All","Jaccard","all",138,0.0222250800490926,0.016,0.0248836595031463,0.005
+"non_PMA","oral","Response_6","CRC","Jaccard","three",24,0.113455397859553,0.002,0.0783221665884462,0.038
+"non_PMA","oral","Response_6","GC","Jaccard","three",63,0.0185782994403623,0.245,0.0194942066177283,0.2
+"non_PMA","oral","Response_6","EC","Jaccard","three",27,0.0288654700540162,0.834,0.0383693178851266,0.405
+"non_PMA","oral","Diagnosis","All","Unweighted UniFrac","all",138,0.0204551568107319,0.1,0.0272076725679156,0.008
+"non_PMA","oral","Response_6","CRC","Unweighted UniFrac","three",24,0.0974097385846651,0.016,0.0654415015681239,0.108
+"non_PMA","oral","Response_6","GC","Unweighted UniFrac","three",63,0.0189047904142398,0.261,0.0189626712108783,0.266
+"non_PMA","oral","Response_6","EC","Unweighted UniFrac","three",27,0.0322682362926918,0.636,0.0422915579991796,0.284
+"non_PMA","oral","Diagnosis","All","Weighted UniFrac","all",138,0.0364957683038541,0.005,0.0348681229872156,0.009
+"non_PMA","oral","Response_6","CRC","Weighted UniFrac","three",24,0.0714651577420355,0.129,0.0648402671990265,0.146
+"non_PMA","oral","Response_6","GC","Weighted UniFrac","three",63,0.0237221997394447,0.168,0.0229817698199156,0.182
+"non_PMA","oral","Response_6","EC","Weighted UniFrac","three",27,0.0157716653392721,0.927,0.0161656280504185,0.864
+"non_PMA","gut","Diagnosis","All","Bray-Curtis","all",138,0.0305262000028541,0.001,0.0251091584860554,0.001
+"non_PMA","gut","Response_6","CRC","Bray-Curtis","three",24,0.0613068916852211,0.065,0.076384096375665,0.011
+"non_PMA","gut","Response_6","GC","Bray-Curtis","three",63,0.0158096366614475,0.488,0.0150521840718235,0.614
+"non_PMA","gut","Response_6","EC","Bray-Curtis","three",27,0.034790476713965,0.587,0.0414924824778948,0.334
+"non_PMA","gut","Diagnosis","All","Jaccard","all",138,0.0250537049716108,0.001,0.0215201830789524,0.008
+"non_PMA","gut","Response_6","CRC","Jaccard","three",24,0.0566151706154853,0.146,0.0605279251738947,0.067
+"non_PMA","gut","Response_6","GC","Jaccard","three",63,0.0192765828697317,0.151,0.0188436497648022,0.155
+"non_PMA","gut","Response_6","EC","Jaccard","three",27,0.0386259089626815,0.396,0.039942378302601,0.336
+"non_PMA","gut","Diagnosis","All","Unweighted UniFrac","all",138,0.0261669982444137,0.009,0.021767482500084,0.031
+"non_PMA","gut","Response_6","CRC","Unweighted UniFrac","three",24,0.0508303780440401,0.254,0.0673129740287232,0.085
+"non_PMA","gut","Response_6","GC","Unweighted UniFrac","three",63,0.0184723493353769,0.245,0.0186289942682347,0.226
+"non_PMA","gut","Response_6","EC","Unweighted UniFrac","three",27,0.0440585983629824,0.259,0.0399659872704696,0.333
+"non_PMA","gut","Diagnosis","All","Weighted UniFrac","all",138,0.0402087954347051,0.001,0.0385208908427066,0.004
+"non_PMA","gut","Response_6","CRC","Weighted UniFrac","three",24,0.0856857647391068,0.075,0.0893018694140813,0.04
+"non_PMA","gut","Response_6","GC","Weighted UniFrac","three",63,0.00986691043631948,0.79,0.00887315875146609,0.846
+"non_PMA","gut","Response_6","EC","Weighted UniFrac","three",27,0.0247830967886643,0.76,0.0419846322642026,0.4
+"PMA","oral","Diagnosis","All","Bray-Curtis","all",136,0.0270993227419307,0.007,0.0271453858008787,0.002
+"PMA","oral","Response_6","CRC","Bray-Curtis","three",24,0.0762371768773119,0.039,0.049875714997875,0.233
+"PMA","oral","Response_6","GC","Bray-Curtis","three",62,0.017380401837374,0.374,0.0150677450128216,0.531
+"PMA","oral","Response_6","EC","Bray-Curtis","three",27,0.029447780150378,0.77,0.0232346583879283,0.922
+"PMA","oral","Diagnosis","All","Jaccard","all",136,0.0263655904492581,0.002,0.0246305074789313,0.002
+"PMA","oral","Response_6","CRC","Jaccard","three",24,0.0997129890353863,0.001,0.0855861662963806,0.005
+"PMA","oral","Response_6","GC","Jaccard","three",62,0.0150719876061902,0.543,0.014705450744023,0.587
+"PMA","oral","Response_6","EC","Jaccard","three",27,0.0346903393604649,0.565,0.0393048815355923,0.36
+"PMA","oral","Diagnosis","All","Unweighted UniFrac","all",136,0.0345684939663577,0.001,0.0323879790965356,0.005
+"PMA","oral","Response_6","CRC","Unweighted UniFrac","three",24,0.0900449767195492,0.017,0.0865842939739409,0.013
+"PMA","oral","Response_6","GC","Unweighted UniFrac","three",62,0.0132593378098121,0.685,0.0130368878752741,0.681
+"PMA","oral","Response_6","EC","Unweighted UniFrac","three",27,0.028884905002714,0.67,0.0369450500141322,0.421
+"PMA","oral","Diagnosis","All","Weighted UniFrac","all",136,0.0236420892230625,0.057,0.0270260020657352,0.028
+"PMA","oral","Response_6","CRC","Weighted UniFrac","three",24,0.0287636590716132,0.719,0.023211683461748,0.818
+"PMA","oral","Response_6","GC","Weighted UniFrac","three",62,0.018697758323151,0.306,0.014698239080746,0.486
+"PMA","oral","Response_6","EC","Weighted UniFrac","three",27,0.0141409236915297,0.951,0.0171612903533704,0.847
+"PMA","gut","Diagnosis","All","Bray-Curtis","all",136,0.0258404938914953,0.001,0.0232165200884853,0.004
+"PMA","gut","Response_6","CRC","Bray-Curtis","three",24,0.0516926622044242,0.202,0.0635794856254358,0.035
+"PMA","gut","Response_6","GC","Bray-Curtis","three",62,0.0177464503520913,0.304,0.0167632243413649,0.365
+"PMA","gut","Response_6","EC","Bray-Curtis","three",27,0.0396852520517101,0.413,0.0549282440119783,0.056
+"PMA","gut","Diagnosis","All","Jaccard","all",136,0.0240366198629228,0.005,0.0205184581760939,0.013
+"PMA","gut","Response_6","CRC","Jaccard","three",24,0.0608049125159477,0.099,0.0579932817758227,0.077
+"PMA","gut","Response_6","GC","Jaccard","three",62,0.0161488364484092,0.451,0.0163441759521329,0.399
+"PMA","gut","Response_6","EC","Jaccard","three",27,0.0404757127154212,0.293,0.0443269244777564,0.198
+"PMA","gut","Diagnosis","All","Unweighted UniFrac","all",136,0.0273601837668655,0.006,0.022595461046897,0.024
+"PMA","gut","Response_6","CRC","Unweighted UniFrac","three",24,0.0598518367200423,0.142,0.0638380471283389,0.109
+"PMA","gut","Response_6","GC","Unweighted UniFrac","three",62,0.0176924581548197,0.311,0.0194528762057421,0.192
+"PMA","gut","Response_6","EC","Unweighted UniFrac","three",27,0.0468533243904199,0.17,0.0493759047637488,0.141
+"PMA","gut","Diagnosis","All","Weighted UniFrac","all",136,0.0312668237213342,0.009,0.034378019866279,0.006
+"PMA","gut","Response_6","CRC","Weighted UniFrac","three",24,0.0561604912439372,0.251,0.0645923095333991,0.143
+"PMA","gut","Response_6","GC","Weighted UniFrac","three",62,0.0148762366335568,0.519,0.0142563327563165,0.505
+"PMA","gut","Response_6","EC","Weighted UniFrac","three",27,0.0348372813058538,0.482,0.0585066999341365,0.142
