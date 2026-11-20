@@ -40,8 +40,8 @@ processed data, environment specification and run instructions are provided.
 - **R packages**: the complete list with versions is given in
   `environment.json`. Main packages include `Maaslin2` (1.20.0), `vegan`
   (2.7-2), `ggplot2` (4.0.0), `survival` (3.8-3), `lme4`, `coxphf`, `dplyr`,
-  `tidyr`, `readxl`, `ggpubr`, `patchwork`, `microeco`, `randomForest` and
-  `pROC`.
+  `tidyr`, `readxl`, `ggpubr`, `patchwork`, `microeco`, `randomForest`,
+  `lmerTest`, `broom` and `pROC`.
 - **Python packages**: `numpy`, `pandas`, `scipy`, `scikit-learn`, `xgboost`
   (see `requirements.txt`).
 - **Non-standard hardware**: none. All analyses run on a standard CPU; no GPU
