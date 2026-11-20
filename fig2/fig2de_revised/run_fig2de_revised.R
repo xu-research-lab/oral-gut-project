@@ -6,7 +6,7 @@
 #                       factors  MSI_Status + Tumor_Staging + Treatment_class
 #                       (collapsed: dMMR/pMMR, IV vs I-III, chemo vs ICI)
 #  - one common Holm correction across all displayed comparisons
-# Run from: D:/oral-gut/code_data_all/fig2
+# Run from: fig2/
 # ============================================================
 suppressMessages({library(ggplot2); library(dplyr)})
 
@@ -15,7 +15,7 @@ dir.create(outdir, showWarnings = FALSE)
 
 # ---- 1. data ----
 load("shared_abundance_counts.RData")
-meta_csv <- "D:/oral-gut/addtional analysis/results/clinical_features/features_filled_with_metadata.csv"
+meta_csv <- "../data/clinical_features/features_filled_with_metadata.csv"
 ff <- read.csv(meta_csv, stringsAsFactors = FALSE, check.names = FALSE)
 
 sa <- shared_abundance_counts[, c("id", "treatment", "Diagnosis",

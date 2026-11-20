@@ -1,7 +1,7 @@
 # One-vs-rest plot sized to the Fig.1 right-column aspect (w/h = 230.77/450),
 # so it fills the column and its x-axis aligns with panel h.
 suppressMessages({library(ggplot2); library(dplyr)})
-outdir <- "maaslin2_onevsrest"
+outdir <- "maaslin2_onevsrest_Diagnosis"
 best <- read.csv(file.path(outdir, "maaslin2_onevsrest_best.csv"), check.names = FALSE)
 tax  <- read.csv("tax_id.csv", row.names = 1, check.names = FALSE)
 tax$id <- rownames(tax); tax$Species <- sub("^s__", "", tax$Species)

@@ -6,7 +6,7 @@
 #    covariates (Age, Gender, BMI_Status, smoking_label)
 #  - one common Holm correction across each panel's comparisons
 #  - only significant brackets drawn; no caption; group labels kept
-# Run from: D:/oral-gut/code_data_all/fig3
+# Run from: fig3/
 # ============================================================
 suppressMessages({library(ggplot2); library(dplyr)})
 
@@ -17,7 +17,7 @@ dir.create(outdir, showWarnings = FALSE)
 e <- new.env(); load("Fig3cdef.RData", envir = e)
 features <- get("features", e)
 
-ff <- read.csv("D:/oral-gut/addtional analysis/results/clinical_features/features_filled_with_metadata.csv",
+ff <- read.csv("../data/clinical_features/features_filled_with_metadata.csv",
                stringsAsFactors = FALSE, check.names = FALSE)
 smoke <- ff[, c("id", "smoking_label")]
 d <- merge(features, smoke, by = "id", all.x = TRUE)

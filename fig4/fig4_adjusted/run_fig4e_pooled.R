@@ -19,7 +19,7 @@
 # Sensitivity: (i) clinical-only pooled model (previous analysis),
 #   (ii) clinical + host pooled model.
 #
-# Run from: D:/oral-gut/code_data_all/fig4
+# Run from: fig4/
 # ============================================================
 suppressMessages({library(survival); library(coxphf); library(ggplot2)})
 .progfile <- "C:/Users/huang/AppData/Local/Temp/opencode/fig4e_progress.log"

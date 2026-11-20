@@ -1,6 +1,6 @@
 # Regenerate PMA / non-PMA adjusted survival curves WITHOUT shaded 95% CI,
 # with the legend placed OUTSIDE the panels on the right (for manual adjustment).
-# Run from: D:/oral-gut/code_data_all/fig4
+# Run from: fig4/
 suppressMessages({library(survival); library(ggplot2)})
 
 outdir <- "fig4_adjusted"
