@@ -8,9 +8,9 @@ The code reproduces the covariate-adjusted analyses and the figures reported in
 the manuscript.
 
 This repository is an **analysis pipeline**, not a standalone software package.
-Checklist items intended for compiled software (binary, installer, demo
-dataset) are therefore marked “not applicable”; the source code, full
-processed data, environment specification and run instructions are provided.
+Checklist items intended for compiled software (binary, installer) are
+therefore marked “not applicable”; the source code, full processed data,
+environment specification and run instructions are provided.
 
 ## Repository structure
 
@@ -127,13 +127,6 @@ respective folders (for example, `cd "fig5/butyrate"` and
 To use your own data, replace the input files in the relevant figure folder
 and update the input file names at the top of the corresponding script. All
 paths are relative to the figure directory.
-
-## Demo (not applicable)
-
-This is an analysis pipeline rather than a standalone software tool, so no
-separate demo dataset or installer is provided. The repository includes the
-full real datasets and scripts; see **Usage** for the commands to run the
-analyses on the study data.
 
 ## Reproduction
 
