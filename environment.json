@@ -42,8 +42,16 @@
 					"version": "1.13.4"
 				},
 				{
+					"name": "data.table",
+					"version": "1.14.10"
+				},
+				{
 					"name": "dplyr",
 					"version": "1.1.4"
+				},
+				{
+					"name": "emmeans",
+					"version": "2.0.4"
 				},
 				{
 					"name": "forcats",
@@ -108,6 +116,10 @@
 				{
 					"name": "patchwork",
 					"version": "1.3.2"
+				},
+				{
+					"name": "pheatmap",
+					"version": "1.0.12"
 				},
 				{
 					"name": "pROC",

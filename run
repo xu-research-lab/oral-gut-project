@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Master script for the covariate-adjusted analyses of Figures 1-4.
+# Master script for the analyses of Figures 1-4 and Figure 6.
 # Run from anywhere: the script locates the repository root automatically.
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -34,5 +34,14 @@ Rscript "fig4_adjusted/run_fig4c_pooled.R"
 Rscript "run_fig4d_revised.R"
 Rscript "fig4_adjusted/run_fig4e_pooled.R"
 Rscript "replot_fig4c_pooled.R"
+
+echo "===== Figure 6 ====="
+cd "$ROOT/fig6/lefse"
+Rscript run_lefse.R
+Rscript plot_lefse_mirrored.R
+cd "$ROOT/fig6/scfa_metabolomics"
+Rscript run_scfa_metabolomics.R
+cd "$ROOT/fig6/growth_flow"
+Rscript growth_flow_plots.R
 
 echo "===== Done ====="

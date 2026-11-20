@@ -25,6 +25,7 @@ environment specification and run instructions are provided.
 ├── fig3/                           # Figure 3 analyses (transmitted strains and shared SGBs)
 ├── fig4/                           # Figure 4 analyses (PCoA, pooled LMM, PFS Cox models)
 ├── fig5/                           # Figure 5 analyses (functional and network analyses)
+├── fig6/                           # Figure 6 mouse validation (growth, flow, SCFA, LEfSe)
 ├── Extended Data Fig/              # Extended Data Figure analyses
 ├── environment.json                # Code Ocean environment (R/Python package versions)
 ├── requirements.txt                # Python packages used by the notebooks
@@ -42,7 +43,7 @@ environment specification and run instructions are provided.
   `environment.json`. Main packages include `Maaslin2` (1.20.0), `vegan`
   (2.7-2), `ggplot2` (4.0.0), `survival` (3.8-3), `lme4`, `coxphf`, `dplyr`,
   `tidyr`, `readxl`, `ggpubr`, `patchwork`, `microeco`, `randomForest`,
-  `lmerTest`, `broom` and `pROC`.
+  `lmerTest`, `broom`, `data.table`, `emmeans`, `pheatmap` and `pROC`.
 - **Python packages**: `numpy`, `pandas`, `scipy`, `scikit-learn`, `xgboost`
   (see `requirements.txt`).
 - **Non-standard hardware**: none. All analyses run on a standard CPU; no GPU
@@ -118,6 +119,13 @@ Rscript "fig4_adjusted/run_fig4e_pooled.R"
 Rscript "replot_fig4c_pooled.R"
 ```
 
+```bash
+# Figure 6 (run each from the repository root)
+(cd fig6/lefse && Rscript run_lefse.R && Rscript plot_lefse_mirrored.R)
+(cd fig6/scfa_metabolomics && Rscript run_scfa_metabolomics.R)
+(cd fig6/growth_flow && Rscript growth_flow_plots.R)
+```
+
 The scripts write their outputs (PDF, PNG and CSV files) into the
 corresponding `*_adjusted` or `*_revised` folder.
 
@@ -151,7 +159,7 @@ are not the manuscript results.
 
 ## Reproduction
 
-After installing the dependencies, the adjusted analyses for Figures 1–4 can
+After installing the dependencies, the analyses for Figures 1–4 and Figure 6 can
 be run from the repository root with:
 
 ```bash

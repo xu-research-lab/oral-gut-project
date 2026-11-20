@@ -1,0 +1,52 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: log_volume ~ grp * day + (1 | mouse_id)
+   Data: growth
+Control: 
+lme4::lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1e+05))
+
+REML criterion at convergence: 452.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6358 -0.3485  0.0647  0.5278  2.5795 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ mouse_id (Intercept) 0.1458   0.3818  
+ Residual             0.1655   0.4069  
+Number of obs: 320, groups:  mouse_id, 40
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                  1.49233    0.23015   6.484
+grpPD-1                      1.13370    0.32548   3.483
+grpE. coli + PD-1            1.16846    0.32548   3.590
+grpVP + PD-1                 0.50499    0.32548   1.551
+grpVP + PD-1 + butyrate      1.02151    0.32548   3.138
+day                          0.05687    0.01018   5.589
+grpPD-1:day                 -0.10892    0.01439  -7.569
+grpE. coli + PD-1:day       -0.11307    0.01439  -7.858
+grpVP + PD-1:day            -0.03395    0.01439  -2.359
+grpVP + PD-1 + butyrate:day -0.09936    0.01439  -6.905
+
+Correlation of Fixed Effects:
+            (Intr) grPD-1 grE.c+PD-1 grVP+PD-1 grVP+PD-1+b day    gPD-1:
+grpPD-1     -0.707                                                      
+grpE.c+PD-1 -0.707  0.500                                               
+grpVP+PD-1  -0.707  0.500  0.500                                        
+grVP+PD-1+b -0.707  0.500  0.500      0.500                             
+day         -0.779  0.551  0.551      0.551     0.551                   
+grpPD-1:day  0.551 -0.779 -0.390     -0.390    -0.390      -0.707       
+grE.c+PD-1:  0.551 -0.390 -0.779     -0.390    -0.390      -0.707  0.500
+grpVP+PD-1:  0.551 -0.390 -0.390     -0.779    -0.390      -0.707  0.500
+gVP+PD-1+b:  0.551 -0.390 -0.390     -0.390    -0.779      -0.707  0.500
+            gE.c+PD-1: gVP+PD-1:
+grpPD-1                         
+grpE.c+PD-1                     
+grpVP+PD-1                      
+grVP+PD-1+b                     
+day                             
+grpPD-1:day                     
+grE.c+PD-1:                     
+grpVP+PD-1:  0.500              
+gVP+PD-1+b:  0.500      0.500   
