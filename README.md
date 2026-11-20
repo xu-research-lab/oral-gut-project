@@ -18,6 +18,7 @@ environment specification and run instructions are provided.
 .
 ├── data/
 │   └── clinical_features/          # harmonised clinical metadata used by the adjusted analyses
+├── demo/                           # small real-data subset and runnable demo
 ├── data processing/                # strain-level distance merging
 ├── fig1/                           # Figure 1 analyses (adjusted PCoA, alpha diversity, MaAsLin2)
 ├── fig2/                           # Figure 2 analyses (shared SGBs and cumulative abundance)
@@ -127,6 +128,26 @@ respective folders (for example, `cd "fig5/butyrate"` and
 To use your own data, replace the input files in the relevant figure folder
 and update the input file names at the top of the corresponding script. All
 paths are relative to the figure directory.
+
+## Demo
+
+A small real-data subset (18 samples: 6 CRC, 6 GC and 6 EC) and a runnable
+demo are provided in `demo/`.
+
+```bash
+cd demo
+Rscript make_demo_data.R   # optional: re-create demo_data.csv from the full data
+Rscript demo.R
+```
+
+`demo.R` fits a simplified host-adjusted linear model
+(`log10(shared SGB counts + 1e-6) ~ Diagnosis + Age + Gender`) and writes
+`demo_output.pdf` and `demo_output.png`. On a normal desktop computer the demo
+runs in **under 1 minute** (typically a few seconds). The console prints the
+model summary and ANOVA table; with the provided subset, the Diagnosis ANOVA
+p-value is approximately **0.23** and the CRC-versus-GC adjusted p-value is
+approximately **0.11**. These values only demonstrate that the code runs and
+are not the manuscript results.
 
 ## Reproduction
 
