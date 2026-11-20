@@ -1,0 +1,206 @@
+"subject_id","Diagnosis","Gender","Age","BMI","BMI_Status","MSI_Status","Tumor_Staging","Treatment","Treatment_class","Response_3","Response_6","smoking","smoking_label","histology","PD.L1","PD.L1_num"
+"1156750","EC","M",66,17.01017307,"lean","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","1","Yes","squamous cell carcinoma","CPS=12",12
+"1290762","GC","M",49,20.76124567,"normal","non MSI-high","IV","PD-1","ICI","R","R","2","No","adenocarcinoma","pos 5-10%",5
+"1345909","GC","M",63,22.4996371,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","2","No","adenocarcinoma","neg",0
+"1363817","GC","M",59,22.20633069,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","2","No","adenocarcinoma","neg",0
+"1369751","GC","M",48,19.97440779,"normal","non MSI-high","IV","PD-1 combined","ICI","R","R","1","Yes","adenocarcinoma","PD-L1(+＜10%）",10
+"1429638","EC","M",55,22.81638724,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1521973","CRC","F",53,24.74745426,"normal","non MSI-high","IV","PD-1 combined","ICI|target","NR","NR","2","No","adenocarcinoma","未查",
+"1551463","CRC","F",35,20.703125,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","2","No","adenocarcinoma","未查",
+"1551516","GC","M",73,24.97704316,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","CPS ＜1",0
+"1557169","CRC","M",56,24.67702134,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","未查",
+"1583990","EC","M",70,20.93663912,"normal","non MSI-high","IV","PD-L1 combined","ICI|chemo","NR","NR","2","No","squamous cell carcinoma","未查",
+"1588509","GC","F",44,16.18427491,"lean","MSI-high","IV","PD-1","ICI","R","R","2","No","adenocarcinoma","未查",
+"1622382","GC","F",38,22.32142857,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","2","No","adenocarcinoma","CPS=0",0
+"1676542","CRC","M",37,22.21925223,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","R","2","No","adenocarcinoma","未查",
+"1688793","EC","M",59,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","1","Yes","squamous cell carcinoma","未查",
+"1693066","GC","M",54,19.18319051,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo",,,"1","Yes","adenocarcinoma","CPS 20",20
+"1694835","CRC","F",26,23.71184463,"normal","non MSI-high","IV","PD-1 combined","ICI|target","NR","NR","2","No","adenocarcinoma","未查",
+"1700485","CRC","M",61,24.22145329,"normal","MSI-high","IV","PD-1","ICI","R","R","1","Yes","adenocarcinoma","未查",
+"1703701","GC","M",62,20.01549587,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","NR","2","No","adenocarcinoma","CPS 20",20
+"1706829","GC","M",61,20.12863154,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","1","Yes","adenocarcinoma","未查",
+"1745624","CRC","F",66,21.09375,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","未查",
+"1751896","EC","M",74,19.00390835,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","2","No","squamous cell carcinoma","未查",
+"1753969","CRC","M",61,22.27530992,"normal","non MSI-high","IV","PD-1 combined","ICI|target","NR","NR","1","Yes","adenocarcinoma","未查",
+"1763530","GC","M",62,19.44444444,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","CPS=10",10
+"1768795","GC","M",63,24.8015873,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","未查",
+"1770309","CRC","M",65,19.1953028,"normal","non MSI-high","IV","PD-1 combined","ICI|target",,,"1","Yes","adenocarcinoma","未查",
+"1786437","CRC","F",54,27.24432251,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","2","No","adenocarcinoma","未查",
+"1786951","GC","M",64,22.5981405,"normal","non MSI-high","IV","PD-1 combined","ICI","R","R","1","Yes","adenocarcinoma","CPS=60 (CPS>5)",60
+"1787829","GC","M",61,23.83673469,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","NR","NR","2","No","adenocarcinoma","未查",
+"1790015","CRC","M",56,26.25958475,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","未查",
+"1790780","GC","F",63,26.37023814,"Obesity","non MSI-high","IV","PD-1","ICI","R","R","1","Yes","adenocarcinoma","CPS=90",90
+"1793619","CRC","M",48,22.38631428,"normal","MSI-high","IV","PD-1→PD-1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","未查",
+"1799065","GC","M",85,25.63691716,"Obesity","MSI-high","IV","PD-1","ICI","R","R","1","Yes","adenocarcinoma","CPS 70",70
+"1799696","GC","M",54,20.61744774,"normal","non MSI-high","IV","PD-L1","ICI|target","NR","NR","1","Yes","adenocarcinoma","CPS=5",5
+"1802801","GC","F",50,24.65483235,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","2","No","adenocarcinoma","未查",
+"1807262","EC","F",60,19.04432133,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","2","No","squamous cell carcinoma","cps=60",60
+"1810105","GC","M",66,15.85414189,"lean","MSI-high","IV","PD-1 combined","ICI|target","NR","NR","1","Yes","adenocarcinoma","CPS 5",5
+"1813364","GC","M",57,23.38435374,"normal","non MSI-high","IV","PD-1 combined","ICI","R","NR","1","Yes","adenocarcinoma","cps 小于1",0
+"1821208","GC","M",59,28.85034112,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","cps=1",1
+"1823249","GC","M",67,24.72518293,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","cps=40",40
+"1823787","GC","F",63,19.22768787,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo",,,"1","Yes","adenocarcinoma","CPS=5",5
+"1828385","GC","F",65,21.45726808,"normal","MSI-high","IV","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","CPS 6",6
+"1829217","GC","M",77,22.76146754,"normal","non MSI-high","IV","XELOX","chemo","R",,"1","Yes","adenocarcinoma","CPS 40",40
+"1832753","GC","F",70,21.8299522,"normal","MSI-high","IV","PD-L1 combined","ICI","R","R","2","No","adenocarcinoma","cps=1",1
+"1834836","GC","M",58,21.5450908,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","R","2","No","adenocarcinoma","CPS<1",0
+"1836373","GC","M",55,22.60026298,"normal","non MSI-high","IV","PD-1 combined","ICI","R","NR","1","Yes","adenocarcinoma","CPS 60",60
+"1837089","GC","M",22,17.27143595,"lean","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","2","No","adenocarcinoma","CPS 15",15
+"1843492","CRC","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","R","NR","2","No","adenocarcinoma","未查",
+"1850511","GC","M",65,21.0498179,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","CPS<1",0
+"1854510","EC","M",46,22.98539751,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","R","1","Yes","squamous cell carcinoma","CPS 2",2
+"1866127","EC","M",44,22.05219018,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","1","Yes","squamous cell carcinoma","未查",
+"1870580","EC","M",55,21.79930796,"normal",,"IV","PD-1 combined","ICI|chemo","R","NR","1","Yes","squamous cell carcinoma","CPS=8",8
+"1879757","GC","M",45,28.73469388,"Obesity","non MSI-high","III","PD-1 combined","ICI","R","R","1","Yes","adenocarcinoma","CPS 95",95
+"1881964","GC","F",76,26.3778981,"Obesity","MSI-high","III","PD-1","ICI","R","R","1","Yes","adenocarcinoma","CPS=10",10
+"1884527","GC","F",64,14.453125,"lean","MSI-high","III","PD-1","ICI","R","R","2","No","adenocarcinoma","CPS=5",5
+"1886988","EC","M",64,23.42355741,"normal","non MSI-high","IIIB","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","CPS=50",50
+"1888352","GC","M",58,19.84126984,"normal","non MSI-high","IV","chemo","chemo","R",,"1","Yes","adenocarcinoma","CPS 11",11
+"1890033","EC","M",58,23.50780533,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1892471","CRC","M",37,26.17519452,"Obesity","MSI-high","IIC","PD-1","ICI","R","R","1","Yes","adenocarcinoma","neg",0
+"1894439","GC","M",41,27.1177686,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","2","No","adenocarcinoma","CPS<1",0
+"1895668","GC","M",76,18.42653421,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R",,"1","Yes","adenocarcinoma","CPS=10",10
+"1897464","CRC","M",51,28.72678773,"Obesity","MSI-high","IV","PD-1 combined","ICI","R","R","1","Yes","adenocarcinoma","未查",
+"1898160","EC","M",76,25.40554782,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","CPS 5",5
+"1899211","CRC","M",58,21.30681818,"normal","non MSI-high","IV","PD-1 combined","ICI|target","NR","NR","1","Yes","adenocarcinoma","未查",
+"1900608","GC","M",66,21.30394858,"normal","non MSI-high","IV","PD-1 combined","ICI","NR","NR","2","No","adenocarcinoma","CPS=2",2
+"1901300","EC","M",57,24.16831246,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1902316","GC","F",85,13.69612856,"lean","MSI-high","IV","PD-1","ICI",,,"2","No","adenocarcinoma","CPS=10",10
+"1902669","EC","F",64,16.271809,"lean","non MSI-high","IIIB","PD-1 combined","ICI|chemo","R","R","2","No","squamous cell carcinoma","未查",
+"1902762","GC","M",61,23.33768443,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","CPS 8",8
+"1903009","GC","F",70,26.89767019,"Obesity","non MSI-high","IV","PD-1 combined","ICI","R","R","2","No","adenocarcinoma","CPS 50",50
+"1903857","CRC","F",42,22.92097107,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","2","No","adenocarcinoma","未查",
+"1904234","EC","M",70,24.31412397,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","2","No","squamous cell carcinoma","CPS=2",2
+"1905350","EC","M",71,24.22145329,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1905512","EC","M",57,28.30599506,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1906007","GC","F",63,23.55555556,"normal","MSI-high","IV","PD-1","ICI","R","R","2","No","adenocarcinoma","未查",
+"1906432","EC","M",53,22.81131655,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1907311","GC","M",52,23.183391,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","CPS 5",5
+"1907987","GC","M",69,23.12467037,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","CPS 80",80
+"1908773","GC","M",78,18.67093431,"normal","non MSI-high","III","PD-1 combined","ICI|chemo",,,"2","No","adenocarcinoma","CPS=10",10
+"1909554","EC","M",67,22.40817899,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","CPS=100",100
+"1910344","GC","F",25,21.78649237,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","NR","2","No","adenocarcinoma","未查",
+"1915379","CRC","M",42,25.47792483,"Obesity","MSI-high","IIA","chemo","chemo","R",,"1","Yes","adenocarcinoma","未查",
+"1915542","GC","M",56,26.44897959,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","CPS 20",20
+"1916412","GC","F",73,19.81784449,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","R","NR","2","No","adenocarcinoma","CPS＜1",0
+"1916590","GC","F",44,22.1718317,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","NR","2","No","adenocarcinoma","CPS<1",0
+"1916725","GC","F",64,20.82465639,"normal","non MSI-high","IV","XELOX","chemo","R",,"2","No","adenocarcinoma","CPS 5",5
+"1916907","CRC","F",39,20.17325264,"normal","MSI-high","II","chemo","chemo","R",,"2","No","adenocarcinoma","未查",
+"1918153","GC","M",72,21.29529475,"normal","MSI-high","IV","PD-1","ICI","R","R","1","Yes","adenocarcinoma","未查",
+"1918977","CRC","F",57,24.69040546,"normal","MSI-high","IV","PD-1 combined","ICI|target|chemo","R","R","2","No","adenocarcinoma","CPS 5",5
+"1919134","EC","M",67,19.10009183,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","CPS 1",1
+"1920020","GC","M",59,16.82964853,"lean","non MSI-high","IV","chemo","chemo","R",,"1","Yes","adenocarcinoma","CPS 5",5
+"1920286","GC","M",57,19.46740129,"normal","non MSI-high","IV","XELOX","chemo","R",,"1","Yes","adenocarcinoma","CPS 0",0
+"1921203","GC","F",63,25.77777778,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","CPS 10",10
+"1924430","GC","M",58,25.14285714,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","R","NR","1","Yes","adenocarcinoma","CPS=10",10
+"1925573","GC","M",66,27.39091856,"Obesity","non MSI-high","IV","XELOX","chemo","R",,"1","Yes","adenocarcinoma","CPS 10",10
+"1926378","GC","M",65,20.32443826,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","0",0
+"1927915","GC","M",32,24.41827061,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","2","No","adenocarcinoma","1",1
+"1928254","GC","M",75,21.21831719,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo",,,"2","No","adenocarcinoma","CPS 2",2
+"1928263","GC","M",67,24.77209671,"normal","non MSI-high","IV","XELOX","chemo","NR",,"2","No","adenocarcinoma","CPS 5",5
+"1930802","EC","M",61,27.10204082,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1930914","GC","M",54,22.54657648,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","R","1","Yes","adenocarcinoma","CPS=1",1
+"1932704","GC","M",59,23.38868656,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R",,"1","Yes","adenocarcinoma","CPS=30",30
+"1932751","GC","M",75,23.98126115,"normal","non MSI-high","IVA","PD-1 combined","ICI|chemo","R","R","1","Yes","adenocarcinoma","3",3
+"1933402","GC","F",70,26.15562597,"Obesity","MSI-high","IV","PD-1","ICI","R",,"2","No","adenocarcinoma","90",90
+"1935110","EC","M",58,25.01352082,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo",,,"1","Yes","squamous cell carcinoma","未查",
+"1935528","GC","F",64,22.37034332,"normal","MSI-high","IVA","PD-1","ICI",,,"2","No","adenocarcinoma","10",10
+"1936290","GC","M",54,19.59645812,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","2","No","adenocarcinoma","CPS=0",0
+"1937402","GC","F",59,22.66606576,"normal","non MSI-high","IV","PD-1","ICI|chemo","R","NR","2","No","adenocarcinoma","8",8
+"1938128","GC","M",73,24.35306365,"normal","non MSI-high","IV","PD-1 combined","ICI|target","R","NR","1","Yes","adenocarcinoma","CPS=50",50
+"1939723","EC","M",66,24.56747405,"normal","MSI-high","III","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1939768","GC","M",60,21.79930796,"normal","non MSI-high","IV","chemo","chemo","NR",,"1","Yes","adenocarcinoma","5",5
+"1940036","EC","M",63,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","NR","NR","1","Yes","squamous cell carcinoma","未查",
+"1940414","EC","M",70,17.31341037,"lean","non MSI-high","IIB","PD-1 combined","ICI|chemo","R","R","1","Yes","squamous cell carcinoma","未查",
+"1944552","GC","M",72,23.35640138,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","R","R","2","No","adenocarcinoma","0",0
+"1944672","GC","M",82,19.72103697,"normal","non MSI-high","IV","chemo","chemo","R",,"1","Yes","adenocarcinoma","0",0
+"1945014","CRC","F",55,21.36752137,"normal","MSI-high","IV","chemo","target|chemo","R",,"2","No","adenocarcinoma","未查",
+"1945152","EC","M",57,23.91581633,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","R","R","2","No","squamous cell carcinoma","未查",
+"597397","GC","F",32,17.21108681,"lean","non MSI-high","IV","PD-1 combined","ICI|chemo","R","NR","2","No","adenocarcinoma","CPS 10",10
+"1873920","GC","M",50,24.08925272,"normal","non MSI-high","III","PD-1 combined","ICI","NR","NR","1","Yes","adenocarcinoma","CPS=80",80
+"C36_Control","HC",,,,,,,,,,,,,,,
+"C40_Control","HC",,,,,,,,,,,,,,,
+"C43_Control","HC",,,,,,,,,,,,,,,
+"C47_Control","HC",,,,,,,,,,,,,,,
+"C50_Control","HC",,,,,,,,,,,,,,,
+"C51_Control","HC",,,,,,,,,,,,,,,
+"C51_S_Control","HC",,,,,,,,,,,,,,,
+"C53_Control","HC",,,,,,,,,,,,,,,
+"C59_Control","HC",,,,,,,,,,,,,,,
+"C62_Control","HC",,,,,,,,,,,,,,,
+"C68_Control","HC",,,,,,,,,,,,,,,
+"C7_Control","HC",,,,,,,,,,,,,,,
+"C70_Control","HC",,,,,,,,,,,,,,,
+"C71_Control","HC",,,,,,,,,,,,,,,
+"C72_Control","HC",,,,,,,,,,,,,,,
+"C89_Control","HC",,,,,,,,,,,,,,,
+"C93_Control","HC",,,,,,,,,,,,,,,
+"C1_Control","HC",,,,,,,,,,,,,,,
+"C10_Control","HC",,,,,,,,,,,,,,,
+"C104_R_Control","HC",,,,,,,,,,,,,,,
+"C12_Control","HC",,,,,,,,,,,,,,,
+"C126_S_Control","HC",,,,,,,,,,,,,,,
+"C13_Control","HC",,,,,,,,,,,,,,,
+"C130_S_Control","HC",,,,,,,,,,,,,,,
+"C14_Control","HC",,,,,,,,,,,,,,,
+"C145_R_Control","HC",,,,,,,,,,,,,,,
+"C147_R_Control","HC",,,,,,,,,,,,,,,
+"C150_R_Control","HC",,,,,,,,,,,,,,,
+"C15H_Control","HC",,,,,,,,,,,,,,,
+"C164_S_Control","HC",,,,,,,,,,,,,,,
+"C18_Control","HC",,,,,,,,,,,,,,,
+"C19_Control","HC",,,,,,,,,,,,,,,
+"C24_Control","HC",,,,,,,,,,,,,,,
+"C26_Control","HC",,,,,,,,,,,,,,,
+"C27_Control","HC",,,,,,,,,,,,,,,
+"C29_Control","HC",,,,,,,,,,,,,,,
+"C3_Control","HC",,,,,,,,,,,,,,,
+"C31_Control","HC",,,,,,,,,,,,,,,
+"C32_Control","HC",,,,,,,,,,,,,,,
+"C35_Control","HC",,,,,,,,,,,,,,,
+"D179_Untreated","RA",,,,,,,,,,,,,,,
+"D182_Untreated","RA",,,,,,,,,,,,,,,
+"D185_Untreated","RA",,,,,,,,,,,,,,,
+"D188_Untreated","RA",,,,,,,,,,,,,,,
+"D190_Untreated","RA",,,,,,,,,,,,,,,
+"D191_M_Untreated","RA",,,,,,,,,,,,,,,
+"D197_N_Treated",,,,,,,,,,,,,,,,
+"D202_M_Treated",,,,,,,,,,,,,,,,
+"D209_M_Treated",,,,,,,,,,,,,,,,
+"D225_N_Treated",,,,,,,,,,,,,,,,
+"D25_Untreated","RA",,,,,,,,,,,,,,,
+"D41_Untreated","RA",,,,,,,,,,,,,,,
+"D50_M_Treated",,,,,,,,,,,,,,,,
+"D53_Untreated","RA",,,,,,,,,,,,,,,
+"D57_Untreated","RA",,,,,,,,,,,,,,,
+"D60_Untreated","RA",,,,,,,,,,,,,,,
+"D69_Untreated","RA",,,,,,,,,,,,,,,
+"C99_Control","HC",,,,,,,,,,,,,,,
+"D100_Untreated","RA",,,,,,,,,,,,,,,
+"D108_Untreated","RA",,,,,,,,,,,,,,,
+"D114_Untreated","RA",,,,,,,,,,,,,,,
+"D118_Untreated","RA",,,,,,,,,,,,,,,
+"D121_Untreated","RA",,,,,,,,,,,,,,,
+"D122_N_Treated",,,,,,,,,,,,,,,,
+"D124_Untreated","RA",,,,,,,,,,,,,,,
+"D126_Untreated","RA",,,,,,,,,,,,,,,
+"D130_Untreated","RA",,,,,,,,,,,,,,,
+"D132_Untreated","RA",,,,,,,,,,,,,,,
+"D138_M_Treated",,,,,,,,,,,,,,,,
+"D145_Untreated","RA",,,,,,,,,,,,,,,
+"D147_Untreated","RA",,,,,,,,,,,,,,,
+"D15_Untreated","RA",,,,,,,,,,,,,,,
+"D150_Untreated","RA",,,,,,,,,,,,,,,
+"D157_N_Treated",,,,,,,,,,,,,,,,
+"D158_M_Treated",,,,,,,,,,,,,,,,
+"D158_Untreated","RA",,,,,,,,,,,,,,,
+"D166_Untreated","RA",,,,,,,,,,,,,,,
+"D172_Untreated","RA",,,,,,,,,,,,,,,
+"D177_Untreated","RA",,,,,,,,,,,,,,,
+"D178_Untreated","RA",,,,,,,,,,,,,,,
+"D79_G_Treated",,,,,,,,,,,,,,,,
+"D8_N_Treated",,,,,,,,,,,,,,,,
+"D82_Untreated","RA",,,,,,,,,,,,,,,
+"D86_Untreated","RA",,,,,,,,,,,,,,,
+"D90_Untreated","RA",,,,,,,,,,,,,,,
+"D93_M_Treated",,,,,,,,,,,,,,,,

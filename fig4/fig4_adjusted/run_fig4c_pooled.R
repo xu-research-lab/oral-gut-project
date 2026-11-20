@@ -22,7 +22,7 @@
 # the more parsimonious collapsed (diagnosis-level) estimates are also
 # reported. The subgroup-only models are shown as sensitivity analyses.
 #
-# Run from: D:/oral-gut/code_data_all/fig4
+# Run from: fig4/
 # ============================================================
 suppressMessages({library(lme4); library(lmerTest); library(ggplot2)})
 .progfile <- "C:/Users/huang/AppData/Local/Temp/opencode/fig4c_progress.log"
@@ -30,7 +30,7 @@ prog <- function(...) { msg <- paste(..., collapse=" "); line <- paste(format(Sy
   cat(line, "\n"); cat(line, "\n", file=.progfile, append=TRUE); flush.console() }
 prog("START")
 
-e <- new.env(); load("D:/oral-gut/code_data_all/fig3/Fig3cdef.RData", envir = e)
+e <- new.env(); load("../fig3/Fig3cdef.RData", envir = e)
 features <- get("features", e)
 outdir <- "fig4_adjusted"; dir.create(outdir, showWarnings = FALSE)
 prog("data loaded")
@@ -44,7 +44,7 @@ d$Tx      <- factor(ifelse(grepl("combined|chemo|XELOX", d$Treatment), "chemo", 
 d$BMI_cat <- factor(d$BMI_Status, levels = c("normal", "lean", "Obesity"))
 
 # smoking from the matched-cohort clinical metadata (host factor, available for all 96)
-pl <- read.csv("D:/oral-gut/addtional analysis/results/clinical_features/patient_level_metadata.csv",
+pl <- read.csv("../data/clinical_features/patient_level_metadata.csv",
                check.names = FALSE, stringsAsFactors = FALSE)
 d$smoking <- factor(pl$smoking_label[match(d$subject_id, as.character(pl$subject_id))], levels = c("No", "Yes"))
 

@@ -5,7 +5,7 @@
 #   Same cohort (n=270) and covariates as run_maaslin2_diagnosis_withTx.R.
 #   Positive coefficient = higher in X than in the rest (X-enriched).
 #   Original pairwise (withTx) version and ANCOM-BC2 version are kept unchanged.
-# Run from: D:/oral-gut/code_data_all/fig1
+# Run from: fig1/
 # ============================================================
 suppressMessages({library(Maaslin2)})
 
@@ -51,7 +51,7 @@ otu_table2 <- data.frame(t(otu_table1))
 otu_table2 <- otu_table2[rownames(sam2), ]
 
 covs <- c("Treatment_class", "Stage_IV", "MMR_MSI", "Gender", "Age", "BMI_category", "smoking")
-outdir <- "maaslin2_onevsrest"
+outdir <- "maaslin2_onevsrest_Diagnosis"
 dir.create(outdir, showWarnings = FALSE)
 
 fit_one <- function(X) {

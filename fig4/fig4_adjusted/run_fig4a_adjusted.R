@@ -7,7 +7,7 @@
 #     - Response_6 analysis (WITHIN each cancer, separated):
 #         adjust for the 3 factors  MSI_Status + Tumor_Staging + Treatment_class
 #   coding collapsed as in fig4e: MMR d/p, Stage IV vs I-III, Tx chemo/ICI
-# Run from: D:/oral-gut/code_data_all/fig4
+# Run from: fig4/
 # ============================================================
 suppressMessages({library(vegan); library(dplyr); library(ggplot2)})
 set.seed(123)
@@ -28,7 +28,7 @@ meta_data_full$treatment <- ifelse(grepl("PMA", rn), "PMA", "non-PMA")
 sid <- sub("^Saliva_","",rn); sid <- sub("^PMA_","",sid); sid <- sub("_.*$","",sid)
 meta_data_full$subject_id <- sid
 
-ff <- read.csv("D:/oral-gut/addtional analysis/results/clinical_features/features_filled_with_metadata.csv",
+ff <- read.csv("../data/clinical_features/features_filled_with_metadata.csv",
                check.names=FALSE, stringsAsFactors=FALSE)
 ff$key <- paste(ff$subject_id, ff$treatment)
 ff <- ff[!duplicated(ff$key), ]

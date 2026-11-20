@@ -3,7 +3,7 @@
 suppressMessages({library(ggplot2)})
 
 outdir <- "fig4_adjusted"
-e <- new.env(); load("D:/oral-gut/code_data_all/fig3/Fig3cdef.RData", envir = e)
+e <- new.env(); load("../fig3/Fig3cdef.RData", envir = e)
 features <- get("features", e)
 
 d <- features
@@ -13,7 +13,7 @@ d$MMR_MSI <- factor(ifelse(d$MSI_Status == "MSI-high", "dMMR",
 d$Stage   <- factor(ifelse(d$Tumor_Staging %in% c("IV", "IVA"), "IV", "I-III"), levels = c("I-III", "IV"))
 d$Tx      <- factor(ifelse(grepl("combined|chemo|XELOX", d$Treatment), "chemo", "ICI"), levels = c("ICI", "chemo"))
 d$BMI_cat <- factor(d$BMI_Status, levels = c("normal", "lean", "Obesity"))
-pl <- read.csv("D:/oral-gut/addtional analysis/results/clinical_features/patient_level_metadata.csv",
+pl <- read.csv("../data/clinical_features/patient_level_metadata.csv",
                check.names = FALSE, stringsAsFactors = FALSE)
 d$smoking <- factor(pl$smoking_label[match(d$subject_id, as.character(pl$subject_id))], levels = c("No", "Yes"))
 

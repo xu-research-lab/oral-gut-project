@@ -17,7 +17,7 @@ suppressPackageStartupMessages({
 ###############################################################################
 
 # Load StrainPhlAn distance data and panphlan data
-load("../data/data processing/distance_strainphlan_panphlan.RData")
+load("distance_strainphlan_panphlan.RData")
 
 ###############################################################################
 # Step 2: Merge results from both methods and select minimal distance as final genetic distance
@@ -140,6 +140,6 @@ trans_merged <- trans_merged %>%
   )
 cat("Determining transmission events...\n")
 
-save(dis_merged,trans_merged,file="../results/processed_merge_dis.RData")
+save(dis_merged,trans_merged,file="processed_merge_dis.RData")
 
 

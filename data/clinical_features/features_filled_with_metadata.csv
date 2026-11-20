@@ -1,0 +1,360 @@
+"id","subject_id","site","treatment","is_PMA","visit","Diagnosis","Response_3","Response_6","Gender","Age","BMI","BMI_Status","MSI_Status","Tumor_Staging","Treatment","Treatment_class","smoking","smoking_label","histology","PD.L1","PD.L1_num"
+"Feces_PMA_1156750","1156750","Feces","PMA",TRUE,"first","EC","R","NR","M",66,17.01017307,"lean","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","CPS=12",12
+"Feces_1156750","1156750","Feces","non-PMA",FALSE,"first","EC","R","NR","M",66,17.01017307,"lean","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","CPS=12",12
+"Feces_PMA_1290762","1290762","Feces","PMA",TRUE,"first","GC","R","R","M",49,20.76124567,"normal","non MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","pos 5-10%",5
+"Feces_1290762","1290762","Feces","non-PMA",FALSE,"first","GC","R","R","M",49,20.76124567,"normal","non MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","pos 5-10%",5
+"Feces_1345909","1345909","Feces","non-PMA",FALSE,"first","GC","R","R","M",63,22.4996371,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","neg",0
+"Feces_PMA_1345909","1345909","Feces","PMA",TRUE,"first","GC","R","R","M",63,22.4996371,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","neg",0
+"Feces_1363817","1363817","Feces","non-PMA",FALSE,"first","GC","R","R","M",59,22.20633069,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","neg",0
+"Feces_PMA_1363817","1363817","Feces","PMA",TRUE,"first","GC","R","R","M",59,22.20633069,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","neg",0
+"Feces_PMA_1369751","1369751","Feces","PMA",TRUE,"first","GC","R","R","M",48,19.97440779,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","PD-L1(+＜10%）",10
+"Feces_1369751","1369751","Feces","non-PMA",FALSE,"first","GC","R","R","M",48,19.97440779,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","PD-L1(+＜10%）",10
+"Feces_PMA_1429638","1429638","Feces","PMA",TRUE,"first","EC","R","R","M",55,22.81638724,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1429638","1429638","Feces","non-PMA",FALSE,"first","EC","R","R","M",55,22.81638724,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1521973","1521973","Feces","PMA",TRUE,"first","CRC","NR","NR","F",53,24.74745426,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1521973","1521973","Feces","non-PMA",FALSE,"first","CRC","NR","NR","F",53,24.74745426,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1551463","1551463","Feces","non-PMA",FALSE,"first","CRC","R","NR","F",35,20.703125,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1551463","1551463","Feces","PMA",TRUE,"first","CRC","R","NR","F",35,20.703125,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1551516","1551516","Feces","non-PMA",FALSE,"first","GC","R","R","M",73,24.97704316,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS ＜1",0
+"Feces_PMA_1551516","1551516","Feces","PMA",TRUE,"first","GC","R","R","M",73,24.97704316,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS ＜1",0
+"Feces_PMA_1557169","1557169","Feces","PMA",TRUE,"first","CRC","R","R","M",56,24.67702134,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1557169","1557169","Feces","non-PMA",FALSE,"first","CRC","R","R","M",56,24.67702134,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1583990","1583990","Feces","PMA",TRUE,"first","EC","NR","NR","M",70,20.93663912,"normal","non MSI-high","IV","PD-L1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_1583990","1583990","Feces","non-PMA",FALSE,"first","EC","NR","NR","M",70,20.93663912,"normal","non MSI-high","IV","PD-L1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_1588509","1588509","Feces","non-PMA",FALSE,"first","GC","R","R","F",44,16.18427491,"lean","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","未查",
+"Feces_PMA_1588509","1588509","Feces","PMA",TRUE,"first","GC","R","R","F",44,16.18427491,"lean","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","未查",
+"Feces_1622382_A","1622382","Feces","non-PMA",FALSE,"A","GC","R","R","F",38,22.32142857,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_PMA_1622382_A","1622382","Feces","PMA",TRUE,"A","GC","R","R","F",38,22.32142857,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_PMA_1622382_B","1622382","Feces","PMA",TRUE,"B","GC","R","R","F",38,22.32142857,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_1622382_B","1622382","Feces","non-PMA",FALSE,"B","GC","R","R","F",38,22.32142857,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_PMA_1676542","1676542","Feces","PMA",TRUE,"first","CRC","R","R","M",37,22.21925223,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1676542","1676542","Feces","non-PMA",FALSE,"first","CRC","R","R","M",37,22.21925223,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1688793","1688793","Feces","non-PMA",FALSE,"first","EC","R","NR","M",59,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1688793","1688793","Feces","PMA",TRUE,"first","EC","R","NR","M",59,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","未查",
+"Feces_1693066","1693066","Feces","non-PMA",FALSE,"first","GC",,,"M",54,19.18319051,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 20",20
+"Feces_PMA_1693066","1693066","Feces","PMA",TRUE,"first","GC",,,"M",54,19.18319051,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 20",20
+"Feces_PMA_1694835","1694835","Feces","PMA",TRUE,"first","CRC","NR","NR","F",26,23.71184463,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1694835","1694835","Feces","non-PMA",FALSE,"first","CRC","NR","NR","F",26,23.71184463,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1700485","1700485","Feces","PMA",TRUE,"first","CRC","R","R","M",61,24.22145329,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_1700485","1700485","Feces","non-PMA",FALSE,"first","CRC","R","R","M",61,24.22145329,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1703701","1703701","Feces","PMA",TRUE,"first","GC","R","NR","M",62,20.01549587,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 20",20
+"Feces_1703701","1703701","Feces","non-PMA",FALSE,"first","GC","R","NR","M",62,20.01549587,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 20",20
+"Feces_PMA_1706829_A","1706829","Feces","PMA",TRUE,"A","GC","R","R","M",61,20.12863154,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","adenocarcinoma","未查",
+"Feces_1706829_A","1706829","Feces","non-PMA",FALSE,"A","GC","R","R","M",61,20.12863154,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","adenocarcinoma","未查",
+"Feces_1706829_B","1706829","Feces","non-PMA",FALSE,"B","GC","R","R","M",61,20.12863154,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1706829_B","1706829","Feces","PMA",TRUE,"B","GC","R","R","M",61,20.12863154,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1745624","1745624","Feces","PMA",TRUE,"first","CRC","R","R","F",66,21.09375,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","未查",
+"Feces_1745624","1745624","Feces","non-PMA",FALSE,"first","CRC","R","R","F",66,21.09375,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","未查",
+"Feces_PMA_1751896","1751896","Feces","PMA",TRUE,"first","EC","NR","NR","M",74,19.00390835,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_1751896","1751896","Feces","non-PMA",FALSE,"first","EC","NR","NR","M",74,19.00390835,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_PMA_1753969","1753969","Feces","PMA",TRUE,"first","CRC","NR","NR","M",61,22.27530992,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1753969","1753969","Feces","non-PMA",FALSE,"first","CRC","NR","NR","M",61,22.27530992,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1763530","1763530","Feces","non-PMA",FALSE,"first","GC","R","R","M",62,19.44444444,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_PMA_1763530","1763530","Feces","PMA",TRUE,"first","GC","R","R","M",62,19.44444444,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_PMA_1768795","1768795","Feces","PMA",TRUE,"first","GC","R","R","M",63,24.8015873,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1768795","1768795","Feces","non-PMA",FALSE,"first","GC","R","R","M",63,24.8015873,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1770309","1770309","Feces","PMA",TRUE,"first","CRC",,,"M",65,19.1953028,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1770309","1770309","Feces","non-PMA",FALSE,"first","CRC",,,"M",65,19.1953028,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1786437_B","1786437","Feces","non-PMA",FALSE,"B","CRC","R","NR","F",54,27.24432251,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1786437_A","1786437","Feces","non-PMA",FALSE,"A","CRC","R","NR","F",54,27.24432251,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1786437_A","1786437","Feces","PMA",TRUE,"A","CRC","R","NR","F",54,27.24432251,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1786437_B","1786437","Feces","PMA",TRUE,"B","CRC","R","NR","F",54,27.24432251,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1786951","1786951","Feces","PMA",TRUE,"first","GC","R","R","M",64,22.5981405,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS=60 (CPS>5)",60
+"Feces_1786951","1786951","Feces","non-PMA",FALSE,"first","GC","R","R","M",64,22.5981405,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS=60 (CPS>5)",60
+"Feces_PMA_1787829","1787829","Feces","PMA",TRUE,"first","GC","NR","NR","M",61,23.83673469,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1787829","1787829","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",61,23.83673469,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1790015_A","1790015","Feces","PMA",TRUE,"A","CRC","R","R","M",56,26.25958475,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1790015_B","1790015","Feces","PMA",TRUE,"B","CRC","R","R","M",56,26.25958475,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1790015_A","1790015","Feces","non-PMA",FALSE,"A","CRC","R","R","M",56,26.25958475,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1790015_B","1790015","Feces","non-PMA",FALSE,"B","CRC","R","R","M",56,26.25958475,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1790780","1790780","Feces","non-PMA",FALSE,"first","GC","R","R","F",63,26.37023814,"Obesity","non MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","CPS=90",90
+"Feces_PMA_1790780","1790780","Feces","PMA",TRUE,"first","GC","R","R","F",63,26.37023814,"Obesity","non MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","CPS=90",90
+"Feces_1793619","1793619","Feces","non-PMA",FALSE,"first","CRC","R","R","M",48,22.38631428,"normal","MSI-high","IV","PD-1→PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1793619","1793619","Feces","PMA",TRUE,"first","CRC","R","R","M",48,22.38631428,"normal","MSI-high","IV","PD-1→PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1799065","1799065","Feces","PMA",TRUE,"first","GC","R","R","M",85,25.63691716,"Obesity","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","CPS 70",70
+"Feces_1799065","1799065","Feces","non-PMA",FALSE,"first","GC","R","R","M",85,25.63691716,"Obesity","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","CPS 70",70
+"Feces_PMA_1799696","1799696","Feces","PMA",TRUE,"first","GC","NR","NR","M",54,20.61744774,"normal","non MSI-high","IV","PD-L1","ICI|target","1","Yes","adenocarcinoma","CPS=5",5
+"Feces_1799696","1799696","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",54,20.61744774,"normal","non MSI-high","IV","PD-L1","ICI|target","1","Yes","adenocarcinoma","CPS=5",5
+"Feces_1802801","1802801","Feces","non-PMA",FALSE,"first","GC","R","R","F",50,24.65483235,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1807262","1807262","Feces","non-PMA",FALSE,"first","EC","R","R","F",60,19.04432133,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","cps=60",60
+"Feces_PMA_1807262","1807262","Feces","PMA",TRUE,"first","EC","R","R","F",60,19.04432133,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","cps=60",60
+"Feces_1810105_B","1810105","Feces","non-PMA",FALSE,"B","GC","NR","NR","M",66,15.85414189,"lean","MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1810105_B","1810105","Feces","PMA",TRUE,"B","GC","NR","NR","M",66,15.85414189,"lean","MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_1810105_A","1810105","Feces","non-PMA",FALSE,"A","GC","NR","NR","M",66,15.85414189,"lean","MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1810105_A","1810105","Feces","PMA",TRUE,"A","GC","NR","NR","M",66,15.85414189,"lean","MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1813364","1813364","Feces","PMA",TRUE,"first","GC","R","NR","M",57,23.38435374,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","cps 小于1",0
+"Feces_1813364","1813364","Feces","non-PMA",FALSE,"first","GC","R","NR","M",57,23.38435374,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","cps 小于1",0
+"Feces_1821208_A","1821208","Feces","non-PMA",FALSE,"A","GC","R","R","M",59,28.85034112,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=1",1
+"Feces_PMA_1821208_A","1821208","Feces","PMA",TRUE,"A","GC","R","R","M",59,28.85034112,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=1",1
+"Feces_PMA_1821208_B","1821208","Feces","PMA",TRUE,"B","GC","R","R","M",59,28.85034112,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=1",1
+"Feces_1821208_B","1821208","Feces","non-PMA",FALSE,"B","GC","R","R","M",59,28.85034112,"Obesity","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=1",1
+"Feces_PMA_1823249_A","1823249","Feces","PMA",TRUE,"A","GC","R","R","M",67,24.72518293,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=40",40
+"Feces_PMA_1823249_B","1823249","Feces","PMA",TRUE,"B","GC","R","R","M",67,24.72518293,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=40",40
+"Feces_1823249_A","1823249","Feces","non-PMA",FALSE,"A","GC","R","R","M",67,24.72518293,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=40",40
+"Feces_1823249_B","1823249","Feces","non-PMA",FALSE,"B","GC","R","R","M",67,24.72518293,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","cps=40",40
+"Feces_PMA_1823787","1823787","Feces","PMA",TRUE,"first","GC",,,"F",63,19.22768787,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=5",5
+"Feces_1823787","1823787","Feces","non-PMA",FALSE,"first","GC",,,"F",63,19.22768787,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=5",5
+"Feces_1828385","1828385","Feces","non-PMA",FALSE,"first","GC","R","R","F",65,21.45726808,"normal","MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 6",6
+"Feces_PMA_1828385","1828385","Feces","PMA",TRUE,"first","GC","R","R","F",65,21.45726808,"normal","MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 6",6
+"Feces_PMA_1829217","1829217","Feces","PMA",TRUE,"first","GC","R",,"M",77,22.76146754,"normal","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 40",40
+"Feces_1829217","1829217","Feces","non-PMA",FALSE,"first","GC","R",,"M",77,22.76146754,"normal","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 40",40
+"Feces_PMA_1832753","1832753","Feces","PMA",TRUE,"first","GC","R","R","F",70,21.8299522,"normal","MSI-high","IV","PD-L1 combined","ICI","2","No","adenocarcinoma","cps=1",1
+"Feces_1832753","1832753","Feces","non-PMA",FALSE,"first","GC","R","R","F",70,21.8299522,"normal","MSI-high","IV","PD-L1 combined","ICI","2","No","adenocarcinoma","cps=1",1
+"Feces_PMA_1834836","1834836","Feces","PMA",TRUE,"first","GC","R","R","M",58,21.5450908,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","CPS<1",0
+"Feces_1834836","1834836","Feces","non-PMA",FALSE,"first","GC","R","R","M",58,21.5450908,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","CPS<1",0
+"Feces_1836373","1836373","Feces","non-PMA",FALSE,"first","GC","R","NR","M",55,22.60026298,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS 60",60
+"Feces_PMA_1836373","1836373","Feces","PMA",TRUE,"first","GC","R","NR","M",55,22.60026298,"normal","non MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS 60",60
+"Feces_1837089_B","1837089","Feces","non-PMA",FALSE,"B","GC","R","R","M",22,17.27143595,"lean","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 15",15
+"Feces_PMA_1837089_B","1837089","Feces","PMA",TRUE,"B","GC","R","R","M",22,17.27143595,"lean","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 15",15
+"Feces_1837089_A","1837089","Feces","non-PMA",FALSE,"A","GC","R","R","M",22,17.27143595,"lean","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 15",15
+"Feces_PMA_1837089_A","1837089","Feces","PMA",TRUE,"A","GC","R","R","M",22,17.27143595,"lean","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 15",15
+"Feces_1843492_B","1843492","Feces","non-PMA",FALSE,"B","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1843492_A","1843492","Feces","non-PMA",FALSE,"A","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1843492_A","1843492","Feces","PMA",TRUE,"A","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1843492_B","1843492","Feces","PMA",TRUE,"B","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1843492_C","1843492","Feces","PMA",TRUE,"C","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1843492_C","1843492","Feces","non-PMA",FALSE,"C","CRC","R","NR","F",56,20.19557823,"normal","non MSI-high","IV","PD-L1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1850511","1850511","Feces","non-PMA",FALSE,"first","GC","R","R","M",65,21.0498179,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS<1",0
+"Feces_PMA_1850511","1850511","Feces","PMA",TRUE,"first","GC","R","R","M",65,21.0498179,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS<1",0
+"Feces_1854510","1854510","Feces","non-PMA",FALSE,"first","EC","R","R","M",46,22.98539751,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","CPS 2",2
+"Feces_PMA_1854510","1854510","Feces","PMA",TRUE,"first","EC","R","R","M",46,22.98539751,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","squamous cell carcinoma","CPS 2",2
+"Feces_1866127","1866127","Feces","non-PMA",FALSE,"first","EC","NR","NR","M",44,22.05219018,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1866127","1866127","Feces","PMA",TRUE,"first","EC","NR","NR","M",44,22.05219018,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1870580","1870580","Feces","PMA",TRUE,"first","EC","R","NR","M",55,21.79930796,"normal",,"IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=8",8
+"Feces_1870580","1870580","Feces","non-PMA",FALSE,"first","EC","R","NR","M",55,21.79930796,"normal",,"IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=8",8
+"Feces_1879757","1879757","Feces","non-PMA",FALSE,"first","GC","R","R","M",45,28.73469388,"Obesity","non MSI-high","III","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS 95",95
+"Feces_PMA_1879757","1879757","Feces","PMA",TRUE,"first","GC","R","R","M",45,28.73469388,"Obesity","non MSI-high","III","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS 95",95
+"Feces_PMA_1881964","1881964","Feces","PMA",TRUE,"first","GC","R","R","F",76,26.3778981,"Obesity","MSI-high","III","PD-1","ICI","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_1881964","1881964","Feces","non-PMA",FALSE,"first","GC","R","R","F",76,26.3778981,"Obesity","MSI-high","III","PD-1","ICI","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_PMA_1884527","1884527","Feces","PMA",TRUE,"first","GC","R","R","F",64,14.453125,"lean","MSI-high","III","PD-1","ICI","2","No","adenocarcinoma","CPS=5",5
+"Feces_1884527","1884527","Feces","non-PMA",FALSE,"first","GC","R","R","F",64,14.453125,"lean","MSI-high","III","PD-1","ICI","2","No","adenocarcinoma","CPS=5",5
+"Feces_1886988_B","1886988","Feces","non-PMA",FALSE,"B","EC","R","R","M",64,23.42355741,"normal","non MSI-high","IIIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=50",50
+"Feces_1886988_A","1886988","Feces","non-PMA",FALSE,"A","EC","R","R","M",64,23.42355741,"normal","non MSI-high","IIIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=50",50
+"Feces_PMA_1886988_A","1886988","Feces","PMA",TRUE,"A","EC","R","R","M",64,23.42355741,"normal","non MSI-high","IIIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=50",50
+"Feces_PMA_1886988_B","1886988","Feces","PMA",TRUE,"B","EC","R","R","M",64,23.42355741,"normal","non MSI-high","IIIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=50",50
+"Feces_PMA_1888352","1888352","Feces","PMA",TRUE,"first","GC","R",,"M",58,19.84126984,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","CPS 11",11
+"Feces_1888352","1888352","Feces","non-PMA",FALSE,"first","GC","R",,"M",58,19.84126984,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","CPS 11",11
+"Feces_PMA_1890033","1890033","Feces","PMA",TRUE,"first","EC","R","R","M",58,23.50780533,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1890033","1890033","Feces","non-PMA",FALSE,"first","EC","R","R","M",58,23.50780533,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1892471_B","1892471","Feces","non-PMA",FALSE,"B","CRC","R","R","M",37,26.17519452,"Obesity","MSI-high","IIC","PD-1","ICI","1","Yes","adenocarcinoma","neg",0
+"Feces_1892471_A","1892471","Feces","non-PMA",FALSE,"A","CRC","R","R","M",37,26.17519452,"Obesity","MSI-high","IIC","PD-1","ICI","1","Yes","adenocarcinoma","neg",0
+"Feces_PMA_1892471_A","1892471","Feces","PMA",TRUE,"A","CRC","R","R","M",37,26.17519452,"Obesity","MSI-high","IIC","PD-1","ICI","1","Yes","adenocarcinoma","neg",0
+"Feces_PMA_1892471_B","1892471","Feces","PMA",TRUE,"B","CRC","R","R","M",37,26.17519452,"Obesity","MSI-high","IIC","PD-1","ICI","1","Yes","adenocarcinoma","neg",0
+"Feces_PMA_1894439","1894439","Feces","PMA",TRUE,"first","GC","NR","NR","M",41,27.1177686,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS<1",0
+"Feces_1894439","1894439","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",41,27.1177686,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS<1",0
+"Feces_PMA_1895668","1895668","Feces","PMA",TRUE,"first","GC","R",,"M",76,18.42653421,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_1895668","1895668","Feces","non-PMA",FALSE,"first","GC","R",,"M",76,18.42653421,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_PMA_1897464","1897464","Feces","PMA",TRUE,"first","CRC","R","R","M",51,28.72678773,"Obesity","MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_1897464","1897464","Feces","non-PMA",FALSE,"first","CRC","R","R","M",51,28.72678773,"Obesity","MSI-high","IV","PD-1 combined","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_1898160","1898160","Feces","non-PMA",FALSE,"first","EC","R","R","M",76,25.40554782,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS 5",5
+"Feces_PMA_1898160","1898160","Feces","PMA",TRUE,"first","EC","R","R","M",76,25.40554782,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS 5",5
+"Feces_PMA_1899211_B","1899211","Feces","PMA",TRUE,"B","CRC","NR","NR","M",58,21.30681818,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1899211_A","1899211","Feces","non-PMA",FALSE,"A","CRC","NR","NR","M",58,21.30681818,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1899211_A","1899211","Feces","PMA",TRUE,"A","CRC","NR","NR","M",58,21.30681818,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_1899211_B","1899211","Feces","non-PMA",FALSE,"B","CRC","NR","NR","M",58,21.30681818,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1900608","1900608","Feces","PMA",TRUE,"first","GC","NR","NR","M",66,21.30394858,"normal","non MSI-high","IV","PD-1 combined","ICI","2","No","adenocarcinoma","CPS=2",2
+"Feces_1900608","1900608","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",66,21.30394858,"normal","non MSI-high","IV","PD-1 combined","ICI","2","No","adenocarcinoma","CPS=2",2
+"Feces_1901300","1901300","Feces","non-PMA",FALSE,"first","EC","R","R","M",57,24.16831246,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1901300","1901300","Feces","PMA",TRUE,"first","EC","R","R","M",57,24.16831246,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1902316","1902316","Feces","non-PMA",FALSE,"first","GC",,,"F",85,13.69612856,"lean","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","CPS=10",10
+"Feces_PMA_1902316","1902316","Feces","PMA",TRUE,"first","GC",,,"F",85,13.69612856,"lean","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","CPS=10",10
+"Feces_PMA_1902669","1902669","Feces","PMA",TRUE,"first","EC","R","R","F",64,16.271809,"lean","non MSI-high","IIIB","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_1902669","1902669","Feces","non-PMA",FALSE,"first","EC","R","R","F",64,16.271809,"lean","non MSI-high","IIIB","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_PMA_1902762","1902762","Feces","PMA",TRUE,"first","GC","R","R","M",61,23.33768443,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 8",8
+"Feces_1902762","1902762","Feces","non-PMA",FALSE,"first","GC","R","R","M",61,23.33768443,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 8",8
+"Feces_1903009","1903009","Feces","non-PMA",FALSE,"first","GC","R","R","F",70,26.89767019,"Obesity","non MSI-high","IV","PD-1 combined","ICI","2","No","adenocarcinoma","CPS 50",50
+"Feces_PMA_1903009","1903009","Feces","PMA",TRUE,"first","GC","R","R","F",70,26.89767019,"Obesity","non MSI-high","IV","PD-1 combined","ICI","2","No","adenocarcinoma","CPS 50",50
+"Feces_1903857","1903857","Feces","non-PMA",FALSE,"first","CRC","R","NR","F",42,22.92097107,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_PMA_1903857","1903857","Feces","PMA",TRUE,"first","CRC","R","NR","F",42,22.92097107,"normal","non MSI-high","IV","PD-1 combined","ICI|target","2","No","adenocarcinoma","未查",
+"Feces_1904234","1904234","Feces","non-PMA",FALSE,"first","EC","NR","NR","M",70,24.31412397,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","CPS=2",2
+"Feces_PMA_1904234","1904234","Feces","PMA",TRUE,"first","EC","NR","NR","M",70,24.31412397,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","CPS=2",2
+"Feces_PMA_1905350","1905350","Feces","PMA",TRUE,"first","EC","R","R","M",71,24.22145329,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1905350","1905350","Feces","non-PMA",FALSE,"first","EC","R","R","M",71,24.22145329,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1905512","1905512","Feces","PMA",TRUE,"first","EC","R","R","M",57,28.30599506,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1905512","1905512","Feces","non-PMA",FALSE,"first","EC","R","R","M",57,28.30599506,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1906007","1906007","Feces","PMA",TRUE,"first","GC","R","R","F",63,23.55555556,"normal","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","未查",
+"Feces_1906007","1906007","Feces","non-PMA",FALSE,"first","GC","R","R","F",63,23.55555556,"normal","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","未查",
+"Feces_1906432","1906432","Feces","non-PMA",FALSE,"first","EC","R","R","M",53,22.81131655,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1906432","1906432","Feces","PMA",TRUE,"first","EC","R","R","M",53,22.81131655,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1907311","1907311","Feces","non-PMA",FALSE,"first","GC","R","R","M",52,23.183391,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1907311","1907311","Feces","PMA",TRUE,"first","GC","R","R","M",52,23.183391,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1907987","1907987","Feces","PMA",TRUE,"first","GC","R","R","M",69,23.12467037,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 80",80
+"Feces_1907987","1907987","Feces","non-PMA",FALSE,"first","GC","R","R","M",69,23.12467037,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 80",80
+"Feces_PMA_1908773","1908773","Feces","PMA",TRUE,"first","GC",,,"M",78,18.67093431,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS=10",10
+"Feces_1908773","1908773","Feces","non-PMA",FALSE,"first","GC",,,"M",78,18.67093431,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS=10",10
+"Feces_1909554_A","1909554","Feces","non-PMA",FALSE,"A","EC","R","R","M",67,22.40817899,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=100",100
+"Feces_1909554_B","1909554","Feces","non-PMA",FALSE,"B","EC","R","R","M",67,22.40817899,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=100",100
+"Feces_PMA_1909554_A","1909554","Feces","PMA",TRUE,"A","EC","R","R","M",67,22.40817899,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=100",100
+"Feces_PMA_1909554_B","1909554","Feces","PMA",TRUE,"B","EC","R","R","M",67,22.40817899,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS=100",100
+"Feces_PMA_1910344","1910344","Feces","PMA",TRUE,"first","GC","R","NR","F",25,21.78649237,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","未查",
+"Feces_1910344","1910344","Feces","non-PMA",FALSE,"first","GC","R","NR","F",25,21.78649237,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","未查",
+"Feces_PMA_1915379","1915379","Feces","PMA",TRUE,"first","CRC","R",,"M",42,25.47792483,"Obesity","MSI-high","IIA","chemo","chemo","1","Yes","adenocarcinoma","未查",
+"Feces_1915379","1915379","Feces","non-PMA",FALSE,"first","CRC","R",,"M",42,25.47792483,"Obesity","MSI-high","IIA","chemo","chemo","1","Yes","adenocarcinoma","未查",
+"Feces_1915542","1915542","Feces","non-PMA",FALSE,"first","GC","R","R","M",56,26.44897959,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 20",20
+"Feces_PMA_1915542","1915542","Feces","PMA",TRUE,"first","GC","R","R","M",56,26.44897959,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS 20",20
+"Feces_PMA_1916412","1916412","Feces","PMA",TRUE,"first","GC","R","NR","F",73,19.81784449,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS＜1",0
+"Feces_1916412","1916412","Feces","non-PMA",FALSE,"first","GC","R","NR","F",73,19.81784449,"normal","non MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS＜1",0
+"Feces_PMA_1916590","1916590","Feces","PMA",TRUE,"first","GC","R","NR","F",44,22.1718317,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS<1",0
+"Feces_1916590","1916590","Feces","non-PMA",FALSE,"first","GC","R","NR","F",44,22.1718317,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS<1",0
+"Feces_PMA_1916725_B","1916725","Feces","PMA",TRUE,"B","GC","R",,"F",64,20.82465639,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_PMA_1916725_A","1916725","Feces","PMA",TRUE,"A","GC","R",,"F",64,20.82465639,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_1916725_B","1916725","Feces","non-PMA",FALSE,"B","GC","R",,"F",64,20.82465639,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_1916725_A","1916725","Feces","non-PMA",FALSE,"A","GC","R",,"F",64,20.82465639,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_PMA_1916907","1916907","Feces","PMA",TRUE,"first","CRC","R",,"F",39,20.17325264,"normal","MSI-high","II","chemo","chemo","2","No","adenocarcinoma","未查",
+"Feces_1916907","1916907","Feces","non-PMA",FALSE,"first","CRC","R",,"F",39,20.17325264,"normal","MSI-high","II","chemo","chemo","2","No","adenocarcinoma","未查",
+"Feces_1918153_A","1918153","Feces","non-PMA",FALSE,"A","GC","R","R","M",72,21.29529475,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_1918153_B","1918153","Feces","non-PMA",FALSE,"B","GC","R","R","M",72,21.29529475,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1918153_B","1918153","Feces","PMA",TRUE,"B","GC","R","R","M",72,21.29529475,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_PMA_1918153_A","1918153","Feces","PMA",TRUE,"A","GC","R","R","M",72,21.29529475,"normal","MSI-high","IV","PD-1","ICI","1","Yes","adenocarcinoma","未查",
+"Feces_1918977_B","1918977","Feces","non-PMA",FALSE,"B","CRC","R","R","F",57,24.69040546,"normal","MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_PMA_1918977_B","1918977","Feces","PMA",TRUE,"B","CRC","R","R","F",57,24.69040546,"normal","MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_1918977_A","1918977","Feces","non-PMA",FALSE,"A","CRC","R","R","F",57,24.69040546,"normal","MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_PMA_1918977_A","1918977","Feces","PMA",TRUE,"A","CRC","R","R","F",57,24.69040546,"normal","MSI-high","IV","PD-1 combined","ICI|target|chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_1919134","1919134","Feces","non-PMA",FALSE,"first","EC","R","R","M",67,19.10009183,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS 1",1
+"Feces_PMA_1919134","1919134","Feces","PMA",TRUE,"first","EC","R","R","M",67,19.10009183,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","CPS 1",1
+"Feces_PMA_1920020","1920020","Feces","PMA",TRUE,"first","GC","R",,"M",59,16.82964853,"lean","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_1920020","1920020","Feces","non-PMA",FALSE,"first","GC","R",,"M",59,16.82964853,"lean","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","CPS 5",5
+"Feces_PMA_1920286","1920286","Feces","PMA",TRUE,"first","GC","R",,"M",57,19.46740129,"normal","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 0",0
+"Feces_1920286","1920286","Feces","non-PMA",FALSE,"first","GC","R",,"M",57,19.46740129,"normal","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 0",0
+"Feces_1921203_B","1921203","Feces","non-PMA",FALSE,"B","GC","R","R","F",63,25.77777778,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_1921203_A","1921203","Feces","non-PMA",FALSE,"A","GC","R","R","F",63,25.77777778,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_1921203_A","1921203","Feces","PMA",TRUE,"A","GC","R","R","F",63,25.77777778,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_1921203_B","1921203","Feces","PMA",TRUE,"B","GC","R","R","F",63,25.77777778,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_1924430","1924430","Feces","PMA",TRUE,"first","GC","R","NR","M",58,25.14285714,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_1924430","1924430","Feces","non-PMA",FALSE,"first","GC","R","NR","M",58,25.14285714,"Obesity","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=10",10
+"Feces_PMA_1925573","1925573","Feces","PMA",TRUE,"first","GC","R",,"M",66,27.39091856,"Obesity","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 10",10
+"Feces_1925573","1925573","Feces","non-PMA",FALSE,"first","GC","R",,"M",66,27.39091856,"Obesity","non MSI-high","IV","XELOX","chemo","1","Yes","adenocarcinoma","CPS 10",10
+"Feces_PMA_1926378","1926378","Feces","PMA",TRUE,"first","GC","R","R","M",65,20.32443826,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","0",0
+"Feces_1926378","1926378","Feces","non-PMA",FALSE,"first","GC","R","R","M",65,20.32443826,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","0",0
+"Feces_1927915","1927915","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",32,24.41827061,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","1",1
+"Feces_PMA_1927915","1927915","Feces","PMA",TRUE,"first","GC","NR","NR","M",32,24.41827061,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","1",1
+"Feces_1928254","1928254","Feces","non-PMA",FALSE,"first","GC",,,"M",75,21.21831719,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 2",2
+"Feces_PMA_1928254","1928254","Feces","PMA",TRUE,"first","GC",,,"M",75,21.21831719,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 2",2
+"Feces_PMA_1928263","1928263","Feces","PMA",TRUE,"first","GC","NR",,"M",67,24.77209671,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_1928263","1928263","Feces","non-PMA",FALSE,"first","GC","NR",,"M",67,24.77209671,"normal","non MSI-high","IV","XELOX","chemo","2","No","adenocarcinoma","CPS 5",5
+"Feces_PMA_1930802","1930802","Feces","PMA",TRUE,"first","EC","R","R","M",61,27.10204082,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1930802","1930802","Feces","non-PMA",FALSE,"first","EC","R","R","M",61,27.10204082,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1930914","1930914","Feces","non-PMA",FALSE,"first","GC","R","R","M",54,22.54657648,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=1",1
+"Feces_PMA_1930914","1930914","Feces","PMA",TRUE,"first","GC","R","R","M",54,22.54657648,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=1",1
+"Feces_1932704","1932704","Feces","non-PMA",FALSE,"first","GC","R",,"M",59,23.38868656,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=30",30
+"Feces_PMA_1932704","1932704","Feces","PMA",TRUE,"first","GC","R",,"M",59,23.38868656,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","CPS=30",30
+"Feces_PMA_1932751","1932751","Feces","PMA",TRUE,"first","GC","R","R","M",75,23.98126115,"normal","non MSI-high","IVA","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","3",3
+"Feces_1932751","1932751","Feces","non-PMA",FALSE,"first","GC","R","R","M",75,23.98126115,"normal","non MSI-high","IVA","PD-1 combined","ICI|chemo","1","Yes","adenocarcinoma","3",3
+"Feces_PMA_1933402","1933402","Feces","PMA",TRUE,"first","GC","R",,"F",70,26.15562597,"Obesity","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","90",90
+"Feces_1933402","1933402","Feces","non-PMA",FALSE,"first","GC","R",,"F",70,26.15562597,"Obesity","MSI-high","IV","PD-1","ICI","2","No","adenocarcinoma","90",90
+"Feces_1935110","1935110","Feces","non-PMA",FALSE,"first","EC",,,"M",58,25.01352082,"Obesity","non MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1935528","1935528","Feces","non-PMA",FALSE,"first","GC",,,"F",64,22.37034332,"normal","MSI-high","IVA","PD-1","ICI","2","No","adenocarcinoma","10",10
+"Feces_PMA_1935528","1935528","Feces","PMA",TRUE,"first","GC",,,"F",64,22.37034332,"normal","MSI-high","IVA","PD-1","ICI","2","No","adenocarcinoma","10",10
+"Feces_1936290","1936290","Feces","non-PMA",FALSE,"first","GC","NR","NR","M",54,19.59645812,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_PMA_1936290","1936290","Feces","PMA",TRUE,"first","GC","NR","NR","M",54,19.59645812,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS=0",0
+"Feces_PMA_1937402","1937402","Feces","PMA",TRUE,"first","GC","R","NR","F",59,22.66606576,"normal","non MSI-high","IV","PD-1","ICI|chemo","2","No","adenocarcinoma","8",8
+"Feces_1937402","1937402","Feces","non-PMA",FALSE,"first","GC","R","NR","F",59,22.66606576,"normal","non MSI-high","IV","PD-1","ICI|chemo","2","No","adenocarcinoma","8",8
+"Feces_PMA_1938128","1938128","Feces","PMA",TRUE,"first","GC","R","NR","M",73,24.35306365,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=50",50
+"Feces_1938128","1938128","Feces","non-PMA",FALSE,"first","GC","R","NR","M",73,24.35306365,"normal","non MSI-high","IV","PD-1 combined","ICI|target","1","Yes","adenocarcinoma","CPS=50",50
+"Feces_PMA_1939723","1939723","Feces","PMA",TRUE,"first","EC","R","R","M",66,24.56747405,"normal","MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1939723","1939723","Feces","non-PMA",FALSE,"first","EC","R","R","M",66,24.56747405,"normal","MSI-high","III","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1939768","1939768","Feces","PMA",TRUE,"first","GC","NR",,"M",60,21.79930796,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","5",5
+"Feces_1939768","1939768","Feces","non-PMA",FALSE,"first","GC","NR",,"M",60,21.79930796,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","5",5
+"Feces_1940036","1940036","Feces","non-PMA",FALSE,"first","EC","NR","NR","M",63,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1940036","1940036","Feces","PMA",TRUE,"first","EC","NR","NR","M",63,22.05805119,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1940414","1940414","Feces","PMA",TRUE,"first","EC","R","R","M",70,17.31341037,"lean","non MSI-high","IIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_1940414","1940414","Feces","non-PMA",FALSE,"first","EC","R","R","M",70,17.31341037,"lean","non MSI-high","IIB","PD-1 combined","ICI|chemo","1","Yes","squamous cell carcinoma","未查",
+"Feces_PMA_1944552","1944552","Feces","PMA",TRUE,"first","GC","R","R","M",72,23.35640138,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","0",0
+"Feces_1944552","1944552","Feces","non-PMA",FALSE,"first","GC","R","R","M",72,23.35640138,"normal","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","0",0
+"Feces_PMA_1944672","1944672","Feces","PMA",TRUE,"first","GC","R",,"M",82,19.72103697,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","0",0
+"Feces_1944672","1944672","Feces","non-PMA",FALSE,"first","GC","R",,"M",82,19.72103697,"normal","non MSI-high","IV","chemo","chemo","1","Yes","adenocarcinoma","0",0
+"Feces_1945014","1945014","Feces","non-PMA",FALSE,"first","CRC","R",,"F",55,21.36752137,"normal","MSI-high","IV","chemo","target|chemo","2","No","adenocarcinoma","未查",
+"Feces_PMA_1945014","1945014","Feces","PMA",TRUE,"first","CRC","R",,"F",55,21.36752137,"normal","MSI-high","IV","chemo","target|chemo","2","No","adenocarcinoma","未查",
+"Feces_PMA_1945152","1945152","Feces","PMA",TRUE,"first","EC","R","R","M",57,23.91581633,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_1945152","1945152","Feces","non-PMA",FALSE,"first","EC","R","R","M",57,23.91581633,"normal","non MSI-high","III","PD-1 combined","ICI|chemo","2","No","squamous cell carcinoma","未查",
+"Feces_597397_B","597397","Feces","non-PMA",FALSE,"B","GC","R","NR","F",32,17.21108681,"lean","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_597397_B","597397","Feces","PMA",TRUE,"B","GC","R","NR","F",32,17.21108681,"lean","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_597397_A","597397","Feces","non-PMA",FALSE,"A","GC","R","NR","F",32,17.21108681,"lean","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_597397_A","597397","Feces","PMA",TRUE,"A","GC","R","NR","F",32,17.21108681,"lean","non MSI-high","IV","PD-1 combined","ICI|chemo","2","No","adenocarcinoma","CPS 10",10
+"Feces_PMA_1873920","1873920","Feces","PMA",TRUE,"first","GC","NR","NR","M",50,24.08925272,"normal","non MSI-high","III","PD-1 combined","ICI","1","Yes","adenocarcinoma","CPS=80",80
+"Feces_C36_Control","C36_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C40_Control","C40_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C43_Control","C43_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C47_Control","C47_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C50_Control","C50_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C51_Control","C51_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C51_S_Control","C51_S_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C53_Control","C53_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C59_Control","C59_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C62_Control","C62_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C68_Control","C68_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C7_Control","C7_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C70_Control","C70_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C71_Control","C71_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C72_Control","C72_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C89_Control","C89_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C93_Control","C93_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C1_Control","C1_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C10_Control","C10_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C104_R_Control","C104_R_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C12_Control","C12_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C126_S_Control","C126_S_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C13_Control","C13_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C130_S_Control","C130_S_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C14_Control","C14_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C145_R_Control","C145_R_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C147_R_Control","C147_R_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C150_R_Control","C150_R_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C15H_Control","C15H_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C164_S_Control","C164_S_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C18_Control","C18_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C19_Control","C19_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C24_Control","C24_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C26_Control","C26_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C27_Control","C27_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C29_Control","C29_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C3_Control","C3_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C31_Control","C31_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C32_Control","C32_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_C35_Control","C35_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_D179_Untreated","D179_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D182_Untreated","D182_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D185_Untreated","D185_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D188_Untreated","D188_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D190_Untreated","D190_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D191_M_Untreated","D191_M_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D197_N_Treated","D197_N_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D202_M_Treated","D202_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D209_M_Treated","D209_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D225_N_Treated","D225_N_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D25_Untreated","D25_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D41_Untreated","D41_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D50_M_Treated","D50_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D53_Untreated","D53_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D57_Untreated","D57_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D60_Untreated","D60_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D69_Untreated","D69_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_C99_Control","C99_Control",,"non-PMA",FALSE,"first","HC",,,,,,,,,,,,,,,
+"Feces_D100_Untreated","D100_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D108_Untreated","D108_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D114_Untreated","D114_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D118_Untreated","D118_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D121_Untreated","D121_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D122_N_Treated","D122_N_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D124_Untreated","D124_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D126_Untreated","D126_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D130_Untreated","D130_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D132_Untreated","D132_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D138_M_Treated","D138_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D145_Untreated","D145_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D147_Untreated","D147_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D15_Untreated","D15_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D150_Untreated","D150_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D157_N_Treated","D157_N_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D158_M_Treated","D158_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D158_Untreated","D158_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D166_Untreated","D166_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D172_Untreated","D172_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D177_Untreated","D177_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D178_Untreated","D178_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D79_G_Treated","D79_G_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D8_N_Treated","D8_N_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
+"Feces_D82_Untreated","D82_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D86_Untreated","D86_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D90_Untreated","D90_Untreated",,"non-PMA",FALSE,"first","RA",,,,,,,,,,,,,,,
+"Feces_D93_M_Treated","D93_M_Treated",,"non-PMA",FALSE,"first",,,,,,,,,,,,,,,,
