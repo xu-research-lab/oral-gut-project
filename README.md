@@ -27,39 +27,28 @@ environment specification and run instructions are provided.
 ├── fig5/                           # Figure 5 analyses (functional and network analyses)
 ├── fig6/                           # Figure 6 mouse validation (growth, flow, SCFA, LEfSe)
 ├── Extended Data Fig/              # Extended Data Figure analyses
-├── environment.json                # Code Ocean environment (R/Python package versions)
+├── software_versions.md            # software and package versions used in this study
 ├── requirements.txt                # Python packages used by the notebooks
-├── run                             # master script (Figure 1–4 adjusted analyses)
+├── run                             # master script (Figures 1–4 and Figure 6)
 ├── LICENSE                         # MIT License
 └── README.md
 ```
 
 ## System requirements
 
-- **Operating system**: Linux (Ubuntu 22.04, Code Ocean image) or Windows 11.
-- **R**: tested with R 4.3.2 (Windows 11) and R 4.4.2 (Code Ocean, Ubuntu 22.04).
+- **Operating system**: Linux (CentOS cluster) and Windows 11.
+- **R**: 4.3.2.
 - **Python**: 3.12.8 (only needed for the prediction notebooks).
-- **R packages**: the complete list with versions is given in
-  `environment.json`. Main packages include `Maaslin2` (1.20.0), `vegan`
-  (2.7-2), `ggplot2` (4.0.0), `survival` (3.8-3), `lme4`, `coxphf`, `dplyr`,
-  `tidyr`, `readxl`, `ggpubr`, `patchwork`, `microeco`, `randomForest`,
-  `lmerTest`, `broom`, `data.table`, `emmeans`, `pheatmap` and `pROC`.
-- **Python packages**: `numpy`, `pandas`, `scipy`, `scikit-learn`, `xgboost`
-  (see `requirements.txt`).
+- **Software and package versions**: the exact versions used in this study are
+  listed in `software_versions.md`.
+- **Python packages**: `numpy`, `pandas`, `scipy`, `scikit-learn` and
+  `xgboost` (v2.1.4; see `requirements.txt`).
 - **Non-standard hardware**: none. All analyses run on a standard CPU; no GPU
   is required.
 
 ## Installation
 
-### Option 1: Code Ocean environment (recommended)
-
-The file `environment.json` defines the complete Code Ocean environment,
-including the R/Python versions and package versions. Importing this
-environment installs all dependencies automatically.
-
-### Option 2: Local R installation
-
-Install R (>= 4.3) and the required packages, for example:
+Install R 4.3.2 and the R packages listed in `software_versions.md`. For example:
 
 ```r
 install.packages(c(
@@ -69,6 +58,13 @@ install.packages(c(
 ))
 if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
 BiocManager::install("Maaslin2")
+```
+
+For the Python notebooks, install Python 3.12.8 and the packages in
+`requirements.txt`:
+
+```bash
+pip install -r requirements.txt
 ```
 
 Typical installation time on a normal desktop computer is **15–30 minutes**,
