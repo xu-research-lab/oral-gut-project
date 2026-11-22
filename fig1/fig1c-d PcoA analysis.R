@@ -12,15 +12,15 @@ library(knitr) # For creating well-formatted tables
 library(ggplot2) # For data visualization
 
 # --- 2. Load your data ---
-# Note: If your meta.csv file contains Chinese characters and fails to read by default,
+# Note: If your meta_extended.csv file contains Chinese characters and fails to read by default,
 # the script will try to use 'GBK' encoding, which is a common way to handle Chinese encoding issues.
 tryCatch(
     {
-        meta_data <- read.csv("../data/Figure1/meta.csv", row.names = 1, header = TRUE)
+        meta_data <- read.csv("meta_extended.csv", row.names = 1, header = TRUE, check.names = FALSE)
     },
     error = function(e) {
-        message("Failed to read meta.csv with default encoding, trying GBK encoding...")
-        meta_data <- read.csv("../data/Figure1/meta.csv", row.names = 1, header = TRUE, encoding = "GBK")
+        message("Failed to read meta_extended.csv with default encoding, trying GBK encoding...")
+        meta_data <- read.csv("meta_extended.csv", row.names = 1, header = TRUE, encoding = "GBK", check.names = FALSE)
     }
 )
 
@@ -33,10 +33,10 @@ cat("--- Starting first round of analysis: Based on oral strain data ---\n")
 cat("============================================================\n\n")
 
 # --- 2.1 Load oral strain distance matrices ---
-bray_curtis_oral <- read.csv("../data/Figure1/big_cohort_profile_oral_strains_bray-curtis.tsv", sep = "\t", row.names = 1, header = TRUE)
-jaccard_oral <- read.csv("../data/Figure1/big_cohort_profile_oral_strains_jaccard.tsv", sep = "\t", row.names = 1, header = TRUE)
-unweighted_unifrac_oral <- read.csv("../data/Figure1/big_cohort_profile_oral_strains_unweighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
-weighted_unifrac_oral <- read.csv("../data/Figure1/big_cohort_profile_oral_strains_weighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
+bray_curtis_oral <- read.csv("big_cohort_profile_oral_strains_bray-curtis.tsv", sep = "\t", row.names = 1, header = TRUE)
+jaccard_oral <- read.csv("big_cohort_profile_oral_strains_jaccard.tsv", sep = "\t", row.names = 1, header = TRUE)
+unweighted_unifrac_oral <- read.csv("big_cohort_profile_oral_strains_unweighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
+weighted_unifrac_oral <- read.csv("big_cohort_profile_oral_strains_weighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
 
 # --- 3.1 Prepare a list of data for loop processing ---
 dist_matrices_oral <- list(
@@ -236,10 +236,10 @@ cat("--- Starting second round of analysis: Based on gut microbiome data ---\n")
 cat("============================================================\n\n")
 
 # --- 2.2 Load gut microbiome distance matrices ---
-bray_curtis_gut <- read.csv("../data/Figure1/big_cohort_profile_bray-curtis.tsv", sep = "\t", row.names = 1, header = TRUE)
-jaccard_gut <- read.csv("../data/Figure1/big_cohort_profile_jaccard.tsv", sep = "\t", row.names = 1, header = TRUE)
-unweighted_unifrac_gut <- read.csv("../data/Figure1/big_cohort_profile_unweighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
-weighted_unifrac_gut <- read.csv("../data/Figure1/big_cohort_profile_weighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
+bray_curtis_gut <- read.csv("big_cohort_profile_bray-curtis.tsv", sep = "\t", row.names = 1, header = TRUE)
+jaccard_gut <- read.csv("big_cohort_profile_jaccard.tsv", sep = "\t", row.names = 1, header = TRUE)
+unweighted_unifrac_gut <- read.csv("big_cohort_profile_unweighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
+weighted_unifrac_gut <- read.csv("big_cohort_profile_weighted-unifrac.tsv", sep = "\t", row.names = 1, header = TRUE)
 
 # --- 3.2 Prepare a list of data for loop processing ---
 dist_matrices_gut <- list(
@@ -383,4 +383,4 @@ pcoa_plot_gut <- ggplot(pcoa_plot_data_gut, aes(x = Pco1, y = Pco2, color = Diag
     theme(plot.title = element_text(hjust = 0.5))
 
 print(pcoa_plot_gut)
-ggsave(pcoa_plot_gut, filename = "../results/fig1d.pdf", width = 3.4, height = 2.7)
+ggsave(pcoa_plot_gut, filename = "fig1d.pdf", width = 3.4, height = 2.7)
