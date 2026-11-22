@@ -6,11 +6,11 @@ suppressMessages(library(ggplot2))
 # ---------- Read metadata (plotting uses only Diagnosis / Response_6, as in the original) ----------
 tryCatch(
   {
-      meta_data <- read.csv("meta.csv", row.names = 1, header = TRUE)
+      meta_data <- read.csv("meta_extended.csv", row.names = 1, header = TRUE, check.names = FALSE)
   },
   error = function(e) {
-      message("Failed to read meta.csv with default encoding, trying GBK encoding...")
-      meta_data <- read.csv("meta.csv", row.names = 1, header = TRUE, encoding = "GBK")
+      message("Failed to read meta_extended.csv with default encoding, trying GBK encoding...")
+      meta_data <- read.csv("meta_extended.csv", row.names = 1, header = TRUE, encoding = "GBK", check.names = FALSE)
   }
 )
 
